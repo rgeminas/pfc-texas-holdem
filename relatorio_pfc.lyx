@@ -1,0 +1,2108 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{amsmath}
+\usepackage{tocbibind}
+\usepackage{tocloft}
+
+\renewcommand \thefigure{FIG.~\ifnum \c@section>\z@ \thesubsection.\fi \@arabic\c@figure}
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{\thefigure}
+
+\renewcommand \thetable{TAB.~\ifnum \c@section>\z@ \thesubsection.\fi \@arabic\c@table}
+\def\fps@table{tbp}
+\def\ftype@table{1}
+\def\ext@table{lot}
+\def\fnum@table{\thetable}
+
+\renewcommand\@pnumwidth{1.55em}%era 1.55
+\renewcommand\@tocrmarg{5em}%era 2.55--5
+\renewcommand\@dotsep{2} %era 3--2
+\setcounter{tocdepth}{3} %{3}
+
+\renewcommand*\l@figure{\vskip 10pt\normalfont\@dottedtocline{1}{0em}{6em}} 
+\renewcommand*\l@table{\vskip 10pt\normalfont\@dottedtocline{1}{0em}{6em}} 
+
+\renewcommand*\l@section{\vskip 10pt\bfseries\@dottedtocline{1}{0em}{3.5em}} 
+\renewcommand*\l@subsection{\normalfont \@dottedtocline{2}{0em}{4.0em}}
+\renewcommand*\l@subsubsection{\normalfont \@dottedtocline{3}{0em}{4.0em}} 
+
+
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\bfseries\MakeUppercase}}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\MakeUppercase}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\normalsize\MakeUppercase}}
+\end_preamble
+\use_default_options true
+\begin_modules
+figs-within-sections
+tabs-within-sections
+eqs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
+theorems-sec-bytype
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\headheight 1cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align left
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+MINISTÉRIO DA DEFESA 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+EXÉRCITO BRASILEIRO 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+DEPARTAMENTO DE CIÊNCIA E TECNOLOGIA 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+INSTITUTO MILITAR DE ENGENHARIA 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+CURSO DE GRADUAÇÃO EM ENGENHARIA DE COMPUTAÇÃO
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size small
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+CARLOS ALBERTO VILLOTE DE OLIVEIRA
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+PAULO EDUARDO ALTHOFF
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+RENAN GEMIGNANI
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size small
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size small
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+RIO DE JANEIRO 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+2013
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+INSTITUTO MILITAR DE ENGENHARIA 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size small
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+CARLOS ALBERTO VILLOTE DE OLIVEIRA
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+PAULO EDUARDO ALTHOFF
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+RENAN GEMIGNANI
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\size small
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\size small
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align right
+
+\size small
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+
+\size small
+Projeto de Final de Curso apresentado ao Curso de Engenharia de Computação
+ do Instituto Militar (IME) de Engenharia, como parte das exigências do
+ IME.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Orientador: Prof.
+ Marcos Veloso Peixoto – D.C.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+
+\size small
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+RIO DE JANEIRO 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+2013
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+c2013
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+INSTITUTO MILITAR DE ENGENHARIA
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+Praça General Tibúrcio, 80 – Praia Vermelha 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+Rio de Janeiro - RJ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+CEP: 22290- 270
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+Este exemplar é de propriedade do Instituto Militar de Engenharia, que poderá
+ incluí-lo em base de dados, armazenar em computa dor, microfilmar ou adotar
+ qualquer forma de arquivamento.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+É permitida a menção, reprodução parcial ou integral e a transmissão entre
+ bibliotecas deste trabalho, sem modificação de seu texto, em qualquer meio
+ que esteja ou venha a ser fixado, para pesquisa acadêmica, comentários
+ e citações, desde que sem finalidade comercial e que seja feita a referência
+ bibliográfica completa.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Os conceitos expressos neste trabalho são de responsabilidade do(s) autor(es)
+ e do(s) orientador(es).
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size small
+____
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+Carageorge, Edward Céspedes/ Gemignani, Renan.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size small
+Análise da Segurança da Criptografia Baseada em Reticulado, no Rio de Janeiro
+ / 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Edward Céspedes Carageorge, Renan Genignani
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+- Rio de Janeiro : Instituto Militar de Engenharia, 2013.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size small
+n f.
+ : il., graf., tab.
+ : - cm.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Dissertação (graduação) - Instituto Militar de Engenharia, 2013.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+1.
+ Formação.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+INSTITUTO MILITAR DE ENGENHARIA 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size small
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+CARLOS ALBERTO VILLOTE DE OLIVEIRA
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+PAULO EDUARDO ALTHOFF
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size small
+RENAN GEMIGNANI
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size small
+EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+Projeto de Final de Curso apresentado ao Curso de Engenharia de Computação
+ do Instituto Militar (IME) de Engenharia, como parte das exigências do
+ IME.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Aprovado em 04/06/2013 pela seguinte Banca Examinadora:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+Orientador: XXXXXXXXXXXX – D.Sc., do IME
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+XXXXXXXXXXXX, D.Sc., do IME
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace 0cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+XXXXXXXXXXXXXX, D.Sc., do IME
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+RIO DE JANEIRO 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset space \hspace{}
+\length 6.5cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "9.5cm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace 11.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“ A primeira coisa a entender é que você não entende”.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ $
+\end_inset
+
+SOREN AABYE KIERKEGAARD
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+contentsname{
+\backslash
+normalsize SUMÁRIO 
+\backslash
+vspace{1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+normalsize
+\backslash
+addvspace{-1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+listfigurename{
+\backslash
+normalsize LISTA DE ILUSTRAÇÕES}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+LISTA DE SIGLAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+abstractname{RESUMO} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Palavras-chave: Criptografia, reticulado, avaliação de segurança, 
+\shape italic
+learning with errors
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+abstractname{ABSTRACT} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Keywords: Neural networks, machine learning, poker.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+INTRODUÇÃO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+MOTIVAÇÃO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+OBJETIVO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+JUSTIFICATIVA
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+METODOLOGIA
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ESTRUTURA
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONCLUSÃO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dos estudos apresentados acerca dos diferentes criptossistemas baseados
+ em reticulados, pode-se, de imediato, concluir que alguns deles são de
+ implementação inviável, devido tanto a problemas de tamanho de chave muito
+ grande em comparação com outros criptossistemas atualmente em uso (como
+ é o caso do GGH, que tem tamanho de chave inviável nas dimensões nas quais
+ ele se torna seguro), quanto a vulnerabilidades ao ataque pelos algoritmos
+ LLL e KZ, o que torna o sistema inerentemente inseguro.
+ Deste modo, também pode-se perceber que nem todos os problemas inicialmente
+ tidos como difíceis o são, uma vez que não necessariamente é preciso possuir
+ a informação de arapuca para resolvê-los em tempo hábil por um ataque de
+ redução.
+ 
+\end_layout
+
+\begin_layout Standard
+Conclui-se também que deve haver cuidado ao se selecionar um problema mesmo
+ que ele aparente ser difícil.
+ Deste modo, concluímos que o GGH em sua forma atual não seria viável como
+ criptossistema, e que, salvo por meio de uma escolha cuidadosa de parâmetros,
+ o NTRU também se veria vulnerável.
+ O NTRU, devido a sua baixa complexidade algoritmica de encriptação e decriptaçã
+o, poderia ainda ser utilizado em aplicações que priorizassem a velocidade
+ acima da segurança 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ntru-conclusion"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Em contrapartida, alguns dos problemas apresentados mostraram-se resistentes
+ à redução LLL básica, caso do SIS e do LWE.
+ Isso indica que ainda há grande possibilidade de estudos na área de redução
+ de reticulados de modo a resolver estes problemas.
+ Estudos neste sentido já foram iniciados
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cn"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rs"
+
+\end_inset
+
+ de modo a produzir métodos mais eficientes de redução, o que poderia compromete
+r a aparente segurança de criptossistemas baseados no LWE ou no SIS.
+ Apesar disso, o LWE e o SIS mostram-se promissores em resistência a ataques
+ de redução com os métodos apresentados, mesmo considerando o aumento do
+ poder de processamento com o tempo.
+ Modificações significativas de performance no BKZ 2.0 podem, contudo, servir
+ para diminuir esta segurança.
+\end_layout
+
+\begin_layout Standard
+Um dos problemas encontrados na avaliação da segurança é o fato de a teoria
+ de redução de reticulados não estar madura o suficiente de modo a poder
+ prever tanto seu tempo de execução quanto sua precisão ao encontrar melhores
+ bases, o que faz com que seja apenas possível realizar a avaliação de segurança
+ por meio da implementação direta dos algoritmos.
+ No caso do LWE, por ser um algoritmo probabilístico de aprendizado de máquina
+ complexo, há grande dificuldade de implementação do mesmo, o que impede
+ em muitos casos o teste da segurança do criptossistema ante um ataque.
+ No caso do SIS, as implicações de um possível ataque de redução são melhor
+ compreendidas, e, no estado atual da teoria de redução, o SIS encontra-se
+ relativamente seguro em relação a este tipo de ataque.
+ Outros possíveis métodos de ataque não se mostraram muito promissores,
+ sendo deixados de lado.
+\end_layout
+
+\begin_layout Standard
+Para trabalhos futuros, reforça-se a necessidade da implementação e teste
+ dos algoritmos, tanto em suas versões básicas como com as modificações
+ apresentadas de modo a de fato realizar uma avaliação contundente sobre
+ a segurança dos criptossistemas, tanto atualmente como utilizando previsões
+ para o poder computacional de gerações futuras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+REFERÊNCIAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+refname{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+bibsection}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vspace*{-1em}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+vspace*{-1em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "estimate"
+
+\end_inset
+
+ Ruckert, Markus; Schneider, Michael.
+ Estimating the Security of Lattice-based Cryptosystems.
+ Technische Universitat Darmstadt, Germany, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "solve"
+
+\end_inset
+
+ Laarhovem, Thijs; van de Pol, Joop, Wegner, Benne de.
+ Solving Hard Lattice Problems and the Security of Lattice-Based Cryptosystems,
+ 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "shor"
+
+\end_inset
+
+ Shor, Peter W.
+ (1997), "Polynomial-Time Algorithms for Prime Factorization and Discrete
+ Logarithms on a Quantum Computer", SIAM J.
+ Comput.
+ 26 (5): 1484–1509
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "edward"
+
+\end_inset
+
+ CARAGEORGE, Edward C., Criptografia Baseada em Reticulado.
+ Instituto Militar de Engenharia, Rio de Janeiro, 2012.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "AnIntroMathCripto"
+
+\end_inset
+
+ HOFFSTEIN, 
+\lang english
+J
+\lang brazilian
+effrey; PIPHER, Jill; SILVERMAN, Joseph H.
+ An Introduction to Mathematical Cryptography, 2008, Springer.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ggh"
+
+\end_inset
+
+ O Goldreich, S Goldwasser, and S Halevi.
+ Public-key cryptosystems from lattice reduction problems.
+ CRYPTO '97: Proceedings of the 17th Annual International Cryptology Conference
+ on Advances in Cryptology, Jan 1996.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ggh2"
+
+\end_inset
+
+ O.
+ Goldreich, S.
+ Goldwasser and S.
+ Halevi, Collision-Free Hashing from Lattice Problems, Electronic Colloquium
+ on Computational Complexity, vol.
+ 3, no.
+ 42, pp.
+ 1–10, 1996.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ajtaidwork"
+
+\end_inset
+
+ AJTAI, M.; DWORK, C.
+ A public-key cryptosystem with worstcase/ average-case equivalence.
+ In: Proc.
+ 29th ACM STOC.
+ [S.l.: s.n.], 1998.
+ p.
+ 284–293
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ajt"
+
+\end_inset
+
+ Miklós Ajtai.
+ Generating Hard Instances of Lattice Problems.
+ In STOC, pages 99-108.
+ ACM, 1996.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "gen"
+
+\end_inset
+
+ Craig Gentry.
+ Fully Homomorphic Encryption Using Ideal Lattices.
+ In Mitzenmacher, pages 169-178.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mic"
+
+\end_inset
+
+ Daniele Micciancio.
+ Generalized Compact Knapsacks, Cyclic Lattices, and Efficient one-way Functions.
+ Computational Complexity, 16(4):365-411, 2007.
+ Prelim.
+ in FOCS 2002.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ntru"
+
+\end_inset
+
+ J.
+ Hoffstein, J.
+ Pipher, and J.
+ H.
+ Silverman.
+ NTRU: a ring-based public key cryptosystem.
+ In Algorithmic Number Theory (Portland, OR, 1998), volume 1423 of Lecture
+ Notes in Comput.
+ Sci., pages 267–288.
+ Springer, Berlin, 1998.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "lwe"
+
+\end_inset
+
+ REGEV, O.
+ On lattices, learning with errors, random linear codes, and cryptography.
+ In: Proc.
+ 37th ACM Symposium on Theory of Computing (STOC).
+ [S.l.: s.n.], 2005.
+ p.
+ 84–93.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "lll"
+
+\end_inset
+
+A.
+ K.
+ Lenstra, H.
+ W.
+ Lenstra, Jr., and L.
+ Losvász.
+ Factoring polynomials with rational coefficients.
+ Math.
+ Ann., 261(4):515–534, 1982.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "stallings"
+
+\end_inset
+
+ STALLINGS, William.
+ Criptografia e Segurança de Redes - Princípios e Prática, 2007, PEARSON,
+ Prentice Hall, São Paulo
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mr1"
+
+\end_inset
+
+ D.
+ Micciancio and O.
+ Regev, Worst-Case to Average-Case Reductions Based on Gaussian Measures,
+ SIAM J.
+ Comput., vol.
+ 37, no.
+ 1, pp.
+ 267–302, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "r1"
+
+\end_inset
+
+ O.
+ Regev, On Lattices, Learning with Errors, Random Linear Codes, and Cryptography
+, Proc.
+ 37th Symp.
+ Theory of Computing (STOC), pp.
+ 84–93, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "gauss"
+
+\end_inset
+
+ C.F.
+ Gauss, Disquisitiones Arithmeticae, Leipzig, 1801.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "lovasz"
+
+\end_inset
+
+ L.
+ Lovász.
+ An algorithm theory of numbers, graphs and convexity, CBMS-NSF Reg.
+ Conf.
+ Ser.
+ Appl.
+ Math, vol 50, pp.
+ 91, 1986
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "hermite"
+
+\end_inset
+
+ C.
+ Hermite, Extraits de lettres de M.
+ Hermite à M.
+ Jacobi sur diff'erent objets de la théorie des nombres, deuxième lettre,
+ J.
+ Reine Angew.
+ Math.
+ 40 [1850], 279–290.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "gn"
+
+\end_inset
+
+ N.
+ Gama and P.Q.
+ Nguyen, Predicting Lattice Reduction, Proc.
+ 27th Conf.
+ Theory and Applications of Cryptographic Techniques (EUROCRYPT), pp.
+ 31–51, cn2008.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "rs"
+
+\end_inset
+
+ M.
+ Rycket and M.
+ Schneider, Estimating the Security of Lattice-based Cryptosystems, Cryptology
+ ePrint Archive, Report 2010/137, pp.
+ 1–33, 2010.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "lp"
+
+\end_inset
+
+ R.
+ Lindner and C.
+ Peikert, Better Key Sizes (and Attacks) for LWE-based Encryption, Topics
+ in Cryptology (CT-RSA), pp.
+ 319–339, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cn"
+
+\end_inset
+
+ Y.
+ Chen and P.Q.
+ Nguyen, BKZ 2.0: Better Lattice Security Estimates, Proc.
+ 17th Conf.
+ Theory and Application of Cryptology and Information Security (ASIACRYPT),
+ pp.
+ 1–20, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "kz"
+
+\end_inset
+
+ A.
+ Korkine and G.
+ Zolotarev, Sur les formes quadratiques, Math.
+ Ann., vol.
+ 6, no.
+ 3, pp.
+ 366–389, 1873.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "quantum"
+
+\end_inset
+
+E.
+ Rieffel and W.
+ Polak, An Introduction to Quantum Computing for Non-Physicists, ACM Computing
+ Surveys, Vol.
+ 32, No.
+ 3, September 2000C.P.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "se"
+
+\end_inset
+
+Schnorr and M.
+ Euchner, Lattice Basis Reduction: Improved Practical Algorithms and Solving
+ Subset Sum Problems, Mathematical Programming, vol.
+ 66, no.
+ 2–3, pp.
+ 181–199, 1994.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "sno1"
+
+\end_inset
+
+ C.P.
+ Schnorr, A Hierarchy of Polynomial Time Lattice Basis Reduction Algorithms,
+ Theoretical Computer Science, vol.
+ 53, no.
+ 2–3, pp.
+ 201–224, 1987.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "hps2"
+
+\end_inset
+
+ G.
+ Hanrot, X.
+ Pujol and D.
+ Stehl´e, Analyzing Blockwise Lattice Algorithms using Dynamical Systems,
+ Proc.
+ 31th Cryptology Conference (CRYPTO), pp.
+ 447–464, 2011.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "le"
+
+\end_inset
+
+ A.K.
+ Lenstra, Key Lengths, in The Handbook of Information Security, ch.
+ 114, 2005.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ntru-conclusion"
+
+\end_inset
+
+A.
+ C.
+ Atici, L.
+ Batina, J.
+ Fan and I.
+ Verbauwhede.
+ Low-cost implementations of NTRU for pervasive security, 19th IEEE Internationa
+l Conference on Application-Specific Systems, Architectures and Processors,
+ pp79-84, 2008.
+\end_layout
+
+\end_body
+\end_document
