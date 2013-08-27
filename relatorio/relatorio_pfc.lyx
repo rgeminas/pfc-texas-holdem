@@ -323,7 +323,6 @@ PAULO EDUARDO ALTHOFF
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
 
 \series bold
@@ -806,7 +805,6 @@ PAULO EDUARDO ALTHOFF
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align center
 
 \series bold
@@ -861,7 +859,7 @@ Projeto de Final de Curso apresentado ao Curso de Engenharia de Computação
 \begin_layout Standard
 
 \size small
-Aprovado em 04/06/2013 pela seguinte Banca Examinadora:
+Aprovado em __/__/____ pela seguinte Banca Examinadora:
 \end_layout
 
 \begin_layout Standard
@@ -890,7 +888,7 @@ Aprovado em 04/06/2013 pela seguinte Banca Examinadora:
 \align center
 
 \size small
-Orientador: XXXXXXXXXXXX – D.Sc., do IME
+Orientador: Marcos Veloso Peixoto – D.Sc., do IME
 \end_layout
 
 \begin_layout Standard
@@ -919,7 +917,7 @@ Orientador: XXXXXXXXXXXX – D.Sc., do IME
 \align center
 
 \size small
-XXXXXXXXXXXX, D.Sc., do IME
+Alex Garcia, D.Sc., do IME
 \end_layout
 
 \begin_layout Standard
@@ -948,7 +946,7 @@ XXXXXXXXXXXX, D.Sc., do IME
 \align center
 
 \size small
-XXXXXXXXXXXXXX, D.Sc., do IME
+Ricardo Choren Noya, D.Sc., do IME
 \end_layout
 
 \begin_layout Standard
@@ -1336,6 +1334,85 @@ indent
 
 \end_layout
 
+\begin_layout Standard
+O emprego de técnicas de aprendizado de máquina de modo a construir agentes
+ autônomos que sejam capazes de jogar alguma forma de pôquer vem sido estudado
+ há algum tempo devido às características de informação imperfeita do jogo.
+ A maior parte dos estudos na área advém do grupo de inteligência artificial
+ aplicada ao pôquer da Universidade de Alberta.
+ Uma parte dos estudos e implementações de software de pôquer faz uso de
+ estratégias e contra-estratégias baseadas na teoria de equilíbrio de Nash
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+, com algoritmos de avaliação sendo utilizados principalmente com o objetivo
+ de selecionar a estratégia mais interessante para a situação atual dentre
+ estas estratégias conforme resposta do oponente, de modo a se manter a
+ menor quantidade de tempo possível em uma estratégia que se é percebida
+ como não-ideal.
+ Esta abordagem é baseada mais fortemente no fundamento matemático da teoria
+ do jogo do que no melhoramento da estratégia em si.
+\end_layout
+
+\begin_layout Standard
+Contudo, mesmo o software baseado em estratégias fixas se vale, em alguns
+ casos, da utilização de algoritmos de aprendizado de máquina baseados em
+ redes neurais para realizar ao menos a modelagem dos oponentes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+ de modo a prever as probabilidades de o oponente responder de certa forma
+ dado seu histórico de jogadas, como no caso de uma das máquinas descritas
+ em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "opponent_modeling"
+
+\end_inset
+
+, em que a abordagem utilizada para construção do agente-fim não é descrita,
+ contudo, redes neurais são usadas para prever as jogadas do oponente, iniciando
+-se com uma rede limpa que é consequentemente adaptada à medida que o oponente
+ age.
+ Uma desvantagem dessa utilização da rede neural é a possível infactibilidade
+ de se treinar a rede satisfatoriamente em tempo real em um ambiente com
+ agentes humanos.
+ Mesmo com essa desvantagem, a modelagem de redes neurais mostra-se mais
+ acurada do que uma modelagem baseada puramente em pesos relativos a cada
+ tupla ação-mão possível como a mostrada em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "opponent_modeling_old"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma abordagem em que o agente objetivo-fim do estudo é de fato baseado em
+ redes neurais está descritas em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+
+\end_inset
+
+, contudo sem tomar em consideração as especificidades do modo com que o
+ oponente joga, levando a uma abordagem relativamente simples no que concerne
+ a modelagem em si da rede, focando na evolução de agentes predeterminados
+ via combinação dos mesmos e utilização de heurísticas coevolucionárias
+ como halls da fama para realizar a seleção dos agentes que mais se adaptassem,
+ descartando modelos menos eficientes.
+\end_layout
+
 \begin_layout Subsection
 MOTIVAÇÃO
 \end_layout
@@ -1376,6 +1453,15 @@ indent
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\noindent
+No presente trabalho, tencionamos melhorar a maneira com que uma análise
+ prévia do oponente pode ser utilizada como entrada adicional para uma rede
+ neural de forma a conseguir classificá-lo em uma série de perfis distintos,
+ informação esta que pode ser utilizada pela rede de modo a conseguir uma
+ contra-estratégia para um perfil de oponente.
 \end_layout
 
 \begin_layout Subsection
@@ -1470,91 +1556,6 @@ indent
 \end_layout
 
 \begin_layout Standard
-Dos estudos apresentados acerca dos diferentes criptossistemas baseados
- em reticulados, pode-se, de imediato, concluir que alguns deles são de
- implementação inviável, devido tanto a problemas de tamanho de chave muito
- grande em comparação com outros criptossistemas atualmente em uso (como
- é o caso do GGH, que tem tamanho de chave inviável nas dimensões nas quais
- ele se torna seguro), quanto a vulnerabilidades ao ataque pelos algoritmos
- LLL e KZ, o que torna o sistema inerentemente inseguro.
- Deste modo, também pode-se perceber que nem todos os problemas inicialmente
- tidos como difíceis o são, uma vez que não necessariamente é preciso possuir
- a informação de arapuca para resolvê-los em tempo hábil por um ataque de
- redução.
- 
-\end_layout
-
-\begin_layout Standard
-Conclui-se também que deve haver cuidado ao se selecionar um problema mesmo
- que ele aparente ser difícil.
- Deste modo, concluímos que o GGH em sua forma atual não seria viável como
- criptossistema, e que, salvo por meio de uma escolha cuidadosa de parâmetros,
- o NTRU também se veria vulnerável.
- O NTRU, devido a sua baixa complexidade algoritmica de encriptação e decriptaçã
-o, poderia ainda ser utilizado em aplicações que priorizassem a velocidade
- acima da segurança 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ntru-conclusion"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Em contrapartida, alguns dos problemas apresentados mostraram-se resistentes
- à redução LLL básica, caso do SIS e do LWE.
- Isso indica que ainda há grande possibilidade de estudos na área de redução
- de reticulados de modo a resolver estes problemas.
- Estudos neste sentido já foram iniciados
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cn"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "rs"
-
-\end_inset
-
- de modo a produzir métodos mais eficientes de redução, o que poderia compromete
-r a aparente segurança de criptossistemas baseados no LWE ou no SIS.
- Apesar disso, o LWE e o SIS mostram-se promissores em resistência a ataques
- de redução com os métodos apresentados, mesmo considerando o aumento do
- poder de processamento com o tempo.
- Modificações significativas de performance no BKZ 2.0 podem, contudo, servir
- para diminuir esta segurança.
-\end_layout
-
-\begin_layout Standard
-Um dos problemas encontrados na avaliação da segurança é o fato de a teoria
- de redução de reticulados não estar madura o suficiente de modo a poder
- prever tanto seu tempo de execução quanto sua precisão ao encontrar melhores
- bases, o que faz com que seja apenas possível realizar a avaliação de segurança
- por meio da implementação direta dos algoritmos.
- No caso do LWE, por ser um algoritmo probabilístico de aprendizado de máquina
- complexo, há grande dificuldade de implementação do mesmo, o que impede
- em muitos casos o teste da segurança do criptossistema ante um ataque.
- No caso do SIS, as implicações de um possível ataque de redução são melhor
- compreendidas, e, no estado atual da teoria de redução, o SIS encontra-se
- relativamente seguro em relação a este tipo de ataque.
- Outros possíveis métodos de ataque não se mostraram muito promissores,
- sendo deixados de lado.
-\end_layout
-
-\begin_layout Standard
-Para trabalhos futuros, reforça-se a necessidade da implementação e teste
- dos algoritmos, tanto em suas versões básicas como com as modificações
- apresentadas de modo a de fato realizar uma avaliação contundente sobre
- a segurança dos criptossistemas, tanto atualmente como utilizando previsões
- para o poder computacional de gerações futuras.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1619,489 +1620,83 @@ vspace*{-1em}
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "estimate"
+key "opponent_modeling"
 
 \end_inset
 
- Ruckert, Markus; Schneider, Michael.
- Estimating the Security of Lattice-based Cryptosystems.
- Technische Universitat Darmstadt, Germany, 2010.
+ Salim, Rohwer.
+ Poker Opponent Modeling.
+ Indiana University, 2006.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "solve"
+key "opponent_modeling_old"
 
 \end_inset
 
- Laarhovem, Thijs; van de Pol, Joop, Wegner, Benne de.
- Solving Hard Lattice Problems and the Security of Lattice-Based Cryptosystems,
- 2012.
+Billings, Papp et al.
+ Opponent Modeling in Poker.
+ AAAI, University of Alberta, Edmonton, Canada, 1998.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "shor"
+key "key-3"
 
 \end_inset
 
- Shor, Peter W.
- (1997), "Polynomial-Time Algorithms for Prime Factorization and Discrete
- Logarithms on a Quantum Computer", SIAM J.
- Comput.
- 26 (5): 1484–1509
+Davidson, Billings, Schaeffer, Szafron.
+ Improved Opponent Modeling in Poker.
+ University of Alberta, Edmonton, Canada, 2000.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "edward"
+key "key-2"
 
 \end_inset
 
- CARAGEORGE, Edward C., Criptografia Baseada em Reticulado.
- Instituto Militar de Engenharia, Rio de Janeiro, 2012.
+Johnson.
+ Robust Strategies and Counter-Strategies: Building a Champion Level Computer
+ Poker Player, University of Alberta, 2007.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "AnIntroMathCripto"
+key "key-4"
 
 \end_inset
 
- HOFFSTEIN, 
-\lang english
-J
-\lang brazilian
-effrey; PIPHER, Jill; SILVERMAN, Joseph H.
- An Introduction to Mathematical Cryptography, 2008, Springer.
+Nicolai, Hilderman.
+ No-Limit Texas Hold’em Poker Agents Created with Evolutionary Neural Networks.
+ 2009 IEEE Symposium on Computational Intelligence and Games.
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referências
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "ggh"
+key "key-5"
 
 \end_inset
 
- O Goldreich, S Goldwasser, and S Halevi.
- Public-key cryptosystems from lattice reduction problems.
- CRYPTO '97: Proceedings of the 17th Annual International Cryptology Conference
- on Advances in Cryptology, Jan 1996.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "ggh2"
-
-\end_inset
-
- O.
- Goldreich, S.
- Goldwasser and S.
- Halevi, Collision-Free Hashing from Lattice Problems, Electronic Colloquium
- on Computational Complexity, vol.
- 3, no.
- 42, pp.
- 1–10, 1996.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "ajtaidwork"
-
-\end_inset
-
- AJTAI, M.; DWORK, C.
- A public-key cryptosystem with worstcase/ average-case equivalence.
- In: Proc.
- 29th ACM STOC.
- [S.l.: s.n.], 1998.
- p.
- 284–293
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "ajt"
-
-\end_inset
-
- Miklós Ajtai.
- Generating Hard Instances of Lattice Problems.
- In STOC, pages 99-108.
- ACM, 1996.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "gen"
-
-\end_inset
-
- Craig Gentry.
- Fully Homomorphic Encryption Using Ideal Lattices.
- In Mitzenmacher, pages 169-178.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "mic"
-
-\end_inset
-
- Daniele Micciancio.
- Generalized Compact Knapsacks, Cyclic Lattices, and Efficient one-way Functions.
- Computational Complexity, 16(4):365-411, 2007.
- Prelim.
- in FOCS 2002.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "ntru"
-
-\end_inset
-
+B.
+ Beattie, G.
+ Nicolai, D.
+ Gerhard, and R.
  J.
- Hoffstein, J.
- Pipher, and J.
- H.
- Silverman.
- NTRU: a ring-based public key cryptosystem.
- In Algorithmic Number Theory (Portland, OR, 1998), volume 1423 of Lecture
- Notes in Comput.
- Sci., pages 267–288.
- Springer, Berlin, 1998.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "lwe"
-
-\end_inset
-
- REGEV, O.
- On lattices, learning with errors, random linear codes, and cryptography.
- In: Proc.
- 37th ACM Symposium on Theory of Computing (STOC).
- [S.l.: s.n.], 2005.
- p.
- 84–93.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "lll"
-
-\end_inset
-
-A.
- K.
- Lenstra, H.
- W.
- Lenstra, Jr., and L.
- Losvász.
- Factoring polynomials with rational coefficients.
- Math.
- Ann., 261(4):515–534, 1982.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "stallings"
-
-\end_inset
-
- STALLINGS, William.
- Criptografia e Segurança de Redes - Princípios e Prática, 2007, PEARSON,
- Prentice Hall, São Paulo
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "mr1"
-
-\end_inset
-
- D.
- Micciancio and O.
- Regev, Worst-Case to Average-Case Reductions Based on Gaussian Measures,
- SIAM J.
- Comput., vol.
- 37, no.
- 1, pp.
- 267–302, 2007.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "r1"
-
-\end_inset
-
- O.
- Regev, On Lattices, Learning with Errors, Random Linear Codes, and Cryptography
-, Proc.
- 37th Symp.
- Theory of Computing (STOC), pp.
- 84–93, 2005.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "gauss"
-
-\end_inset
-
- C.F.
- Gauss, Disquisitiones Arithmeticae, Leipzig, 1801.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "lovasz"
-
-\end_inset
-
- L.
- Lovász.
- An algorithm theory of numbers, graphs and convexity, CBMS-NSF Reg.
- Conf.
- Ser.
- Appl.
- Math, vol 50, pp.
- 91, 1986
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "hermite"
-
-\end_inset
-
- C.
- Hermite, Extraits de lettres de M.
- Hermite à M.
- Jacobi sur diff'erent objets de la théorie des nombres, deuxième lettre,
- J.
- Reine Angew.
- Math.
- 40 [1850], 279–290.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "gn"
-
-\end_inset
-
- N.
- Gama and P.Q.
- Nguyen, Predicting Lattice Reduction, Proc.
- 27th Conf.
- Theory and Applications of Cryptographic Techniques (EUROCRYPT), pp.
- 31–51, cn2008.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "rs"
-
-\end_inset
-
- M.
- Rycket and M.
- Schneider, Estimating the Security of Lattice-based Cryptosystems, Cryptology
- ePrint Archive, Report 2010/137, pp.
- 1–33, 2010.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "lp"
-
-\end_inset
-
- R.
- Lindner and C.
- Peikert, Better Key Sizes (and Attacks) for LWE-based Encryption, Topics
- in Cryptology (CT-RSA), pp.
- 319–339, 2011.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "cn"
-
-\end_inset
-
- Y.
- Chen and P.Q.
- Nguyen, BKZ 2.0: Better Lattice Security Estimates, Proc.
- 17th Conf.
- Theory and Application of Cryptology and Information Security (ASIACRYPT),
- pp.
- 1–20, 2011.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "kz"
-
-\end_inset
-
- A.
- Korkine and G.
- Zolotarev, Sur les formes quadratiques, Math.
- Ann., vol.
- 6, no.
- 3, pp.
- 366–389, 1873.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "quantum"
-
-\end_inset
-
-E.
- Rieffel and W.
- Polak, An Introduction to Quantum Computing for Non-Physicists, ACM Computing
- Surveys, Vol.
- 32, No.
- 3, September 2000C.P.
- 
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "se"
-
-\end_inset
-
-Schnorr and M.
- Euchner, Lattice Basis Reduction: Improved Practical Algorithms and Solving
- Subset Sum Problems, Mathematical Programming, vol.
- 66, no.
- 2–3, pp.
- 181–199, 1994.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "sno1"
-
-\end_inset
-
- C.P.
- Schnorr, A Hierarchy of Polynomial Time Lattice Basis Reduction Algorithms,
- Theoretical Computer Science, vol.
- 53, no.
- 2–3, pp.
- 201–224, 1987.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "hps2"
-
-\end_inset
-
- G.
- Hanrot, X.
- Pujol and D.
- Stehl´e, Analyzing Blockwise Lattice Algorithms using Dynamical Systems,
- Proc.
- 31th Cryptology Conference (CRYPTO), pp.
- 447–464, 2011.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "le"
-
-\end_inset
-
- A.K.
- Lenstra, Key Lengths, in The Handbook of Information Security, ch.
- 114, 2005.
-\end_layout
-
-\begin_layout Bibliography
-\labelwidthstring Referências
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "ntru-conclusion"
-
-\end_inset
-
-A.
- C.
- Atici, L.
- Batina, J.
- Fan and I.
- Verbauwhede.
- Low-cost implementations of NTRU for pervasive security, 19th IEEE Internationa
-l Conference on Application-Specific Systems, Architectures and Processors,
- pp79-84, 2008.
+ Hilderman.
+ Pattern classification in no-limit poker: A head-start evolutionary approach.
+ Canadian Conference on AI, 204–215, 2007.
 \end_layout
 
 \end_body
