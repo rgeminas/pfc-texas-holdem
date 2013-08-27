@@ -1398,7 +1398,7 @@ key "opponent_modeling_old"
 
 \begin_layout Standard
 Uma abordagem em que o agente objetivo-fim do estudo é de fato baseado em
- redes neurais está descritas em 
+ redes neurais está descrita em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-4"
@@ -1407,7 +1407,7 @@ key "key-4"
 
 , contudo sem tomar em consideração as especificidades do modo com que o
  oponente joga, levando a uma abordagem relativamente simples no que concerne
- a modelagem em si da rede, focando na evolução de agentes predeterminados
+ a modelagem em si da rede, focando na evolução dos agentes predeterminados
  via combinação dos mesmos e utilização de heurísticas coevolucionárias
  como halls da fama para realizar a seleção dos agentes que mais se adaptassem,
  descartando modelos menos eficientes.
