@@ -1,5 +1,6 @@
 package br.eb.ime.comp.nnbot.learning;
 
-public interface Arrayable {
-	public double[] toArray();
+public abstract class Arrayable {
+	public static final int arraySize = 0;
+	public abstract double[] toArray();
 }
