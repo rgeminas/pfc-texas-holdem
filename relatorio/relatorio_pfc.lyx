@@ -1535,6 +1535,442 @@ indent
 \end_layout
 
 \begin_layout Section
+REDES NEURAIS
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma das mais promissoras técnicas de aprendizado de máquina atualmente,
+ é a estrutura conhecida como rede neural, que consiste em formar uma rede
+ de unidades de processamento que enviam mensagens umas as outras, tentando
+ imitar o funcionamento do cérebro humano.
+ Por esse motivo, é a técnica que mais auxilia no entendimento da inteligência
+ humana, e que se espera obter uma inteligência artificial mais próxima
+ daquela 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-5-2"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Histórico (precisa trabalhar mais no formato)
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As primeiras informações sobre neurocomputação surgiram em 1943, em artigos
+ de McCulloch & Pitts , que inauguraram o estudo de redes neurais.
+ Os autores fizeram uma analogia entre células nervosas vivas e o processo
+ eletrônico, simulado o comportamento do neurônio natural, no qual o neurônio
+ possuía uma saída que era uma função da soma de valor de suas diversas
+ entradas.
+ Eles introduziram o cálculo de pesos e unidades limiares.
+ 
+\end_layout
+
+\begin_layout Standard
+Em 1948, o livro “Cybernetics” de Wiener descreve alguns conceitos sobre
+ controle, comunicação e processamento estatístico de sinais.
+ 
+\end_layout
+
+\begin_layout Standard
+Em 1950, por meio do livro “The Organization of Behavior”, Hebb descreveu
+ um sistema de aprendizado por correlação dos neurônios que acabou dando
+ origem a Regra de Aprendizagem de Hebb.
+ No ano seguinte, Minsky construiu o primeio neuro computador.
+ 
+\end_layout
+
+\begin_layout Standard
+Em 1956, a Inteligência Artificial foi oficialmente criada por McCarthy,
+ Minsky, Shannon, Newell & Simon, Samuel e outros.
+ Em Darthmouth College nasceram os dois paradigmas da IA, a simbólica, que
+ tenta simular o comportamento inteligente humano desconsiderando os mecanismos
+ responsáveis port al, e a conexionista, que acredita que construíndo-se
+ um sistema que simule a estrutura do cerébro, este sistema apresentará
+ inteligência.
+ 
+\end_layout
+
+\begin_layout Standard
+No ano seguinte, Rosenblatt criou o Perceptron, um modelo cognitivo que
+ consistia de unidades sensoriais conectadas a uma única camada de neurônios
+ de McCulloch & Pitts, demonstrando que se fossem acrescidas sinapses ajustáveis
+, as redes neurais de McCulloch & Pitts podem ser treinadas para classificar
+ padrões em classes linearmente separáveis, convergindo em um número limitado
+ de passos.
+ 
+\end_layout
+
+\begin_layout Standard
+Em 1969, Minsky e Papert publicam “Perceptron”, que expõe as limitações
+ do modelo de Rosenblatt, provando que tais redes não são capazes de resolver
+ uma ampla classe de problemas devido às restrições de representam, tendo
+ impacto devastador no interesse dos pesquisadores sobre redes neurais.
+ 
+\end_layout
+
+\begin_layout Standard
+Na década de 1970 não houveram avanços devido a pouca credibilidade dos
+ recentes estudos na área.
+ 
+\end_layout
+
+\begin_layout Standard
+Em 1982, a introdução do modelo conexionista permitiu esclarecer boa parte
+ das dúvidas até então existenes em relação ao processo dinâmico executado
+ por certas redes neurais.
+ Em meados da década de 1980 surgiu a descrição do algoritmo de treinamento
+ backpropagation, que se baseia na retropropagação dos erros para realizar
+ os ajustes de pesos das camadas intermediárias.
+ A área de redes neurais teve um desenvolvimento explosivo após a publicação
+ em 1986 do “Parallel Distributed Processing” editado por Rummerlhart &
+ McClelland, com a multiplicação exponencial de Journal`s, teses e paper`s
+ cientifícos.
+ 
+\end_layout
+
+\begin_layout Standard
+Na década de 1990 ocorreu a integração da pesquisa de redes neurais à corrente
+ principal da inteligência artificial.
+ 
+\end_layout
+
+\begin_layout Standard
+Nos anos 2000 as redes neurais são vistas como um das técnicas de aprendizado
+ de máquina, e não necessariamente como a melhor técnica para muitos problemas.
+\end_layout
+
+\begin_layout Subsection
+Cérebro Humano
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O cérebro humano é composto por unidades chamadas neurônios, cerca de 100
+ bilhões dessas unidades trabalham em paralelo, enviando sinais eletroquímicos
+ uns aos outros.
+ Apesar de cada neurônio trabalhar na faixa de menos de 1 kHz (uma taxa
+ muito baixa se comparado a um computador moderno que trabalha em GHz),
+ seu poder de processamento é muito elevado devido às múltiplas conexões
+ entre eles e pela comunicação rápida, que permite que os 10¹¹ neurônios
+ trabalhem ao mesmo tempo.
+\end_layout
+
+\begin_layout Standard
+A estrutura de um neurônio pode ser dividida em 3 partes: dendritos, corpo
+ celular, axônio (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:neuronio"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/neuronio.JPG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:neuronio"
+
+\end_inset
+
+Esquema de um neurônio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os dendritos recebem sinais elétricos dos outros neurônios através das sinapses,
+ que são impulsos nervosos (estímulos) enviados através de ativadores químicos.
+ O corpo celular processa as informações, definindo pesos para as conexões
+ e enviando uma resposta para outro neurônio através do axônio.
+\end_layout
+
+\begin_layout Standard
+Conjuntos de redes de neurônios, são agrupados em áreas de responsabilidades
+ como cerebelo, hipotálamo, córtex, etc.
+ Aumentando a complexibilidade do sistema e intensificando o poder de processame
+nto do cérebro, mas que foge do escopo das redes neurais tradicionais.
+\end_layout
+
+\begin_layout Subsection
+Componentes das Redes Neurais Computacionais
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As redes neurais computacionais, ou redes neurais artificiais (RNA), são
+ feitas a partir de vários neurônios artificiais, que é um modelo eletrônico
+ do neurônio biológico, como representado na figura .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:neuronio-artificial"
+
+\end_inset
+
+Esquema de um neurônio artificial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos destrinchar esse funcionamento do neurônio artificial em 4 componentes
+ principais, as conexões, o núcleo de processamento, as funções e os padrões.
+\end_layout
+
+\begin_layout Subsubsection
+Conexões
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imaginando a RNA como um grafo monodirecionado, teríamos as conexões entre
+ os nós fazendo o papel dos axiônios (ao enviar a informação de saída de
+ um neurônio) e dos dendritos, (associando um peso a cada entrada).
+ Esse peso nada mais é que um valor que será ajustado durante o treinamento
+ da rede neural, podendo ser positivos (excitam a entrada) ou negativos
+ (inibem a entrada).
+ A informação percorre esse grafo por essas conexões para chegar aos núcleos
+ de processamento para ser analisada.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:grafo"
+
+\end_inset
+
+RNA na forma de grafo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Núcleo de Processamento
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O núcleo soma esses valores, e de acordo com um valor de comparação, informa
+ pela saída um valor de verdadeiro ou falso.
+\end_layout
+
+\begin_layout Standard
+O núcleo de processamento é a parte da RNA onde é realizado o processamento
+ das entradas obtidas pelas conexões.
+ Na analogia com o grafo, um núcleo de processamento seria um nó com várias
+ entradas e uma única saída, obtida pelo processamento das informações de
+ entrada, geralmente uma combinação linear destas ou uma análise comparativa
+ dessa combinação.
+ Essa saída só pode depender dos elementos de entrada, sem influência de
+ dados externos e deve ser único.
+\end_layout
+
+\begin_layout Standard
+As diversas funções que podem ser utilizadas para analisar essa saída são
+ abordadas no item a seguir.
+\end_layout
+
+\begin_layout Subsubsection
+Funções
+\end_layout
+
+\begin_layout Subsubsection
+Padrões
+\end_layout
+
+\begin_layout Subsection
+Classificações de Redes Neurais (Abordagem bem superficial, posteriormente
+ aprofundar na utilizada no trabalho)
+\end_layout
+
+\begin_layout Subsection
+Tipos de Neurônios Artificiais (ou Neurônios Artificiais - Perceptrons,
+ depende do prosseguimento do trabalho)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 CONCLUSÃO
 \end_layout
 
@@ -1625,8 +2061,11 @@ key "opponent_modeling"
 \end_inset
 
  Salim, Rohwer.
- Poker Opponent Modeling.
- Indiana University, 2006.
+ 
+\series bold
+Poker Opponent Modeling
+\series default
+ - Indiana University, 2006.
 \end_layout
 
 \begin_layout Bibliography
@@ -1638,8 +2077,11 @@ key "opponent_modeling_old"
 \end_inset
 
 Billings, Papp et al.
- Opponent Modeling in Poker.
- AAAI, University of Alberta, Edmonton, Canada, 1998.
+ 
+\series bold
+Opponent Modeling in Poker
+\series default
+ - AAAI, University of Alberta, Edmonton, Canada, 1998.
 \end_layout
 
 \begin_layout Bibliography
@@ -1651,8 +2093,11 @@ key "key-3"
 \end_inset
 
 Davidson, Billings, Schaeffer, Szafron.
- Improved Opponent Modeling in Poker.
- University of Alberta, Edmonton, Canada, 2000.
+ 
+\series bold
+Improved Opponent Modeling in Poker
+\series default
+ - University of Alberta, Edmonton, Canada, 2000.
 \end_layout
 
 \begin_layout Bibliography
@@ -1664,8 +2109,12 @@ key "key-2"
 \end_inset
 
 Johnson.
- Robust Strategies and Counter-Strategies: Building a Champion Level Computer
- Poker Player, University of Alberta, 2007.
+ 
+\series bold
+Robust Strategies and Counter-Strategies: Building a Champion Level Computer
+ Poker Player
+\series default
+ - University of Alberta, 2007.
 \end_layout
 
 \begin_layout Bibliography
@@ -1677,8 +2126,11 @@ key "key-4"
 \end_inset
 
 Nicolai, Hilderman.
- No-Limit Texas Hold’em Poker Agents Created with Evolutionary Neural Networks.
- 2009 IEEE Symposium on Computational Intelligence and Games.
+ 
+\series bold
+No-Limit Texas Hold’em Poker Agents Created with Evolutionary Neural Networks
+\series default
+ - IEEE Symposium on Computational Intelligence and Games, 2009.
 \end_layout
 
 \begin_layout Bibliography
@@ -1695,8 +2147,27 @@ B.
  Gerhard, and R.
  J.
  Hilderman.
- Pattern classification in no-limit poker: A head-start evolutionary approach.
- Canadian Conference on AI, 204–215, 2007.
+ 
+\series bold
+Pattern classification in no-limit poker: A head-start evolutionary approach
+\series default
+ - Canadian Conference on AI, 204–215, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5-2"
+
+\end_inset
+
+Russell S., Norvig P.
+ - 
+\series bold
+Artificial Intelligence: A Modern Approach (3rd Edition)
+\series default
+, 20??.
 \end_layout
 
 \end_body
