@@ -66,7 +66,8 @@ public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass exte
 		}
 		for (int i = 0; i < weightsOutputFromHiddenLayer.length; i++) {
 			for (int j = 0; i < weightsOutputFromHiddenLayer[i].length; j++) {
-				weightsOutputFromHiddenLayer[i][j] = r.nextFloat() - 0.5;
+				weightsO
+				utputFromHiddenLayer[i][j] = r.nextFloat() - 0.5;
 				deltaOutputFromHidden[i][j] = 0;
 			}
 		}

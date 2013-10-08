@@ -403,9 +403,9 @@ status open
 \noindent
 
 \size small
-Projeto de Final de Curso apresentado ao Curso de Engenharia de Computação
- do Instituto Militar (IME) de Engenharia, como parte das exigências do
- IME.
+Relatório referente à VE de Projeto de Final de Curso apresentada ao Curso
+ de Engenharia de Computação do Instituto Militar de Engenharia (IME), como
+ parte das exigências do IME.
 \end_layout
 
 \begin_layout Plain Layout
@@ -560,7 +560,7 @@ CEP: 22290- 270
 
 \size small
 Este exemplar é de propriedade do Instituto Militar de Engenharia, que poderá
- incluí-lo em base de dados, armazenar em computa dor, microfilmar ou adotar
+ incluí-lo em base de dados, armazenar em computador, microfilmar ou adotar
  qualquer forma de arquivamento.
 \end_layout
 
@@ -633,7 +633,8 @@ ____
 \length 0.5cm
 \end_inset
 
-Carageorge, Edward Céspedes/ Gemignani, Renan.
+de Oliveira, Carlos Alberto Villote / Althoff, Paulo Eduardo / Gemignani,
+ Renan.
 \end_layout
 
 \begin_layout Plain Layout
@@ -667,13 +668,13 @@ Análise da Segurança da Criptografia Baseada em Reticulado, no Rio de Janeiro
 \begin_layout Plain Layout
 
 \size small
-Edward Céspedes Carageorge, Renan Genignani
+Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-- Rio de Janeiro : Instituto Militar de Engenharia, 2013.
+- Rio de Janeiro : Instituto Militar de Engenharia, 2014.
 \end_layout
 
 \begin_layout Plain Layout
@@ -726,7 +727,7 @@ n f.
 \begin_layout Plain Layout
 
 \size small
-Dissertação (graduação) - Instituto Militar de Engenharia, 2013.
+Dissertação (graduação) - Instituto Militar de Engenharia, 2014.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1153,6 +1154,65 @@ end{center}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+listtablename{
+\backslash
+normalsize LISTA DE TABELAS}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoftables
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
 
 \series bold
@@ -1164,6 +1224,10 @@ LISTA DE SIGLAS
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+RN: Rede Neural;
 \end_layout
 
 \begin_layout Standard
@@ -1434,6 +1498,22 @@ indent
 
 \end_layout
 
+\begin_layout Standard
+A utilização de redes neurais aplicadas a problemas de decisão em casos
+ em que pode-se utilizar de grandes quantidades de tempo para realizar o
+ treinamento da rede e no qual existe quantidade suficiente de dados para
+ a realização do mesmo.
+ O Texas Hold'em, em princípio, parece não se prestar exatamente ao modelo
+ necessário para a utilização de redes neurais, uma vez que dada uma mesma
+ entrada, não existe uma resposta 'correta', dado que a adequação de qualquer
+ resposta, à é dependente da subsequente ação tomada pelo adversário.
+ Deste modo, em qualquer modelo de RN utilizado no pôquer para propósitos
+ distintos da mera modelagem de um oponente (dado seu histórico) para uso
+ em outra aplicação, faz-se necessario utilizar alguma técnica de modo a
+ prever as respostas mais prováveis do oponente a cada ação tomada, podendo
+ assim julgar sua adequação, possibilitando assim uma análise mais acurada.
+\end_layout
+
 \begin_layout Subsection
 OBJETIVO
 \end_layout
@@ -1456,12 +1536,13 @@ indent
 \end_layout
 
 \begin_layout Standard
-\noindent
-No presente trabalho, tencionamos melhorar a maneira com que uma análise
+No presente trabalho, tenciona-se melhorar a maneira com que uma análise
  prévia do oponente pode ser utilizada como entrada adicional para uma rede
- neural de forma a conseguir classificá-lo em uma série de perfis distintos,
- informação esta que pode ser utilizada pela rede de modo a conseguir uma
- contra-estratégia para um perfil de oponente.
+ neural de forma a conseguir classificá-lo em um dentre uma série de perfis
+ distintos pré-gerados e treinados, também modelados utilizando redes neurais,
+ informação esta que será utilizada como parâmetro de entrada pela rede
+ de modo a conseguir gerar uma contra-estratégia para um determinado perfil
+ de oponente.
 \end_layout
 
 \begin_layout Subsection
@@ -1485,6 +1566,25 @@ indent
 
 \end_layout
 
+\begin_layout Standard
+Redes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
+ oponentes no pôquer quanto para a resolução de problemas de decisão, como
+ já foi mostrado em trabalhos correlatos.
+ Contudo, as implicações decorrentes da utilização de uma rede neural como
+ agente 
+\shape italic
+stand-alone 
+\shape default
+capaz de jogar competitivamente ainda não foram exploradas.
+ Apesar de a utilização de uma rede neural como estratégia de jogo estar
+ condicionada aos jogadores cujos jogos forem usados para treinar a rede,
+ estando deste modo sujeitos a certa exploração por parte de um oponente
+ que jogasse de modo anormal quando comparado com os oponentes do jogador
+ base nos jogos utilizados para testar a rede, A utilização de perfis de
+ jogadores e a subsequente classificação dos oponentes dentre estes perfis
+ pode ser utilizada de modo a diminuir o impacto desta potencial fraqueza;
+\end_layout
+
 \begin_layout Subsection
 METODOLOGIA
 \end_layout
@@ -1506,6 +1606,14 @@ indent
 
 \end_layout
 
+\begin_layout Standard
+Primeiramente, realizaram-se estudos teóricos objetivando tanto o estudo
+ das redes neurais quanto de outras abordagens de aprendizado de máquina,
+ além do estudo do jogo do pôquer em si.
+ Em seguida, foram construídas a topologia da rede a ser utilizada para
+ modelar o oponente e a diagramação de classes do sistema como um todo.
+\end_layout
+
 \begin_layout Subsection
 ESTRUTURA
 \end_layout
@@ -1525,6 +1633,19 @@ indent
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+No capítulo 2, apresentamos a fundamentação teórica acerca de redes neurais
+ mínima necessária para o entendimento do trabalho.
+ No capítulo 3, apresentamos um breve resumo das regras do pôquer Texas
+ Hold'em destinado ao leitor que não é familiarizado com o mesmo.
+ No capítulo 4, apresentamos brevemente a topologia a ser utilizada pela
+ rede de simulação do oponente, bem com.
+ No capítulo 5, descreveremos a interface com o banco de dados de mãos bem
+ como as heurísticas utilizadas para selecionar os jogadores utilizados
+ para compor o conjunto de treinamento de cada perfil, bem como os jogadores
+ utilizados para treinar a RN objetivo-fim.
 \end_layout
 
 \begin_layout Standard
@@ -1730,6 +1851,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+teste do villote
 \begin_inset Graphics
 	filename imagens/neuronio.JPG
 	scale 70
@@ -1894,10 +2016,6 @@ RNA na forma de grafo
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1964,7 +2082,952 @@ Tipos de Neurônios Artificiais (ou Neurônios Artificiais - Perceptrons,
 \end_layout
 
 \begin_layout Standard
-teste do villote
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ESTRUTURA DA SOLUÇÃO
+\end_layout
+
+\begin_layout Subsection
+Modelagem do oponente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Colocar os diagramas aqui.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em primeiro lugar, apresentamos a topologia básica da rede neural básica
+ utilizada para profilar o oponente (assumindo uma mesa com tamanho máximo
+ de 8 jogadores) nas tabelas 1 e 2.
+ Note que para simplificar a modelagem matemática abordagem, foram ignorados
+ alguns fatores que são de potencial influência sobre a ação do oponente,
+ tal como a posição do mesmo na mesa, uma vez que a utilização da mesma
+ implicaria em um encadeamento de previsões para prever as ações dos últimos
+ jogadores na fila.
+ Outra simplificação a ser realizada na classificação no decorrer de um
+ jogo é assumir que as probabilidades de melhor mão estão identicamente
+ distribuídas dentre os jogadores cujas mãos são desconhecidas e que estão
+ remanescentes no jogo - deste modo, mesmo quando não se sabem as cartas
+ do agente, pode-se utilizar alguma métrica de modo a estimar as ações do
+ oponente.
+ As saídas desta rede neural são representativas do perfil do jogador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parâmetros de entrada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Domínio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probabilidade de a mão ser a melhor da mesa 
+\begin_inset Formula $(\pi$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\begin_inset Formula $\leq$
+\end_inset
+
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas possuída pelo jogador 
+\begin_inset Formula $(1/s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq1/s\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quantidade de jogadores 
+\begin_inset Formula $(n/8)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0<n/8\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas possuída pelo i-ésimo oponente 
+\begin_inset Formula $(1/s_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq1/s_{i}\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas no pote 
+\begin_inset Formula $(1/p)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0<1/p<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fase do jogo (em ordem, pre-flop, flop, turn, river) 
+\begin_inset Formula $(\phi/4)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq\phi\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parâmetros de entrada da RN utilizada para modelar o oponente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parâmetros de entrada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Domínio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fold?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Call?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raise?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fração do pote a ser apostada em raise 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq r/p\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parâmetros de saída da RN utilizada para modelar o oponente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rede principal e classificação em perfis
+\end_layout
+
+\begin_layout Standard
+A topologia da rede principal é similar, contudo, não há necessidade de
+ se estimar a probabilidade de haver a melhor mão, uma vez que presumimos
+ que se sabem as cartas na mão.
+ Para cada potencial oponente (até um máximo de 7) serão adicionadas as
+ informações de perfil adquiridas nos perfis que melhor se encaixarem às
+ informações da tabela 4.1.
+ As jogadas utilizadas para classificar o perfil seguirão um esquema de
+ janela deslizante, de modo a evitar que um oponente que troque de estratégia
+ com frequência seja constantemente classificado de forma incorreta.
+ Deste modo,também descrevemos, uma outra rede de modo a classificar os
+ jogadores em perfis, com sua topologia descrita nas tabelas 4.2.1 e 4.2.2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parâmetros de entrada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Domínio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probabilidade de a mão ser a melhor da mesa 
+\begin_inset Formula $(\pi$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\begin_inset Formula $\leq$
+\end_inset
+
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas possuída pelo jogador 
+\begin_inset Formula $(1/s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq1/s\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quantidade de jogadores 
+\begin_inset Formula $(n/8)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0<n/8\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas possuída pelo i-ésimo oponente 
+\begin_inset Formula $(1/s_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq1/s_{i}\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverso da quantidade de fichas no pote 
+\begin_inset Formula $(1/p)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0<1/p<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fase do jogo (em ordem, pre-flop, flop, turn, river) 
+\begin_inset Formula $(\phi/4)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq\phi\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Opontente deu fold?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oponente deu call?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oponente deu raise?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{r}\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fração do pote que foi apostada em raise 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\leq r/p\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parâmetros de entrada da RN utilizada para classificar o oponente para cada
+ uma das jogadas em uma janela deslizante
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parâmetros de entrada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Domínio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Melhor perfil (
+\begin_inset Formula $i)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0<i/n\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parâmetros de saída da RN utilizada para classificar o oponente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para representar a estrutura de classes da solução, utilizaram-se os seguintes
+ diagramas de classe apresentados nas figuras, descrevendo as classes utilizadas
+ na API de aprendizado e na interface com o banco de dados de mãos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/dclearning.emf
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama das classes utilizadas no aprendizado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+SELEÇÃO DE JOGADORES PARA TREINAMENTO DA REDE
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para realizar o treinamento da rede, serão usados um ou mais banco de dados
+ de mãos de jogos já existentes, que serão unificados em uma única estrutura
+ de dados apresentada na figura 5.1 e inseridos em um banco de dados MySQL.
+ Para realizar a interface com o banco de dados, utilizar-se-á a estrutura
+ de classes descritas na figura 5.2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/dcdatamodel.emf
+	scale 15
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de classe para as classes básicas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma vez obtidos os dados, faz-se necessário utilizar alguma heurística para
+ selecionar os melhores jogadores.
+ Utilizaremos como métrica inicial a quantidade de fichas adquiridas pelo
+ jogador no decorrer do tempo visto.
+ Também é importante seccionar os jogadores em diferentes perfis para treinar
+ diferentes modelagens de oponente.
 \end_layout
 
 \begin_layout Standard
@@ -1993,6 +3056,17 @@ indent
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Da pesquisa bibliográfica realizada, concluímos que é factível a utilização
+ de redes neurais para a simulação e análise de oponentes no jogo de pôquer,
+ dando a entender que é promissora a possibilidade de utilização de uma
+ rede neural como agente 
+\shape italic
+stand-alone
+\shape default
+ do jogo.
 \end_layout
 
 \begin_layout Standard
