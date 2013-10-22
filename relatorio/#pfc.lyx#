@@ -231,7 +231,9 @@ RENAN GEMIGNANI
 
 \series bold
 \size small
-EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+EMPREGO DE REDES NEURAIS PARA O 
+\shape italic
+POKER TEXAS HOLD'EM
 \end_layout
 
 \begin_layout Standard
@@ -345,7 +347,9 @@ RENAN GEMIGNANI
 
 \series bold
 \size small
-EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+EMPREGO DE REDES NEURAIS PARA O 
+\shape italic
+POKER TEXAS HOLD'EM
 \end_layout
 
 \begin_layout Standard
@@ -662,8 +666,11 @@ status open
 \begin_layout Plain Layout
 
 \size small
-Emprego de Redes Neurais para o Poker Texas Hold'em, no Rio de Janeiro /
- 
+Emprego de Redes Neurais para o 
+\shape italic
+Poker Texas Hold'em
+\shape default
+, no Rio de Janeiro / 
 \end_layout
 
 \begin_layout Plain Layout
@@ -828,7 +835,9 @@ RENAN GEMIGNANI
 
 \series bold
 \size small
-EMPREGO DE REDES NEURAIS PARA O POKER TEXAS HOLD'EM
+EMPREGO DE REDES NEURAIS PARA O 
+\shape italic
+POKER TEXAS HOLD'EM
 \end_layout
 
 \begin_layout Standard
@@ -890,7 +899,7 @@ Aprovado em __/__/____ pela seguinte Banca Examinadora:
 \align center
 
 \size small
-Orientador: Marcos Veloso Peixoto – D.Sc., do IME
+Orientador: Marcos Veloso Peixoto – D.I.
 \end_layout
 
 \begin_layout Standard
@@ -919,7 +928,7 @@ Orientador: Marcos Veloso Peixoto – D.Sc., do IME
 \align center
 
 \size small
-Alex Garcia, D.Sc., do IME
+Alex Garcia, D.Sc.
 \end_layout
 
 \begin_layout Standard
@@ -948,7 +957,7 @@ Alex Garcia, D.Sc., do IME
 \align center
 
 \size small
-Ricardo Choren Noya, D.Sc., do IME
+Ricardo Choren Noya, D.Sc.
 \end_layout
 
 \begin_layout Standard
@@ -1221,6 +1230,59 @@ LISTA DE SIGLAS
 \end_layout
 
 \begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rede neural
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RNA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rede Neural Artificial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 1.5cm
 \end_inset
 
@@ -1273,6 +1335,20 @@ abstractname{RESUMO}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Abstract
+Redes neurais vem sendo utilizadas para a resolução de problemas de decisão
+ com grande sucesso, especialmente problemas de informação imperfeita ou
+ ruidosa, dos quais o pôquer é um exemplo.
+ Neste trabalho, orientado ao jogo do pôquer 
+\shape italic
+Texas Hold'em
+\shape default
+, é proposta uma utilização de várias redes neurais de modo a aproveitar
+ sua acurácia já comprovada em outros trabalhos na modelagem de oponentes
+ para permitir uma melhor análise de perfis de jogadores para a formulação
+ implícita de contra-estratégias pela rede.
 \end_layout
 
 \begin_layout Abstract
@@ -1392,9 +1468,10 @@ indent
 \end_layout
 
 \begin_layout Standard
-O emprego de técnicas de aprendizado de máquina de modo a construir agentes
- autônomos que sejam capazes de jogar alguma forma de pôquer vem sido estudado
- há algum tempo devido às características de informação imperfeita do jogo.
+Devido às características imperfeitas do jogo, o pôquer vem sendo estudado
+ na área de aprendizado de máquina.
+ O objetivo desses estudos é construir agentes autônomos que sejam capazes
+ de jogar segundo alguma estratégia.
  A maior parte dos estudos na área advém do grupo de inteligência artificial
  aplicada ao pôquer da Universidade de Alberta.
  Uma parte dos estudos e implementações de software de pôquer faz uso de
@@ -1464,10 +1541,17 @@ key "key-4"
 
 , contudo sem tomar em consideração as especificidades do modo com que o
  oponente joga, levando a uma abordagem relativamente simples no que concerne
- a modelagem em si da rede, focando na evolução dos agentes predeterminados
- via combinação dos mesmos e utilização de heurísticas coevolucionárias
+ a modelagem em si da rede, focando na evolução dos agentes pré-determinados
+ via combinação dos mesmos e utilização de heurísticas co-evolucionárias
  como halls da fama para realizar a seleção dos agentes que mais se adaptassem,
  descartando modelos menos eficientes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1496,15 +1580,26 @@ A utilização de redes neurais aplicadas a problemas de decisão em casos
  em que pode-se utilizar de grandes quantidades de tempo para realizar o
  treinamento da rede e no qual existe quantidade suficiente de dados para
  a realização do mesmo.
- O Texas Hold'em, em princípio, parece não se prestar exatamente ao modelo
- necessário para a utilização de redes neurais, uma vez que dada uma mesma
- entrada, não existe uma resposta 'correta', dado que a adequação de qualquer
- resposta, à é dependente da subsequente ação tomada pelo adversário.
+ O 
+\shape italic
+Texas Hold'em
+\shape default
+, em princípio, parece não se prestar exatamente ao modelo necessário para
+ a utilização de redes neurais, uma vez que dada uma mesma entrada, não
+ existe uma resposta 'correta', dado que a adequação de qualquer resposta
+ é dependente da subsequente ação tomada pelo adversário.
  Deste modo, em qualquer modelo de RN utilizado no pôquer para propósitos
  distintos da mera modelagem de um oponente (dado seu histórico) para uso
  em outra aplicação, faz-se necessario utilizar alguma técnica de modo a
  prever as respostas mais prováveis do oponente a cada ação tomada, podendo
  assim julgar sua adequação, possibilitando assim uma análise mais acurada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1536,6 +1631,13 @@ No presente trabalho, tenciona-se melhorar a maneira com que uma análise
  informação esta que será utilizada como parâmetro de entrada pela rede
  de modo a conseguir gerar uma contra-estratégia para um determinado perfil
  de oponente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1573,9 +1675,17 @@ capaz de jogar competitivamente ainda não foram exploradas.
  condicionada aos jogadores cujos jogos forem usados para treinar a rede,
  estando deste modo sujeitos a certa exploração por parte de um oponente
  que jogasse de modo anormal quando comparado com os oponentes do jogador
- base nos jogos utilizados para testar a rede, A utilização de perfis de
- jogadores e a subsequente classificação dos oponentes dentre estes perfis
- pode ser utilizada de modo a diminuir o impacto desta potencial fraqueza;
+ base nos jogos utilizados para testar a rede.
+ A utilização de perfis de jogadores e a subsequente classificação dos oponentes
+ dentre estes perfis pode ser utilizada de modo a diminuir o impacto desta
+ potencial fraqueza.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1607,6 +1717,13 @@ Primeiramente, realizaram-se estudos teóricos objetivando tanto o estudo
  modelar o oponente e a diagramação de classes do sistema como um todo.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 ESTRUTURA
 \end_layout
@@ -1629,13 +1746,16 @@ indent
 \end_layout
 
 \begin_layout Standard
-No capítulo 2, apresentamos a fundamentação teórica acerca de redes neurais
- mínima necessária para o entendimento do trabalho.
- No capítulo 3, apresentamos um breve resumo das regras do pôquer Texas
- Hold'em destinado ao leitor que não é familiarizado com o mesmo.
- No capítulo 4, apresentamos brevemente a topologia a ser utilizada pela
- rede de simulação do oponente, bem com.
- No capítulo 5, descreveremos a interface com o banco de dados de mãos bem
+No capítulo 2, será apresentada a fundamentação teórica acerca de redes
+ neurais mínima necessária para o entendimento do trabalho.
+ No capítulo 3, um breve resumo das regras do pôquer 
+\shape italic
+Texas Hold'em
+\shape default
+ destinado ao leitor que não é familiarizado com o mesmo.
+ No capítulo 4, é mostrada a topologia a ser utilizada pela rede de simulação
+ do oponente.
+ No capítulo 5, é descrita a interface com o banco de dados de mãos bem
  como as heurísticas utilizadas para selecionar os jogadores utilizados
  para compor o conjunto de treinamento de cada perfil, bem como os jogadores
  utilizados para treinar a RN objetivo-fim.
@@ -1687,8 +1807,15 @@ key "key-5-2"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Histórico
+HISTÓRICO
 \end_layout
 
 \begin_layout Standard
@@ -1793,8 +1920,15 @@ Nos anos 2000 as redes neurais são vistas como um das técnicas de aprendizado
  de máquina, e não necessariamente como a melhor técnica para muitos problemas.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Cérebro Humano
+CÉREBRO HUMANO
 \end_layout
 
 \begin_layout Standard
@@ -1844,6 +1978,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/neuronio.JPG
 	scale 70
@@ -1890,8 +2025,15 @@ Conjuntos de redes de neurônios, são agrupados em áreas de responsabilidades
 nto do cérebro, mas que foge do escopo das redes neurais tradicionais.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Componentes das Redes Neurais Computacionais
+COMPONENTES DAS REDES NEURAIS COMPUTACIONAIS
 \end_layout
 
 \begin_layout Standard
@@ -1914,7 +2056,14 @@ indent
 \begin_layout Standard
 As redes neurais computacionais, ou redes neurais artificiais (RNA), são
  feitas a partir de vários neurônios artificiais, que é um modelo eletrônico
- do neurônio biológico, como representado na figura .
+ do neurônio biológico, como representado na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:neuronio-artificial"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1924,6 +2073,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/neuronioartificial.gif
+	scale 50
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1947,12 +2104,19 @@ Esquema de um neurônio artificial
 \end_layout
 
 \begin_layout Standard
-Podemos destrinchar esse funcionamento do neurônio artificial em 4 componentes
- principais, as conexões, o núcleo de processamento, as funções e os padrões.
+É possível destrinchar esse funcionamento do neurônio artificial em 4 componente
+s principais, as conexões, o núcleo de processamento, as funções e os padrões.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Conexões
+CONEXÕES
 \end_layout
 
 \begin_layout Standard
@@ -1973,7 +2137,7 @@ indent
 \end_layout
 
 \begin_layout Standard
-Imaginando a RNA como um grafo monodirecionado, teríamos as conexões entre
+Imaginando a RNA como um grafo monodirecionado, tem-se as conexões entre
  os nós fazendo o papel dos axiônios (ao enviar a informação de saída de
  um neurônio) e dos dendritos, (associando um peso a cada entrada).
  Esse peso nada mais é que um valor que será ajustado durante o treinamento
@@ -1991,6 +2155,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/grafo.png
+	scale 50
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2008,17 +2180,20 @@ RNA na forma de grafo
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsubsection
-Núcleo de Processamento
+NÚCLEO DE PROCESSAMENTO
 \end_layout
 
 \begin_layout Standard
@@ -2055,6 +2230,13 @@ As diversas funções que podem ser utilizadas para estabelecer essa transferên
  a seguir.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Funções de Limiar
 \end_layout
@@ -2086,8 +2268,11 @@ As funções de limiar, ou funções para transferência de sinais entre neurôn
 \end_layout
 
 \begin_layout Standard
-A função linear é uma equação linear da forma EQUAÇÃO(f=a.x+b), onde a é
- a inclinação da reta.
+A função linear é uma equação linear da forma 
+\begin_inset Formula $f=a.x+b$
+\end_inset
+
+, onde a é a inclinação da reta.
 \end_layout
 
 \begin_layout Standard
@@ -2097,6 +2282,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/flinear.png
+	scale 50
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2120,9 +2313,17 @@ Função Linear
 \end_layout
 
 \begin_layout Standard
-A step, é uma equação que possui um resultado binário, ou seja, de apenas
+A step, é uma função que possui um resultado binário, ou seja, de apenas
  dois valores possíveis.
- Assim ela tem a forma EQUAÇÃO(pra x menor um valor, pra x maior outro).
+ Assim ela tem a forma 
+\begin_inset Formula $f(x)=p+q.u(x-j)$
+\end_inset
+
+, onde 
+\begin_inset Formula $u$
+\end_inset
+
+ é a função de Heaviside.
  Essa função também é conhecida como hard-limiter.
  Uma desvantagem do uso dessa função é que quaisquer ajustes feitos nos
  pesos que alimentam os neurônios com o uso desta função terão efeitos não
@@ -2136,6 +2337,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/fstep.png
+	scale 70
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2165,10 +2374,39 @@ A função de limiar em rampa é semelhante à função step, mas a transição
 \end_layout
 
 \begin_layout Standard
-EQUAÇÃO(menor q -y um valor, maior q y outro, entre eles uma reta) é o valor
- de saturação da função, ou seja, durante a transição o valor de f(x) irá
- variar dentro do intervalo (-y, y).
- Como mostra a figura 
+Sendo 
+\begin_inset Formula $f(x)=\gamma$
+\end_inset
+
+ para 
+\begin_inset Formula $x>z$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=-\gamma$
+\end_inset
+
+ para 
+\begin_inset Formula $x<z$
+\end_inset
+
+ e para valores no intervali 
+\begin_inset Formula $(-z,z)$
+\end_inset
+
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ varia entre 
+\begin_inset Formula $-\gamma$
+\end_inset
+
+ e 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, como mostra a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:funcrampa"
@@ -2185,6 +2423,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/frampa.png
+	scale 40
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2209,7 +2455,11 @@ Função Rampa
 
 \begin_layout Standard
 A gaussiana é uma função que se baseia em um ponto médio e uma variância
- pré-definida, EQUAÇÃO (f (x) = e(−x^2 /v) onde v é a variância.
+ pré-definida 
+\begin_inset Formula $f(x)=e(−x^{2}/v)$
+\end_inset
+
+, onde v é a variância.
  Seu gráfico é apresentado na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2227,6 +2477,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/fgaussian.png
+	scale 35
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2276,6 +2534,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/fsigmoid.png
+	scale 60
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2293,6 +2559,13 @@ Função Sigmoid
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
@@ -2332,8 +2605,15 @@ Os padrões são os dados que alimentam a RNA.
  conjunto de características para os padrões.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Classificações de Redes Neurais
+CLASSIFICAÇÕES DE REDES NEURAIS
 \end_layout
 
 \begin_layout Standard
@@ -2368,8 +2648,8 @@ ndizado.
 
 \begin_layout Standard
 Os tipos de entrada podem ser intervalar, onde as entradas são de forma
- contínua, ou seja, aceitam qualquer valor como entrada.
- Ou pode ser binária, só aceitando 0 ou 1.
+ contínua, ou seja, aceitam qualquer valor como entrada, ou podem ser discretas,
+ como por exemplo uma entrada binária.
 \end_layout
 
 \begin_layout Standard
@@ -2392,10 +2672,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/feedforward.png
+	scale 50
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2419,8 +2703,8 @@ Conexão feed-forward
 \end_layout
 
 \begin_layout Standard
-Na retro-alimentação, os sinais de saída são utilizadas para alimentar camadasan
-teriores.
+Na retro-alimentação, os sinais de saída são utilizadas para alimentar camadas
+ anteriores.
 \end_layout
 
 \begin_layout Standard
@@ -2428,6 +2712,13 @@ Neste trabalho será utilizado um modelo de de alimentação à frente, com
  aprendizado supervisionado e entrada intervalar, conhecido como backpropagation.
  Esse modelo é baseado em outro modelo mais simples chamado adaline, e ambos
  os modelos estão explicitados nos itens subsequentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2454,74 +2745,63 @@ indent
 \begin_layout Standard
 Adaline (Adaptative Linear Network), como seu nome diz utiliza um combinador
  adaptativo linear, onde a saída de cada neurônio é a combinação linear
- das entradas multiplicadas por um peso, seguindo a fórmula: FÓRMULA
+ das entradas multiplicadas por um peso, seguindo a fórmula 
+\begin_inset Formula $S(t)=\sum_{i=0}^{n-1}p_{i}(t)e_{i}(t)$
+\end_inset
+
+, onde S é a saída, 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ são os elementos do vetor de entradas e 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ seus respectivos pesos.
 \end_layout
 
 \begin_layout Standard
 A regra de adaptação de pesos utilizada no adaline pode ser o algoritmo
- perceptron ou o alpha-LMS, a diferença entre eles está na fórmula do peso
- e do erro, onde o perceptron utiliza as fórmulas:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $P(t+1)=P(t)+\alpha(\varepsilon(t)/2)E(t)$
+ perceptron ou o 
+\begin_inset Formula $\alpha-LMS$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-P (t + 1) = P (t) + alpha(epsulon(t)/2)E(t)
-\end_layout
-
-\begin_layout Standard
-epsulon(t) = d(t) − flimiar (S(t))
-\end_layout
-
-\begin_layout Standard
-E a alpha-LMS utiliza:
-\end_layout
-
-\begin_layout Standard
-P (t + 1) = P (t) + alpha(epsulon(t)E(t)/(|E(t)|^2) )
-\end_layout
-
-\begin_layout Standard
-epsulon(t) = d(t) − S(t)
-\end_layout
-
-\begin_layout Standard
-Onde E é o vetor de entradas, P é o vetor de pesos, S é a saída, alpha é
- o coficiente de aprendizado, epsulon o erro e d é a saída esperada.
-\end_layout
-
-\begin_layout Standard
-A topologia de uma rede Adaline é baseada em camadas de neurônios, cuja
- saídas servem apra alimentar os neurônios das camadas subsequentes, como
- na Figura .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Topologia da rede Adaline
-\end_layout
-
+, a diferença entre eles está na fórmula do peso e do erro, onde o perceptron
+ utiliza as fórmulas de pesos 
+\begin_inset Formula $p(t+1)=p(t)+\alpha(\varepsilon(t)/2)e(t)$
 \end_inset
 
-
-\end_layout
-
+ e erro 
+\begin_inset Formula $\varepsilon(t)=d(t)−f_{limiar}(S(t))$
 \end_inset
 
+.
+ Já o 
+\begin_inset Formula $\alpha-LMS$
+\end_inset
 
+ utiliza pesos como sendo 
+\begin_inset Formula $p(t+1)=p(t)+\alpha(\varepsilon(t)e(t)/(|e(t)|^{2}))$
+\end_inset
+
+ e para o cálculo do erro utiliza 
+\begin_inset Formula $\varepsilon(t)=d(t)−S(t)$
+\end_inset
+
+.
+ Onda 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ é o coficiente de aprendizado, 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ o erro e 
+\begin_inset Formula $d$
+\end_inset
+
+ é a saída esperada.
 \end_layout
 
 \begin_layout Standard
@@ -2529,6 +2809,13 @@ A rede adaline tem como vantagem sua simplicidade, pois a entrada não necessita
  de um pré-processamento complexo e são poucos parâmetros a serem ajustados,
  mas ela possui a limitação de conseguir apenas reconhecer padrões mais
  simples, necessitando de adaptações para análises mais complexas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2553,8 +2840,7 @@ indent
 \end_layout
 
 \begin_layout Standard
-\noindent
-O backpropagation, é um modelo composto por três ou mais camadas de adalines
+O backpropagation é um modelo composto por três ou mais camadas de adalines
  interconectados, que utilizam como função limiar a sigmoid.
  Por utilizar uma função contínua, o poder de classifiação da rede é melhorado.
 \end_layout
@@ -2566,24 +2852,31 @@ A atualização dos pesos neste modelo, é feita iniciando-se pelo erro da
 \end_layout
 
 \begin_layout Standard
-O erro da útima saída é dado por epsulon
-\begin_inset Formula $\varepsilon i(t)=S(t)(1\text{−}S(t))(di(t)\text{−}S(t))$
+O erro da útima saída é dado por 
+\begin_inset Formula $\varepsilon_{i}(t)=S(t)(1\text{−}S(t))(di(t)\text{−}S(t))$
 \end_inset
 
  e com ele são ajustados os pesos da última camada por 
-\begin_inset Formula $Pi(t+1)=Pi(t)+\alpha\varepsilon i(t)En(t)$
+\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon i(t)e_{n}(t)$
 \end_inset
 
 .
  À partir dele os erros das camadas anteriores podem ser calculados com
  
-\begin_inset Formula $\varepsilon i(t)=En(t)(1\text{−}En(t))\underset{k}{\sum}\varepsilon kpik(t)$
+\begin_inset Formula $\varepsilon_{i}(t)=e_{n}(t)(1\text{−}e_{n}(t))\underset{k}{\sum}\varepsilon_{k}p_{ik}(t)$
 \end_inset
 
-, onde k são os neurônios conectados à seguir ao nó atual e pik é o peso
- associado a esta ligação.
+, onde 
+\begin_inset Formula $k$
+\end_inset
+
+ são os neurônios conectados à seguir ao nó atual e 
+\begin_inset Formula $p_{ik}$
+\end_inset
+
+ é o peso associado a esta ligação.
  E com este erro recalcula-se os pesos das camadas intermediárias 
-\begin_inset Formula $Pi(t+1)=Pi(t)+\alpha\varepsilon i(t)En(t)+\mu(Pi(t)\text{−}Pi(t\text{−}1))$
+\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon_{i}(t)e_{n}(t)+\mu(p_{i}(t)\text{−}p_{i}(t\text{−}1))$
 \end_inset
 
  onde 
@@ -2595,7 +2888,14 @@ O erro da útima saída é dado por epsulon
 
 \begin_layout Standard
 A topologia do backpropagation é um adaline expandido com camadas intermediárias
- como na Figura.
+ como na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Topologia-Backpropagation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2605,9 +2905,23 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/backpropagation.png
+	scale 55
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Topologia-Backpropagation"
+
+\end_inset
+
 Topologia Backpropagation
 \end_layout
 
@@ -2635,10 +2949,6 @@ A vantagem do modelo é que ele abrange uma grande quantidade de padrões
 
 \begin_layout Section
 O PÔQUER
-\end_layout
-
-\begin_layout Subsection
-O jogo
 \end_layout
 
 \begin_layout Standard
@@ -2673,8 +2983,15 @@ O pôquer é um jogo de cartas jogado por duas ou mais pessoas, no qual os
  de decisão, sendo é essencial para alcançar alto desempenho no pôquer.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-O baralho 
+BARALHO
 \end_layout
 
 \begin_layout Standard
@@ -2697,20 +3014,15 @@ indent
 \begin_layout Standard
 O pôquer é jogado com um barulho comum, de 52 cartas, divididas em 4 grupos,
  chamados naipes.
- Os naipes são identificados por nomes e símbolos, são eles: ouro, copas,
- paus e espadas.
- No pôquer os naipes possuem o mesmo valor, ou seja, o naipe da carta nunca
- é critério de desempate no pôquer.
- Cada naipe possui 13 cartas em ordem crescente de valor: números de 2 a
- 10, o valete (J), a dama (Q), o rei (K) e o ás (A), como é ilustrado em
- 
+ Os naipes são identificados por nomes: ouros , copas, paus e espadas e
+ seus símbolos, representados na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:naipecopas"
+reference "fig:naipes"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -2720,8 +3032,53 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:naipes"
+
+\end_inset
+
+Ouros, copas, paus e espadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No pôquer os naipes possuem o mesmo valor, ou seja, o naipe da carta nunca
+ é critério de desempate no pôquer.
+ Cada naipe possui 13 cartas em ordem decrescente de valor: o ás (A), o
+ rei (K), a dama(Q), o valete (J) e os números de 10 a 2, como é ilustrado
+ na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:naipecopas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/naipe-de-copas.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/naipe-de-copas.png
 
 \end_inset
 
@@ -2735,7 +3092,7 @@ name "fig:naipecopas"
 
 \end_inset
 
-naipe de copas
+Ordem decrescente de valor
 \end_layout
 
 \end_inset
@@ -2743,13 +3100,20 @@ naipe de copas
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsection
-Ranking de combinações de cartas
+RANKING DE COMBINAÇÕES DE CARTAS
 \end_layout
 
 \begin_layout Standard
@@ -2776,50 +3140,8 @@ O ranking das combinações de 5 cartas no pôquer é exibido a seguir em ordem
 
 \begin_layout Standard
 Carta maior: quando não há nenhuma combinação, para efeito de desempate,
- ganha o que possuir a carta de maior valor (Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:cartamaior"
-
-\end_inset
-
-).
+ ganha o que possuir a carta de maior valor.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/high-card.png
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:cartamaior"
-
-\end_inset
-
-Carta maior
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2849,8 +3171,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/par.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/par.png
 
 \end_inset
 
@@ -2903,8 +3226,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/dois-pares.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/dois-pares.png
 
 \end_inset
 
@@ -2951,8 +3275,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/trinca.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/trinca.png
 
 \end_inset
 
@@ -3007,8 +3332,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/straight.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/straight.png
 
 \end_inset
 
@@ -3062,8 +3388,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/flush.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/flush.png
 
 \end_inset
 
@@ -3122,8 +3449,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/full-house.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/full-house.png
 
 \end_inset
 
@@ -3178,8 +3506,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/four.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/four.png
 
 \end_inset
 
@@ -3234,8 +3563,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/straight-flush.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/straight-flush.png
 
 \end_inset
 
@@ -3265,7 +3595,7 @@ Straight Flush
 \end_layout
 
 \begin_layout Standard
-Royal Flush: As cinco cartas de maior valor do mesmo naipe.
+Royal Straight Flush: As cinco cartas de maior valor do mesmo naipe.
  Um Royal Straight Flush é simplesmente um straight flush com um Ás como
  carta mais alta.
  É a combinação mais forte do pôquer (Figura 
@@ -3285,8 +3615,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename imagens/royal-flush.png
+	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/royal-flush.png
 
 \end_inset
 
@@ -3315,8 +3646,15 @@ Royal Straight Flush
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Ações
+AÇÕES
 \end_layout
 
 \begin_layout Standard
@@ -3390,8 +3728,8 @@ Um jogador paga quando iguala a aposta feita por outro jogador na rodada.
 \end_layout
 
 \begin_layout Standard
-Quando um jogador não só iguala a aposta de outro jogador, mas acrescenta
- um tanto mais, ele está aumentando a aposta.
+Quando um jogador não só iguala a aposta de outro jogador, mas também acrescenta
+, ele está aumentando a aposta.
  Todos os jogadores subsequentes deverão pagar o maior valor apostado, ou
  aumentar ainda mais, se quiserem continuar na jogada.
 \end_layout
@@ -3403,8 +3741,15 @@ Quando a última aposta ou aumento na rodada final for igualada, ocorre a
  de cartas de cada jogador são mostradas uma a uma.
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Tipos de pôquer 
+TIPOS DE PÔQUER 
 \end_layout
 
 \begin_layout Standard
@@ -3431,13 +3776,21 @@ Existem diversas variantes do pôquer, dentre as quais pode-se categorizar
 community card poker
 \shape default
 , dentre outras.
- O estilo de pôquer conhecido como Texas-Hold`é um tipo de 
+ O estilo de pôquer conhecido como Texas-Hold'em é um tipo de 
 \shape italic
 community card poker
 \shape default
-, sendo atualmente o mais conhecido e jogado nos cassinos e torneios, e
- consequentemente com maior quantidade de estudo acerca do mesmo, fator
+, onde existem cartas abertas para uso de todos os jogadores.
+ Ele é atualmente o pôquer mais conhecido e jogado nos cassinos e torneios,
+ e consequentemente com maior quantidade de estudo acerca do mesmo, fator
  pelo qual será utilizado como base no presente trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3585,7 +3938,7 @@ ESTRUTURA DA SOLUÇÃO
 \end_layout
 
 \begin_layout Subsection
-Modelagem do oponente
+MODELAGEM DO OPONENTE
 \end_layout
 
 \begin_layout Standard
@@ -3602,14 +3955,44 @@ Colocar os diagramas aqui.
 \end_layout
 
 \begin_layout Standard
-Em primeiro lugar, apresentamos a topologia básica da rede neural básica
- utilizada para profilar o oponente (assumindo uma mesa com tamanho máximo
- de 8 jogadores) nas tabelas 1 e 2.
- Note que para simplificar a modelagem matemática abordagem, foram ignorados
- alguns fatores que são de potencial influência sobre a ação do oponente,
- tal como a posição do mesmo na mesa, uma vez que a utilização da mesma
- implicaria em um encadeamento de previsões para prever as ações dos últimos
- jogadores na fila.
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em primeiro lugar, será apresentada a topologia básica da rede neural utilizada
+ na modelagem do oponente (assumindo uma mesa com tamanho máximo de 8 jogadores)
+ nas tabelas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Parâmetros-de-entrada-modelagem"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Parâmetros-de-saída-modelagem"
+
+\end_inset
+
+.
+ Para simplificar a modelagem matemática, foram ignorados alguns fatores
+ que são de potencial influência sobre a ação do oponente, tal como a posição
+ do mesmo na mesa, uma vez que a utilização da mesma implicaria em um encadeamen
+to de previsões para prever as ações dos últimos jogadores na fila.
  Outra simplificação a ser realizada na classificação no decorrer de um
  jogo é assumir que as probabilidades de melhor mão estão identicamente
  distribuídas dentre os jogadores cujas mãos são desconhecidas e que estão
@@ -3626,6 +4009,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
 <features tabularvalignment="middle">
@@ -3830,6 +4214,12 @@ Fase do jogo (em ordem, pre-flop, flop, turn, river)
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Parâmetros-de-entrada-modelagem"
+
+\end_inset
+
 Parâmetros de entrada da RN utilizada para modelar o oponente
 \end_layout
 
@@ -3850,6 +4240,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -3978,6 +4369,12 @@ Fração do pote a ser apostada em raise
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Parâmetros-de-saída-modelagem"
+
+\end_inset
+
 Parâmetros de saída da RN utilizada para modelar o oponente
 \end_layout
 
@@ -3991,8 +4388,15 @@ Parâmetros de saída da RN utilizada para modelar o oponente
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Rede principal e classificação em perfis
+REDE PRINCIPAL E CLASSIFICAÇÃO EM PERFIS
 \end_layout
 
 \begin_layout Standard
@@ -4006,7 +4410,21 @@ A topologia da rede principal é similar, contudo, não há necessidade de
  janela deslizante, de modo a evitar que um oponente que troque de estratégia
  com frequência seja constantemente classificado de forma incorreta.
  Deste modo,também descrevemos, uma outra rede de modo a classificar os
- jogadores em perfis, com sua topologia descrita nas tabelas 4.2.1 e 4.2.2.
+ jogadores em perfis, com sua topologia descrita nas tabelas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Parâmetros-de-entrada-perfilamento"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Parâmetros-de-saída-perfilamento"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4016,6 +4434,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
 <features tabularvalignment="middle">
@@ -4312,6 +4731,12 @@ Fração do pote que foi apostada em raise
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Parâmetros-de-entrada-perfilamento"
+
+\end_inset
+
 Parâmetros de entrada da RN utilizada para classificar o oponente para cada
  uma das jogadas em uma janela deslizante
 \end_layout
@@ -4333,6 +4758,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">
@@ -4396,6 +4822,12 @@ Melhor perfil (
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Parâmetros-de-saída-perfilamento"
+
+\end_inset
+
 Parâmetros de saída da RN utilizada para classificar o oponente
 \end_layout
 
@@ -4410,21 +4842,43 @@ Parâmetros de saída da RN utilizada para classificar o oponente
 \end_layout
 
 \begin_layout Standard
-Para representar a estrutura de classes da solução, utilizaram-se os seguintes
- diagramas de classe apresentados nas figuras, descrevendo as classes utilizadas
- na API de aprendizado e na interface com o banco de dados de mãos.
+Para representar a estrutura da solução, utilizaram-se os seguintes diagramas
+ de classe apresentados nas figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-das-classes"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-classes-basicas"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-classe-fachada"
+
+\end_inset
+
+, descrevendo as classes utilizadas na API de aprendizado e na interface
+ com o banco de dados de mãos.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/imagens/dclearning.emf
-	scale 15
+	filename imagens/cdlearning.png
+	scale 45
 
 \end_inset
 
@@ -4435,6 +4889,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-das-classes"
+
+\end_inset
+
 Diagrama das classes utilizadas no aprendizado
 \end_layout
 
@@ -4480,19 +4940,22 @@ Para realizar o treinamento da rede, serão usados um ou mais banco de dados
  de mãos de jogos já existentes, que serão unificados em uma única estrutura
  de dados apresentada na figura 5.1 e inseridos em um banco de dados MySQL.
  Para realizar a interface com o banco de dados, utilizar-se-á a estrutura
- de classes descritas na figura 5.2.
+ de classes descritas nas figuras 5.2 e 5.3.
+ Utilizaremos os padrões de DAO (data access object) e fachada para realizar
+ este interfaceamento.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename /home/paulo/ime/pfc/pfc-texas-holdem/relatorio/imagens/imagens/dcdatamodel.emf
-	scale 15
+	filename imagens/cddatamodel.png
+	scale 45
 
 \end_inset
 
@@ -4500,7 +4963,50 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-classes-basicas"
+
+\end_inset
+
 Diagrama de classe para as classes básicas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cdfacade.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-classe-fachada"
+
+\end_inset
+
+Diagrama de classe para a fachada
 \end_layout
 
 \end_inset

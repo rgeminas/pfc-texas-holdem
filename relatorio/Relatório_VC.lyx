@@ -1,0 +1,5208 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{amsmath}
+\usepackage{tocbibind}
+\usepackage{tocloft}
+
+\renewcommand \thefigure{FIG.~\ifnum \c@section>\z@ \thesection.\fi \@arabic\c@figure}
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{\thefigure}
+
+\renewcommand \thetable{TAB.~\ifnum \c@section>\z@ \thesection.\fi \@arabic\c@table}
+\def\fps@table{tbp}
+\def\ftype@table{1}
+\def\ext@table{lot}
+\def\fnum@table{\thetable}
+
+\renewcommand\@pnumwidth{1.55em}%era 1.55
+\renewcommand\@tocrmarg{5em}%era 2.55--5
+\renewcommand\@dotsep{2} %era 3--2
+\setcounter{tocdepth}{3} %{3}
+
+\renewcommand*\l@figure{\vskip 10pt\normalfont\@dottedtocline{1}{0em}{6em}} 
+\renewcommand*\l@table{\vskip 10pt\normalfont\@dottedtocline{1}{0em}{6em}} 
+
+\renewcommand*\l@section{\vskip 10pt\bfseries\@dottedtocline{1}{0em}{3.5em}} 
+\renewcommand*\l@subsection{\normalfont \@dottedtocline{2}{0em}{4.0em}}
+\renewcommand*\l@subsubsection{\normalfont \@dottedtocline{3}{0em}{4.0em}} 
+
+
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\bfseries\MakeUppercase}}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\MakeUppercase}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5cm \@plus .2ex}%
+                                     {\normalfont\normalsize\MakeUppercase}}
+
+\renewcommand\refname{REFERÊNCIAS BIBLIOGRÁFICAS}
+\end_preamble
+\use_default_options true
+\begin_modules
+figs-within-sections
+tabs-within-sections
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\headheight 1cm
+\headsep 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0.75cm
+\quotes_language swedish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+MINISTÉRIO DA DEFESA
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+EXÉRCITO BRASILEIRO
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+DEPARTAMENTO DE CIÊNCIA E TECNOLOGIA
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+INSTITUTO MILITAR DE ENGENHARIA
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+(Real Academia de Artilharia Fortificação e Desenho/1792)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+SEÇÃO DE ENGENHARIA DE COMPUTAÇÃO
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+HALLISON OLIVEIRA DA PAZ
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+PAULO EDUARDO ALTHOFF
+\series default
+
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+USO DE IMAGENS PANORÂMICAS PARA APLICAÇÕES EM REALIDADE AUMENTADA MÓVEL
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+RIO DE JANEIRO
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+INSTITUTO MILITAR DE ENGENHARIA
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+HALLISON OLIVEIRA DA PAZ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+PAULO EDUARDO ALTHOFF 
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+USO DE IMAGENS PANORÂMICAS PARA APLICAÇÕES EM REALIDADE AUMENTADA MÓVEL
+\size default
+
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+Relatório parcial apresentado ao Curso de Engenharia de 
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+Computação do Instituto Militar de Engenharia, como requi-
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+sito parcial para conclusão do curso.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+Orientadores: José Antonio de Sousa Fernandes – D.C.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 8.1cm
+\end_inset
+
+ Luiz Carlos Pacheco Rodrigues Velho – Ph.D.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Rio de Janeiro
+\end_layout
+
+\begin_layout Standard
+\align center
+2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+INSTITUTO MILITAR DE ENGENHARIA 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+HALLISON OLIVEIRA DA PAZ
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+PAULO EDUARDO ALTHOFF
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+USO DE IMAGENS PANORÂMICAS PARA APLICAÇÕES EM REALIDADE AUMENTADA MÓVEL
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Relatório parcial apresentado ao Curso de Engenharia de Computação do Instituto
+ Militar de Engenharia, como requisito da disciplina de Iniciação à Pesquisa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Orientadores: Cel José Antonio de Sousa Fernandes – D.C.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 2.21cm
+\end_inset
+
+Luiz Carlos Pacheco Rodrigues Velho – Ph.D.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aprovado em 2013 pela seguinte Banca Examinadora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+José Antonio de Sousa Fernandes – D.C.
+ , do IME – Presidente
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Julio Cesar Duarte – D.C.
+ , do IME
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underline{\hspace{15cm}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Gabriel Aprigliano Fernandes – D.Sc.
+ , do IMPA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+RIO DE JANEIRO 
+\end_layout
+
+\begin_layout Standard
+\align center
+2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+contentsname{
+\backslash
+normalsize SUMÁRIO 
+\backslash
+vspace{1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+normalsize
+\backslash
+addvspace{-1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+listfigurename{
+\backslash
+normalsize LISTA DE ILUSTRAÇÕES}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{1.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+abstractname{RESUMO} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+
+\lang portuguese
+Neste trabalho será apresentado um estudo sobre a utilização de imagens
+ panorâmicas em aplicações de realidade aumentada para dispositivos móveis
+ como celulares e 
+\emph on
+tablets
+\emph default
+.
+ Serão explicados conceitos como realidade aumentada, QR code e imagens
+ panorâmicas.
+\end_layout
+
+\begin_layout Abstract
+
+\lang portuguese
+Objetiva-se estudar meios de mesclar as informações reais do ambiente em
+ que nós, seres humanos, estamos inseridos com as informações produzidas
+ ou adquiridas por meio da computação.
+ Estas informações podem ser dados de localização provenientes de um GPS,
+ comentários, som ou imagens provenientes da internet ou, até mesmo, elementos
+ tridimensionais modelados em um computador.
+\end_layout
+
+\begin_layout Abstract
+
+\lang portuguese
+Ao contrário da maioria das abordagens realizadas no campo da realidade
+ aumentada, este estudo apoia-se sobre a utilização de imagens pré-fotografadas
+ em substituição à visualização natural do ambiente através da câmera de
+ algum dispositivo.
+ A proposta constitui-se em substituir a imagem real do ambiente que poderia
+ ser visualizada através da câmera de algum dispositivo móvel por uma imagem
+ panorâmica obtida previamente naquele mesmo ambiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+abstractname{ABSTRACT} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+This work presents a study about possible uses of panoramic images in augmented
+ reality aplications for mobile devices as cellphones and tablets.
+ It will be explained concepts as augmented reality, QR code and panoramic
+ images.
+\end_layout
+
+\begin_layout Abstract
+It aims for studying means to merge information from real world, where we,
+ human beings, are inserted with data produced or acquired using computers.
+ These informations may be localization data from a GPS source, comments,
+ sounds or images from internet source or even tridimensional elements modeled
+ in a computer software.
+\end_layout
+
+\begin_layout Abstract
+Unlike most approaches made in the field of mobile augmented reality, this
+ study is based on the use of previously photographed images instead of
+ the natural vision of the environment provided by the camera of any device.
+ The proposal is to replace the environment's real image, which could be
+ seen through the camera of any mobile device, with a panoramic image taken
+ previously on that same environment.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size normal
+INTRODUÇÃO
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O crescente avanço da tecnologia e da computação permitiu diminuir cada
+ vez mais o tamanho de aparelhos eletrônicos, dando origem a novos tipos
+ de dispositivos como os 
+\emph on
+smartphones
+\emph default
+ e 
+\emph on
+tablets
+\emph default
+.
+ Estes dispositivos, têm evoluído rapidamente em poder de processamento
+ e em outros componentes de 
+\emph on
+hardware
+\emph default
+, proporcionando mais mobilidade à computação e agregando diversos sensores
+ capazes de captar informações do ambiente e da interação do usuário, tais
+ como câmeras, acelerômetro, giroscópio, magnetômetro e GPS.
+ 
+\end_layout
+
+\begin_layout Standard
+Estes sensores têm sido sido explorados por diversas aplicações, tanto na
+ indústria quanto no meio acadêmico, nas áreas de visão computacional, georrefer
+enciamento, realidade aumentada, dentre outras.
+ Em particular, no que diz respeito à realidade aumentada, a popularização
+ destes dispositivos contribuiu com o aumento no uso de recursos como os
+ 
+\emph on
+QR codes
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Por outro lado, no campo de visualização de ambientes tridimensionais interativo
+s, a modelagem 3D de um cenário tem dado espaço ao uso de imagens panorâmicas
+ do local.
+ A técnica de modelagem 3D de um cenário permite gerar um conjunto de vértices
+ e arestas com informações de geometria, textura e iluminação associadas,
+ que quando renderizado pode ser utilizado de forma interativa, tal como
+ um cenário de um jogo de vídeo game, porém com aspectos mais próximos da
+ realidade em que vivemos.
+ O problema desta abordagem está no alto custo computacional de se manter
+ esta cena e, principalmente, no tempo necessário para se modelar com perfeição
+ cada objeto da cena.
+ Nestes pontos, as imagens panorâmicas surgem como boas substitutas.
+\end_layout
+
+\begin_layout Standard
+Dentro deste contexto, tem ocorrido vários trabalhos no sentido de integrar
+ as funcionalidades dos dispositivos móveis com os recursos proporcionados
+ pela realidade aumentada e pelas imagens panorâmicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+OBJETIVO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O objetivo deste trabalho é fazer um estudo das aplicações de imagens panorâmica
+s em realidade aumentada, dentro do contexto da computação móvel.
+ Pretende-se abordar aspectos como a visualização de imagens panorâmicas
+ utilizando os sensores de atitude de dispositivos móveis, a utilização
+ de marcações do tipo 
+\emph on
+QR Code 
+\emph default
+para prover pequenos conjuntos de informações úteis às aplicações, a inserção
+ de elementos virtuais em cenas de interesse e como todos estes elementos
+ podem ser combinados para prover novas experiências aos usuários.
+\end_layout
+
+\begin_layout Standard
+Diferente da abordagem mais comum a este problema, não pretende-se estudar
+ como mesclar elementos virtuais com a imagem obtida em tempo real a partir
+ da câmera dos dispositivos.
+ Objetiva-se apresentar uma proposta em que a imagem da câmera é substituída
+ por uma fotografia, uma imagem panorâmica do mesmo ambiente, em que outros
+ elementos virtuais serão adicionados, compondo a imagem final a ser utilizada
+ na experiência de realidade aumentada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+JUSTIFICATIVA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por serem capazes de exibir um amplo campo de visão, as imagens panorâmicas
+ têm sido utilizadas em aplicações de ambientes virtuais interativos.
+ O sistema 
+\emph on
+Google Street View
+\emph default
+, disponibilizado na internet pela empresa Google, utiliza um enorme conjunto
+ de imagens panorâmicas de diversas localidades do mundo para prover uma
+ experiência de navegação em ruas e facilitar a vida das pessoas.
+ 
+\end_layout
+
+\begin_layout Standard
+Muitos experimentos também têm sido conduzidos para a criação de métodos
+ eficientes de inserção de elementos virtuais de forma realista em fotografias
+ e vídeos.
+ No ano de 2012, uma das mais importantes conferências em computação gráfica,
+ a SIGGRAPH (
+\emph on
+Special Interest Group on Graphics and Interactive Techniques
+\emph default
+) apresentou uma seção dedicada a apresentações de pesquisas e aplicações
+ de dispositivos móveis (SIGGRAPH Mobile).
+ O potencial da associação de imagens panorâmicas, realidade aumentada e
+ computação móvel pode ser verificado em artigos e papers apresentados na
+ própria SIGGRAPH e na ISMAR 
+\emph on
+(International Symposium on Mixed and Augmented Reality
+\emph default
+), conferência igualmente importante dentro deste contexto.
+\end_layout
+
+\begin_layout Standard
+Com esta junção de tecnologias, pode-se desenvolver, por exemplo, um sistema
+ de localização e navegação para ambientes fechados como 
+\emph on
+shoppings
+\emph default
+, museus e exposições em geral.
+ Com o auxílio de pontos notáveis do cenário, pode-se fazer um alinhamento
+ entre fotografias retiradas do local e a própria imagem do ambiente visualizado
+, a fim de se exibir em tempo real, por sobre a imagem na tela do dispositivo,
+ informações de interesse sobre os itens em exposição.
+\end_layout
+
+\begin_layout Standard
+Na área de turismo, uma aplicação possível seria exibir como eram os pontos
+ turísticos de uma cidade no passado, utilizando imagens panorâmicas, ao
+ mesmo tempo em que visualizamos estes locais no presente.
+ No campo militar, a realidade aumentada pode ser utilizada em visores que
+ marcam a posição do inimigo, na exibição de estandes de tiros virtuais
+ ou até mesmo na simulação de inimigos em um cenário de campo.
+ Estas são apenas algumas possibilidades dentro do escopo dos assuntos deste
+ trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+METODOLOGIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inicialmente, pesquisou-se sobre a área de realidade aumentada, no intuito
+ de esclarecer seu escopo, verificar seus principais problemas e também
+ suas principais aplicações.
+ Dentro da perspectiva da realidade aumentada móvel, julgou-se interessante
+ o estudo dos QR Codes, códigos bidimensionais capazes de armazenar uma
+ quantidade limitada de informações úteis como entrada em diversas aplicações.
+\end_layout
+
+\begin_layout Standard
+Paralelamente à pesquisa bibliográfica, foi estudado o desenvolvimento de
+ aplicações em plataformas móveis sobre o sistema operacional Android, com
+ a intenção de se implementar uma aplicação que valide resultados e contribua
+ para a pesquisa.
+ Esta aplicação encontra-se em desenvolvimento em cooperação com o 
+\emph on
+Vision and Graphics Laboratory
+\emph default
+ (Visgraf) do Instituto Nacional de Matemática Pura e Aplicada (IMPA).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ESTRUTURA DO TRABALHO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este trabalho está estruturado em 6 capítulos e 1 apêndice.
+ Inicialmente, apresenta-se o conceito de realidade aumentada, tratando
+ de algumas aplicações e da utilização de marcações 
+\emph on
+QR Code
+\emph default
+.
+ O capítulo seguinte trata de imagens panorâmicas, abordando alguns conceitos
+ essenciais de fotografia, suas características de acordo com a superfície
+ de projeção escolhida e meios de aquisição.
+ Em seguida, aborda-se alguns aspectos de um aplicativo utilizado para visualiza
+r imagens panorâmicas em um dispositivo móvel.
+ Após isso, apresenta-se um cronograma da pesquisa e uma conclusão parcial
+ com direcionamentos para continuação do trabalho.
+ Na seção de apêndice, são apresentadas mais informações sobre a constituição
+ de um 
+\emph on
+QR code
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+REALIDADE AUMENTADA
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Realidade Aumentada
+\emph default
+ é um sistema que mistura o mundo real com elementos virtuais, atua em três
+ dimensões, e possui interatividade em tempo real (AZUMA, 1997).
+ Sua aplicabilidade está na capacidade de aumentar a percepção do usuário
+ com o mundo, deixando-o interagir com objetos virtuais que não são possíveis
+ de detectar com seus próprios sentidos (BROOKS, 1996).
+ O termo Realidade Aumentada já existe há décadas, mas só recentemente que
+ começou a ser melhor explorado graças à evolução dos dispositivos móveis
+ e à popularização dos smartphones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+PRINCIPAIS PROBLEMAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A tecnologia de RA ainda tem muitos problemas em aberto, que tornam a experiênci
+a não tão realista quanto se esperaria.
+ Podemos destacar o problema da renderização fotorrealista e os problemas
+ de visualização.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Renderização Fotorrealista
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um processo chave para uma boa experiência de RA é que os objetos virtuais
+ aumentem a realidade de forma coerente.
+ Para isso, é necessário que o 
+\emph on
+software
+\emph default
+ tome uma série de providências antes de renderizar o objeto como, por exemplo,
+ ter exata noção dos planos da imagem real ou, ainda, analisar as direções
+ das fontes de luz para que a iluminação do objeto virtual pareça natural.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Problemas de Visualização
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os principais problemas de visualização encontrados para se fazer aplicações
+ em realidade aumentada são o 
+\emph on
+registro
+\emph default
+, o 
+\emph on
+rastreamento
+\emph default
+ e a 
+\emph on
+oclusão
+\emph default
+.
+ Registro é o nome que se dá ao alinhamento entre os objetos reais e virtuais,
+ algo extremamente importante para uma correta ilusão de coexistência dos
+ objetos para o usuário (AZUMA, 1994).
+ 
+\end_layout
+
+\begin_layout Standard
+O rastreamento do ponto de vista do usuário, ou apenas rastreamento, é o
+ problema de se encontrar o ponto de vista sob o qual a imagem virtual deve
+ ser desenhada.
+ Para isso, o programa deve reconhecer de onde o usuário estará olhando
+ o ambiente.
+ 
+\end_layout
+
+\begin_layout Standard
+O problema da oclusão está relacionado com a coexistência de objetos que
+ se sobrepoem na visão do usuário.
+ A aplicação deve reconhecer qual objeto está na frente, e ocultar corretamente
+ o objeto sobreposto (GROHS, 2002).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+COMPONENTES DE UM SISTEMA DE RA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo sistema RA deve possuir um sistema de localização, um renderizador
+ de imagens e um sistema visualizador.
+ Ao sistema de localização cabe contornar os problemas de registro e rastreament
+o.
+ Um sistema de localização constitui-se de um artifício do programa para
+ saber a posição da câmera.
+ Para isto, podem ser utilizados marcadores cujas posições reais são conhecidas
+ pelo aplicativo ou, ainda, sensores de atitude de um dispositivo móvel.
+ O renderizador de imagens é a parte do programa responsável por gerar os
+ objetos virtuais, que depois serão incluídos na realidade por algum dos
+ métodos apresentados mais adiante.
+ Já o visualizador é a parte do sistema que vai gerar a imagem final e apresentá
+-la ao usuário, podendo ser um capacete de RA, um monitor, ou um dispositivo
+ móvel.
+ A escolha do visualizador depende da situação e do efeito esperado e, normalmen
+te, ele é o agente limitante da tecnologia.
+ Existem 4 categorias principais de visualizadores, os de visualização direta
+ por vídeo, os de visão óptica direta, os de visão indireta e o espacial.
+\end_layout
+
+\begin_layout Standard
+Na visualização direta por vídeo, o processamento é feito na seguinte ordem:
+ uma câmera captura o vídeo da cena em tempo real e, então, o dispositivo
+ visualizador processa a imagem acrescentando os elementos virtuais e gerando
+ um novo vídeo, que será exibido ao usuário (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:visaoDiretaVideo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/visao direta video.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:visaoDiretaVideo"
+
+\end_inset
+
+Esquema de visão direta por vídeo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No sistema de visão óptica direta, o equipamento possui lentes que permitem
+ tanto a passagem da imagem real, quanto da imagem dos objetos virtuais
+ exibidos por um monitor.
+ Os elementos virtuais são acrescentados por alguma combinação óptica na
+ visão do usuário (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:visão direta"
+
+\end_inset
+
+).
+ Este modelo é mais indicado que o modelo de visualização direta por vídeo
+ nos casos em que a interrupção da transmissão poderia ser perigosa, como
+ por exemplo em alguém dirigindo um automóvel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/visao otica.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:visão direta"
+
+\end_inset
+
+Esquema de visão óptica direta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na visualização espacial, a informação virtual é projetada sobre objetos
+ da cena, não sendo necessários, assim, equipamentos auxiliares.
+ Apesar disso, é um sistema restrito às condições do espaço em que está
+ sendo projetado.
+\end_layout
+
+\begin_layout Standard
+Finalmente, na visualização indireta, objetos virtuais são projetados no
+ monitor e seguem movimentos do mundo real (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:visaoIndireta"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/visao indireta.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:visaoIndireta"
+
+\end_inset
+
+Esquema de visualização indireta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+APLICAÇÕES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O campo da realidade aumentada vem crescendo nos últimos anos e são diversas
+ as áreas que utilizam esta tecnologia.
+ Dentre elas, pode-se citar orientação e mapas, marketing e medicina, como
+ será exemplificado a seguir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Orientação e Mapas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O princípio da realidade aumentada de enriquecer o ambiente real pode ser
+ muito bem observado em aplicativos de orientação e mapas, onde um usuário
+ pode explorar o mundo com informações adicionais georreferenciadas a partir
+ da internet.
+ Como exemplo desta tecnologia, pode-se citar o 
+\emph on
+Wikitude
+\emph default
+, eleito como 
+\emph on
+
+\begin_inset Quotes sld
+\end_inset
+
+Best Augmented Reality Browser
+\begin_inset Quotes srd
+\end_inset
+
+
+\emph default
+ de 2009 a 2012 na 
+\emph on
+Augmented Planet Readers Choice Awards
+\emph default
+.
+ O aplicativo junta informações da câmera do usuário em tempo real com dados
+ de locais cadastrados; assim, quando o usuário aponta o smartphone para
+ o horizonte, dependendo do filtro que utilize para encontrar estabelecimentos,
+ vai ter a informação da direção e distância, como mostra a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:wikitude"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/wikitude.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:wikitude"
+
+\end_inset
+
+Wikitude (wikitude.com/app)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Marketing
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A área de marketing também tem aderido ao artifício da Realidade Aumentada
+ e, dentre os motivos, pode-se destacar a possibilidade de um cliente experiment
+ar um produto em tempo real, como por exemplo no caso da Ray-Ban, que lançou
+ o Ray-Ban Virtual Mirror.
+ Este aplicativo permite que com o uso de uma 
+\emph on
+webcam
+\emph default
+, o usuário prove virtualmente diversos modelos de óculos, como mostra a
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:marketing1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/ray-ban.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:marketing1"
+
+\end_inset
+
+Ray-Ban Virtual Mirror
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A vantagem desta tecnologia está na capacidade de experimentação que o cliente
+ pode ter de um produto sem chegar perto dele.
+ Com isso as empresas economizam pela diminuição da necessidade de amostras
+ e ainda conseguem mostrar o produto muitas vezes com riqueza de detalhes.
+ Além disso, o consumidor pode ficar mais seguro ao comprar pela internet
+ provando à distância.
+ Existem produtos que podem ser personalizados pelo usuário, e a realidade
+ aumentada, portanto, permite que o cliente escolha as características do
+ produto, simulando sua utilização e decidindo melhor sua compra, como por
+ exemplo no caso do Catálogo 2009 da IKEA, loja de móveis e decorações,
+ onde um aplicativo para smartphone associado com um marcador da loja permite
+ que o usuário personalize os móveis de sua escolha e veja como ficará em
+ seu cômodo .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/ikea.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:marketing2"
+
+\end_inset
+
+IKEA Catalogue (theikeablog.com)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Medicina
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na medicina, a RA tem recebido grandes investimentos, principalmente em
+ treinamentos e diagnósticos.
+ Nos treinamentos, o uso da tecnologia permite a interação de estudantes
+ e profissionais com objetos 3D, para a prática de algum procedimento cirúrgico
+ antes de executá-lo em algum paciente.
+ Como exemplo disto, pode-se citar o ULIS 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ulis"
+
+\end_inset
+
+, um simulador de cirurgia laparoscópica do IRCAD (Instituto de Pesquisa
+ contra o Câncer no Aparelho Digestivo), que permite o treinamento da cirurgia
+ e simula até sangue virtual no caso de um erro médico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/laparoscopia.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ulis"
+
+\end_inset
+
+Simulador de cirurgia laparoscópica (SOLER, 2008)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Outra aplicação do gênero é o 
+\emph on
+VeinViewer
+\emph default
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:VeinViewer"
+
+\end_inset
+
+), uma espécie de visão de raios X para veias em tempo real.
+ O aparelho exibe as veias do paciente, auxiliando no tratamento de varizes,
+ na coleta de sangue e na medicação intravenosa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/veinviewer.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:VeinViewer"
+
+\end_inset
+
+VeinViewer, aplicação de RA na medicina (veinviewer.com)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Aplicações que utilizam panoramas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algumas aplicações optam pelo uso de panoramas ao invés de imagens capturadas
+ em tempo real, como por exemplo o 
+\emph on
+Google SkyMap
+\emph default
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:skymap"
+
+\end_inset
+
+), que usa a orientação e localização por GPS do smartphone para localizar
+ o panorama do céu a ser mostrado, possuindo diversas opções como mostrar
+ estrelas, constelações, planetas, etc.
+ O aplicativo também possibilita o usuário a localizar um objeto espacial
+ específico, travar uma visualização ou realizar uma viagem no tempo, visualizan
+do o céu de sua localização em uma data específica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/googlesky.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:skymap"
+
+\end_inset
+
+Google SkyMap
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na área de navegação, dois aplicativos se destacam no uso de panoramas,
+ um deles é o 
+\emph on
+Handheld Augmented Reality
+\emph default
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Handheld-Augmented-Reality"
+
+\end_inset
+
+), do Chistian Doppler Laboratory, que é semelhante ao Wikitude, mas ao
+ invés de só utilizar a câmera, ele utiliza panoramas capturados em tempo
+ real durante a marcação.
+ Esta abordagem oferece como vantagem uma marcação fixa no panorama, que
+ depende menos da precisão do GPS para localizá-la.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/handheld.jpg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Handheld-Augmented-Reality"
+
+\end_inset
+
+Handheld Augmented Reality (handheldar.icg.tugraz.at)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último, destacamos o Panoramascope, para dispositivos 
+\emph on
+iPhone
+\emph default
+, que utiliza os dados de terreno da NASA para calcular a linha do horizonte
+ de qualquer lugar do planeta.
+ O aplicativo sobrepõe a imagem da câmera com um panorama e etiquetas de
+ identificação, destacando picos de montanhas e outros pontos notáveis no
+ terreno.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/pscope.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Panoramascope:Augmented Reality (Panoramascope)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+QR CODES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um 
+\emph on
+QR code
+\emph default
+ é um tipo de código de barras bi-dimensional.
+ Por esse motivo ele pode guardar muito mais informação que um código de
+ barras convencional.
+ QR significa “
+\emph on
+quick response
+\emph default
+” que se deve a rápida leitura que esse código permite, podendo ser decodificado
+ por uma simples câmera de um smartphone.
+ Ele tem capacidade de 2953 bytes, podendo armazenar até 7089 caracteres
+ numéricos, 4296 letras ou 1817 kanjis.
+ Mais informações sobre este código encontram-se no APÊNDICE 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/qrcodei.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:QRcode"
+
+\end_inset
+
+Exemplo de QR Code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste trabalho, objetiva-se explorar a substituição da imagem recebida pela
+ câmera do dispositivo por uma imagem panorâmica, previamente fotografada,
+ do mesmo local, de maneira que o usuário possa observar no dispositivo
+ um recorte visual próximo ao que ele pode observar na realidade.
+ No entanto, no dispositivo, a imagem panorâmica possuiria outros elementos
+ adicionados, que justificariam o uso deste recurso.
+\end_layout
+
+\begin_layout Standard
+Dentro deste contexto, o QR Code apresenta-se como uma ferramenta útil para
+ a localização do usuário e aquisição das imagens necessárias.
+ Pode-se, por exemplo, armazenar o endereço de uma página na internet preparada
+ para atender às requisições das imagens e, então, transferí-las para a
+ memória do dispositivo.
+ É possível, ainda, armazenar uma matriz que represente eventuais transformações
+ que sejam necessárias para aproximar a visualização no aparelho móvel da
+ visualização real.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+IMAGENS PANORÂMICAS
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Há várias definições para imagens panorâmicas ou, em nomenclatura mais curta,
+ 
+\emph on
+panoramas, 
+\emph default
+dependendo do contexto analisado.
+ Dentro do contexto da fotografia, pode-se considerar imagens panorâmicas
+ as imagens que apresentam um campo de visão muito amplo, na maioria das
+ vezes maior do que a visão humana é capaz de enxergar.
+\end_layout
+
+\begin_layout Standard
+O termo 
+\emph on
+campo de visão
+\emph default
+ – do inglês 
+\emph on
+field of view
+\emph default
+ – é uma medida, da extensão horizontal ou vertical visualizada, sendo mais
+ comum referenciar-se à horizontal.
+ Faz-se necessário distingui-lo de ângulo de visão ou ângulo de cobertura,
+ que é uma medida da proporção de uma cena incluída em uma imagem.
+ Essas diferenças podem ser observadas na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:field of view"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/camera.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:field of view"
+
+\end_inset
+
+Campo de visão e ângulo de visão de uma câmera
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma outra definição possível, e que será a explorada neste trabalho, é que
+ panoramas são 
+\emph on
+imagens omnidirecionais, 
+\emph default
+ou seja, imagens capazes de exibir, em conjunto, informações sobre o que
+ poderíamos ver a nossa frente e ao nosso redor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+FUNÇÕES PLENÓPTICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com o objetivo de analisar os elementos visuais de forma sistemática, pode-se
+ definir uma função que descreve toda informação visual possível de ser
+ observada a partir de um dado referencial.
+ Para isto, vamos considerar tudo aquilo que enxergamos no mundo como sendo
+ um conjunto de raios de luz que preenchem o espaço.
+ Todos os raios que convergem em um ponto definem para esse ponto a aparência
+ do mundo a sua volta.
+ A 
+\emph on
+função plenóptica
+\emph default
+ (de 
+\emph on
+plenus
+\emph default
+, completa e 
+\emph on
+óptica
+\emph default
+, visão), é uma função que representa esse conjunto de raios de luz, registrando
+ a cada instante, a informação visual que chega em um ponto.
+\end_layout
+
+\begin_layout Standard
+O domínio da função plenóptica é chamado de 
+\emph on
+espaço de fase
+\emph default
+ e tem dimensão 6, pois contém as coordenadas V do ponto de visualização
+ (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+ ,V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+
+ ,V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+z
+\end_layout
+
+\end_inset
+
+), a direção do raio (Θ, Φ) e o tempo (t).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=(V_{x},V_{y},V_{z},\text{Θ},\text{Φ},t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A função plenóptica descarta a necessidade de modelagem direta da geometria
+ de uma cena, pois tendo posse das informações visuais de cada ponto é possível
+ reconstruir a cena.
+ Ela é de grande importância inclusive para a visão humana, pois o mundo
+ é feito de objetos tridimensionais, mas estes objetos não comunicam suas
+ propriedades diretamente a um observador.
+ Os objetos preenchem o espaço à sua volta com o padrão dos raios de luz
+ que constituem a função plenóptica, e o observador toma amostras da função.
+ Esta função, portanto, pode ser vista como um meio de comunicação entre
+ os objetos físicos e sua imagem correspondente na retina (ADELSON, 1991).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/plenoptic.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema amostrando dois pontos da função plenóptica (ADELSON, 1991)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Amostrando a função plenótica, obtem-se o 
+\emph on
+light field
+\emph default
+, ou 
+\emph on
+campo de iluminação
+\emph default
+, que é um corte da função que permite a representação desta em uma imagem,
+ como por exemplo na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rede-furada"
+
+\end_inset
+
+, que representa a parametrização “rede furada”, que uma câmera faz ao tirar
+ uma foto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/light view.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rede-furada"
+
+\end_inset
+
+Parametrização do campo de iluminação (ADELSON, 1991)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+SUPERFÍCIES PANORÂMICAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+O conceito de superfícies panorâmicas é definido para situações em que é
+ associada uma informação visual a um campo de iluminação.
+ A superfície em si é o suporte onde a informação visual será projetada,
+ associando-se cada ponto dela a um raio de luz.
+ Este suporte pode ser um cilindro, um cone, uma esfera, etc.
+\end_layout
+
+\begin_layout Standard
+Sempre existe um jeito bem determinado de associar um ponto da superfície
+ com um raio.
+ Para isto, basta determinar a parametrização que coloca a imagem bidimensional
+ - também referida como textura - sobre a superfície panorâmica tridimensional.
+ A seguir serão descritas algumas superfícies tradicionalmente utilizadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+PLANAR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A superfície planar é a que os olhos humanos estão mais acostumados a visualizar.
+ As imagens projetadas nesta superfície têm a propriedade de preservar todas
+ as linhas retas da cena com aparência reta, sejam elas horizontais ou verticais.
+ No entanto, essa projeção não é recomendada para imagens com amplo campo
+ de visão, pois à medida que aumenta-se o campo de visão, tornam-se evidentes
+ distorções como alongamentos nas laterais e cantos da imagem, como pode
+ ser observado na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Planar amplo"
+
+\end_inset
+
+.
+ Para ângulos de visão superiores a 120º a qualidade da imagem produzida
+ fica bastante prejudicada por essas distorções.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Kelvingrove.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panorama-planar"
+
+\end_inset
+
+Panorama planar com ângulo de visão horizontal de 70º (Kelvingrove)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Hallway Museum.jpg
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Planar amplo"
+
+\end_inset
+
+Panorama planar com ângulo de visão horizontal superior a 100º (Hallway
+ Projection)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CILÍNDRICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para ângulos de visão horizontais amplos, pode-se utilizar uma superfície
+ cilíndrica, que é capaz de representar bem um ângulo de visão de até 360º
+ na horizontal, porém se comporta de maneira similar à projeção planar na
+ vertical.
+ é como se retirássemos a imagem do interior da parede de um cilindro e
+ retificássemos ela por sobre uma superfície plana.
+ Na dimensão vertical, portanto, a projeção cilíndrica se comporta como
+ a projeção retilínea, preservando as linhas retas verticais e distorcendo
+ os pontos próximo aos polos, à medida que se amplia o ângulo de visão vertical.
+ Na dimensão horizontal, no entanto, apenas a linha do horizonte se mantém
+ reta, todas as demais são mapeadas em linhas curvas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Marktplatz Weißenfels.jpg
+	scale 42
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Panorama com projeção cilíndrica (Marktplatz Weißenfels)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ESFÉRICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma forma de se representar todo o ambiente com amplo ângulo de visão de
+ visão horizontal e vertical é a utilização de uma superfície esférica,
+ que está associada ao conceito de imagem omnidirecional.
+ Dado que vamos explorar aplicações em que os dispositivos sejam capazes
+ de substituir qualquer trecho do ambiente ao redor do usuário por um recorte
+ de uma imagem panorâmica, a imagem omnidirecional torna-se algo indispensável
+ a este trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+IMAGEM OMNIDIRECIONAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imagem omnidirecional, é uma imagem que possui informações de raios de luz
+ vindos de todas as direções, que convergem em um ponto, e está associada
+ ao campo de iluminação esférico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/setas pro centro.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagens/campo esferico.jpg
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Campo de iluminação esférico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existem diversas formas de se parametrizar uma esfera.
+ As principais delas são o mapeamento em cubo e as parametrizações estereográfic
+a, azimutal e equiretangular.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+MAPEAMENTO EM CUBO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para o mapeamento das informações visuais de um campo de iluminação esférico
+ em um cubo, são utilizadas 6 imagens planas projetadas nas 6 faces internas
+ do cubo, como se cada face fosse uma superfície panorâmica planar.
+ A principal vantagem deste mapeamento é a relativa facilidade de montagem
+ e edição das imagens, caso haja necessidade, devido às poucas distorções.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/cubico.jpg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemplo de mapeamento cúbico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+PARAMETRIZAÇÃO ESTEREOGRÁFICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Nesta parametrização, mapeia-se a esfera fazendo uma projeção estereográfica;
+ ou seja, coloca-se um plano tangente ao polo sul da esfera, perpendicularmente
+ ao eixo norte-sul e, então, projeta-se a imagem pegando raios que saem
+ do polo norte, cortam a esfera no ponto a ser projetado e atingem o plano
+ no ponto de projeção.
+ 
+\end_layout
+
+\begin_layout Standard
+A vantagem desta parametrização é a preservação dos ângulos da imagem, mas
+ não é interessante utilizá-la para as aplicações descritas neste trabalho,
+ por gerar uma projeção de tamanho infinito.
+ As aplicações da parametrização estereográfica estão mais ligadas à matemática
+ pura e à análise complexa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/estereografica.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/estereografica2.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projeção e parametrização estereográfica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+PARAMETRIZAÇÃO AZIMUTAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta parametrização obtém-se projetando perpendicularmente o hemisfério
+ norte e o hemisfério sul da esfera, em dois círculos.
+ Repara-se nela uma grande distorção nas bordas dos círculos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/azimutal.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parametrização azimutal da esfera
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+PARAMETRIZAÇÃO EQUIRRETANGULAR
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A parametrização equirretangular é obtida discretizando os ângulos uniformemente
+, passando o sistema de coordenadas esféricas para um cartesiano.
+ Apresentam muita redundância de informação próximo aos polos – extremidades
+ superior e inferior da imagem – porque são áreas que aparecem muito esticadas.
+ Apenas as linhas retas na vertical e na horizontal são preservadas, todas
+ as demais são mapeadas em linhas curvas, aumentando-se a distorção com
+ o aumento da latitude.
+ Imagens equirretangulares apresentam 
+\emph on
+razão de aspecto
+\emph default
+ de 2:1, em que a horizontal representa uma variação de 0º a 360º, enquanto
+ a vertical varia de 0º a 180º (ou -90º a 90º), tal como longitude e latitude.
+ A razão de aspecto é definida como a razão entre a dimensão horizontal
+ e a dimensão vertical de uma imagem ou dispositivo gráfico de exibição.
+\end_layout
+
+\begin_layout Standard
+Esta é a parametrização que mais interessa nas aplicações deste trabalho.
+ Em um primeiro momento, a parametrização cúbica pode parecer ser a mais
+ adequada, por apresentar componentes mais naturais à visualização humana
+ e, consequentemente, ser mais simples de editar.
+ Além disso, a visualização em cubo resulta em cálculos mais simples de
+ serem executados em computador, sem a necessidade de funções 
+\emph on
+arco-seno
+\emph default
+ ou 
+\emph on
+arco-cosseno
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+No entanto, a parametrização equirretangular é bastante adequada para aplicações
+ que utilizam medidas de ângulos na imagem, pois discretiza-se uniformemente
+ os ângulos da esfera, tal como um sistema latitude e longitude, um fato
+ que podemos vir a utilizar.
+ A construção de camadas concêntricas de panoramas para composição de uma
+ imagem (artifício que será abordado mais a frente neste trabalho), também
+ é facilitada pela parametrização equirretângular.
+ Além disso, o formato equirretângular é o que mais tem sido adotado entre
+ os profissionais e entusiastas de fotografia interessados em imagens omnidireci
+onais, o que facilita aquisição de imagens em sites como o 
+\emph on
+flickr
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Como esta parametrização tem uma associação natural com o sistema de longitude
+ e latitude, para obtermos um suporte tridimensional adequado para a imagem,
+ basta amostrarmos pontos
+\series bold
+ 
+\series default
+utilizando as equações 3.2, 3.3 e 3.4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x=x_{0}+r\mathrm{sen}\theta\cos\varphi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y=y_{0}+r\mathrm{sen}\theta\mathrm{sen}\varphi
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\qquad\qquad\qquad\qquad\qquad z=z_{0}+r\cos\theta\text{‚}\quad(0\leq\varphi\leq2\pi\mbox{ e }0\leq\theta\leq\pi)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Paritalie.jpg
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Panorama equirretangular (Paritalie)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+MEIOS DE AQUISIÇÃO E CRIAÇÃO
+\end_layout
+
+\begin_layout Standard
+Embora não seja objetivo deste trabalho produzir imagens panorâmicas, é
+ importante que sejam apresentados alguns métodos de obtenção desse tipo
+ de imagem, principalmente as imagens omnidirecionais.
+ O método de geração de panoramas a partir de um mosaico de imagens tem
+ sido implementado, inclusive, em aplicações de dispositivos móveis, permitindo
+ ao usuário formar uma imagem a partir da observação de um cenário com a
+ câmera de seu aparelho.
+\end_layout
+
+\begin_layout Subsubsection
+MOSAICO DE IMAGENS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma forma comum de se obter imagens panorâmicas é através da justaposição
+ de diversas imagens de um mesmo ambiente; em inglês, este método é conhecido
+ como 
+\emph on
+panorama stitching
+\emph default
+.
+ A composição de imagens também permite que se obtenha uma imagem final
+ com uma resolução muito maior que o dispositivo disponível permitiria.
+ O número de imagens necessárias depende do ângulo de visão horizontal e
+ vertical da lente da câmera utilizada.
+ Uma lente capaz de abranger um ângulo próximo aos 180º, por exemplo, utilizaria
+ cerca de 3 fotografias.
+ Enquanto uma lente comum, com aproximadamente 45º de abrangência, requereria
+ algo em torno de 30 fotografias para um bom resultado.
+\end_layout
+
+\begin_layout Standard
+Para compor as imagens corretamente e obter uma imagem final de boa qualidade
+ é importante que algumas restrições sejam atendidas.
+ Cada imagem capturada deve ter uma área de pelo menos 25% sobreposta com
+ a imagem anterior; para um ângulo de visão de 360º, a última imagem deve
+ também conter elementos da primeira.
+ Isso é necessário para que o algoritmo computacional utilizado faça a união
+ das imagens de maneira eficiente.
+ Uma outra restrição importante é que a câmera seja rotacionada em torno
+ do centro óptico da lente, também referenciado como ponto nodal ou ponto
+ de não paralaxe – 
+\emph on
+no parallax point
+\emph default
+ – garantindo o mesmo ponto de perspectiva para todas as imagens e evitando
+ consequências de paralaxe.
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+erro de paralaxe
+\emph default
+ pode ser caracterizado como a mudança aparente na posição de objetos mais
+ afastados em relação a objetos mais próximos da cena, causada pela mudança
+ real na posição do observador.
+ Para composição de uma imagem panorâmica, podemos perceber o erro de paralaxe
+ quando comparamos duas imagens adjacentes e vemos objetos no plano de fundo
+ com uma posição um pouco diferente em relação a objetos em um plano mais
+ próximo do observador.
+ Assim, será impossível fazer o correto alinhamento das imagens, pois ou
+ alinha-se os objetos mais afastados ou alinha-se os objetos mais próximos,
+ e o resultado pode ser uma imagem com pontos borrados ou com “fantasmas”
+ (duas imagens parcialmente sobrepostas).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+CÂMERA OMNIDIMENSIONAL
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Câmeras omnidirecionais são câmeras que tem o campo de visão de 360 graus
+ na direção horizontal ou, as vezes, englobando até a esfera toda.
+ São importantes em áreas onde um amplo campo de visão é necessário e por
+ isso se apresentam como um meio eficaz de obtenção de imagens panorâmicas.
+ Os principais tipos são as câmeras catadióptrica, as dióptricas e os sistemas
+ multi-câmera.
+ As imagens obtidas por essas câmeras podem ser transformadas para quaisquer
+ tipo de parametrização conveniente.
+\end_layout
+
+\begin_layout Standard
+Uma vantagem em se utilizar câmeras omnidirecionais é evitar o alto custo
+ computacional dos algoritmos que geram panoramas por justaposição de imagens
+ e também eliminar a dependência da qualidade do conjunto de imagens fotografada
+s, que está sujeito ao erro de paralaxe.
+\end_layout
+
+\begin_layout Standard
+As câmeras catadióptricas utilizam espelhos para gerar suas imagens.
+ Os raios de luz que chegam das mais variadas direções são refletidos por
+ um espelho parabólico ou hiperbólico em direção a uma câmera comum.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/catadioptrica.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema de câmera catadióptrica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Catadioptric Prague.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagem catadióptrica
+\series bold
+ 
+\series default
+da cidade de Praga, obtida com um espelho hiperbólico (Spacek, 2007)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Prague (unwarped).png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagem de Praga, sem deformações (Spacek, 2007)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As câmeras dióptricas utilizam lentes do tipo “olho de peixe”, que deformam
+ a imagem de maneira a especificar qual raio de luz deve ser associado a
+ cada ponto da superfície.
+ As câmeras dióptricas têm uma distorção parecida com a de uma câmera catadióptr
+ica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/dioptrica.jpg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Câmera dióptrica com lentes “olho de peixe”
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/fisheye.jpg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagem capturada por uma câmera dióptrica com lentes do tipo “olho de peixe”
+ (Slater, 2000)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Por último, temos os sistemas multi-câmeras, que utilizam a mesma ideia
+ do mapeamento em cubo, de tirar fotos uma em cada direção.
+ As fotos resultantes normalmente não estão perfeitamente alinhadas, devendo-se
+ fazer algum tipo de transformação para se obter o panorama corretamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/Ladybug2_large.jpg
+	scale 16
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemplo de sistema multi-câmera (Ladybug)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+VISUALIZADOR DE PANORAMAS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Após a apresentação dos conceitos base envolvidos no trabalho, serão descritos
+ alguns aspectos de uma aplicação desenvolvida em um trabalho conjunto com
+ o 
+\emph on
+Visgraf
+\emph default
+, no IMPA.
+ Foi desenvolvido um aplicativo, para dispositivos móveis sobre a plataforma
+ Android, capaz de permitir a visualização de imagens panorâmicas na tela
+ de um celular ou tablet, de acordo com a orientação física do aparelho.
+\end_layout
+
+\begin_layout Standard
+O aplicativo possui um leitor de marcadores QR code, uma estrutura de conexão
+ à rede, capaz de fazer requisições na internet através do protocolo 
+\emph on
+http
+\emph default
+, e uma interface para a visualização propriamente dita.
+ Podemos formar um QR code que armazena o endereço para um servidor na internet
+ capaz de responder à requisição de uma imagem panorâmica do ambiente em
+ que ele se encontra.
+ O aplicativo, então, executa o 
+\emph on
+download
+\emph default
+ da imagem e a armazena na memória do dispositivo (primária e secundária).
+ Após isso, a imagem pode ser visualizada no dispositivo, onde apenas se
+ exibe um recorte da imagem total, que varia de acordo com a orientação
+ que o usuário posiciona o aparelho.
+\end_layout
+
+\begin_layout Standard
+É importante observar que as imagens panorâmicas possuem um único ponto
+ de observação, chamado de centro de projeção.
+ Devido a isso, a cena será sempre observada do ponto em que a imagem foi
+ fotografada, portanto para a visualização são apenas considerados os movimentos
+ de rotação sobre o dispositivo.
+ Este fato faz com que a imagem observada no dispositivo e a visão real
+ do local fiquem mais diferentes à medida que o usuário translade no local,
+ afastando-se do centro de projeção do panorama.
+\end_layout
+
+\begin_layout Standard
+A limitação de visualização de um panorama ao seu centro de projeção pode
+ ser observada na aplicação 
+\emph on
+Google Street View
+\emph default
+, da empresa Google.
+ Nesta aplicação, podemos executar diversos movimentos de rotação e continuar
+ visualizando a mesma imagem, porém ao tentar se movimentar transladando
+ em uma rua, a aplicação deixa transparente ao usuário (através de um recurso
+ gráfico) que está carregando outra imagem, um outro panorama com diferente
+ centro de projeção.
+ Com uma grande base de imagens panorâmicas, o Google Street View consegue
+ prover ao usuário a visualização de um ambiente sobre diversos pontos de
+ projeção.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+RESULTADOS
+\end_layout
+
+\begin_layout Standard
+Os resultados obtidos com o aplicativo foram julgados satisfatórios.
+ O aplicativo foi testado em 3 dispositivos diferentes: um tablet da 
+\emph on
+Nvidia
+\emph default
+, não comercial, específico para uso de desenvolvedores e testes de novas
+ tecnologias, que utiliza a versão 4.03 do sistema Android; um tablet 
+\emph on
+Samsung Galaxy S
+\emph default
+ com versão do Android 2.3.3; e um 
+\emph on
+tablet Sony Xperia S
+\emph default
+ com versão 4.03 do Android.
+ Neste estágio, a utilização dos dados dos sensores de atitude ainda é muito
+ dependente da qualidade do hardware.
+\end_layout
+
+\begin_layout Standard
+Ainda não foram feitos testes em que a imagem no aplicativo correspondesse
+ ao ambiente real de utilização, pois seria necessário fotografar e produzir
+ uma imagem panorâmica para este fim.
+ A produção de imagens panorâmicas está fora do escopo deste trabalho, portanto
+ as imagens utilizadas para teste foram adquiridas de sites na internet
+ como o 
+\emph on
+flickr
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+No tablet da Nvidia, os resultados foram dentro do que se espera como padrão
+ para uma experiência de qualidade com o aplicativo.
+ No tablet da Sony, o resultado foi bom, porém há algumas trepidações e
+ outras inconstâncias na visualização que afastam a experiência do ideal;
+ acredita-se, no entanto, que esses problemas podem ser resolvidos com um
+ tratamento adequado dos dados, utilizando algoritmos de filtros.
+ 
+\end_layout
+
+\begin_layout Standard
+O tablet da Samsung, por não possuir giroscópio, apresentou atrasos, saltos
+ e outras inconsistências que prejudicam a experiência do aplicativo.
+ Um dos maiores problemas na utilização dos sensores para determinar a orientaçã
+o do dispositivo encontra-se na bússola de cada aparelho.
+ A bússola, ou magnetômetro, pode ser utilizada em conjunto com os dados
+ do acelerômetro para determinar a orientação em que o dispositivo se encontra.
+ No entanto, a bússola sofre muita interferência do meio externo, razão
+ pela qual verificam-se saltos e trepidações na visualização.
+ Parte dos probelmas de visualização observados neste último aparelho, podem
+ estar relacionados também à implementação do algoritmo de fusão de dados
+ do fabricante, responsável por integrar os dados dos sensores de atitude
+ de maneira coerente, pois a versão do sistema utilizada é bem mais antiga
+ em relação à dos outros dispositivos de teste.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CRONOGRAMA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O cronograma inicial podia ser dividido em três etapas principais, uma primeira
+ de estudos sobre definições e principais usos de algumas áreas como realidade
+ aumentada e imagens panorâmicas, que foi concluída.
+ Na segunda etapa, estavam previstas pesquisas sobre tecnologias utilizadas
+ nessas áreas, principalmente relacionadas com dispositivos móveis e visão
+ computacional aplicada ao reconhecimento de padrões em imagens.
+ Para a etapa final, almejava-se desenvolver um aplicativo visualizador
+ de panoramas para um dispositivo móvel.
+ Na imagem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cronograma-inicial"
+
+\end_inset
+
+, as regiões escuras representam o período em que as atividades correspondentes
+ seriam realizadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/cronograma.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cronograma-inicial"
+
+\end_inset
+
+Cronograma inicial
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No entanto, após uma revisão da pesquisa, considerou-se mais relevante à
+ área de realidade aumentada com panoramas estudar como compor uma imagem
+ a partir de várias camadas de panoramas.
+ Além disso, a implementação do visualizador de panoramas foi concluída
+ com aproximadamente um mês de antecedência, possuindo os recursos básicos
+ necessários para prosseguir a pesquisa no caminho mencionado.
+ Com estes motivos, justifica-se a atualização do cronograma de trabalho,
+ como será apresentado na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cronograma-atualizado"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/CronogramaNovo.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cronograma-atualizado"
+
+\end_inset
+
+Cronograma atualizado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os quadros completamente preenchidos em tom mais escuro referem-se às atividades
+ já concluídas, enquanto os quadros preenchidos com tom de cinza mais claro
+ contemplam as atividades em desenvolvimento.
+ As partes marcadas com um 
+\begin_inset Quotes sld
+\end_inset
+
+x
+\begin_inset Quotes srd
+\end_inset
+
+ referem-se ao que está planejado e ainda não teve seu desenvolvimento iniciado.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONCLUSÃO
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dentro do contexto de realidade aumentada, as imagens panorâmicas se apresentam
+ como uma alternativa promissora e têm sido bastante exploradas em conjunto
+ com dispositivos móveis tanto no meio acadêmico como na indústria.
+\end_layout
+
+\begin_layout Standard
+A implementação e teste de um aplicativo visualizador de panoramas para
+ dispositivos móveis sobre a plataforma Android confirma a existência de
+ tecnologia atual para explorarmos melhor aplicações neste sentido.
+ Tanto a capacidade de processamento dos dispositivos para exibição de imagens
+ e interação em tempo real, quanto a capacidade de captação de informações
+ pelos sensores de atitude mostraram-se satisfatórias, proporcionando uma
+ visualização coerente com a intenção do usuário.
+\end_layout
+
+\begin_layout Standard
+Como próximos passos, enfatizando mais a experiência de realidade aumentada,
+ pretende-se estudar a composição de imagens panorâmicas a partir de uma
+ estrutura em camadas.
+ Nesta abordagem, objetiva-se construir uma imagem que seja o resultado
+ da composição de uma camada contendo a imagem do local em que a aplicação
+ está sendo utilizada, com outras camadas que apresentem elementos coerentes
+ para uma experiência em realidade aumentada.
+ Neste problema, teríamos informações de cor diferentes para um mesmo 
+\emph on
+pixel
+\emph default
+, que devemos tratar para obter o resultado desejado na imagem final.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+refname{REFERÊNCIAS BIBLIOGRÁFICAS} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ADELSON, 1991"
+
+\end_inset
+
+ADELSON, Edward H.; BERGEN, James R.
+ 
+\series bold
+The Plenoptic Function and the Elements of Early Vision
+\series default
+, Cambridge, MA: MIT Press, 1991.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "AZUMA, 1994"
+
+\end_inset
+
+AZUMA, Ronald; BISHOP, Gary.
+ 
+\series bold
+Improving Static and Dynamic Registration in an Optical See-through HMD
+\series default
+.
+ Department of Computer Science - University of North Carolina at Chapel
+ Hill, 1994.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+AZUMA , Ronald T.
+ - 
+\series bold
+A Survey of Augmented Reality
+\series default
+ - Presence: Teleoperators and Virtual Environments 6, 4 (August 1997).
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+BROOKS, Frederick P.
+ Jr.
+ - 
+\series bold
+The Computer Scientist as Toolsmith II
+\series default
+.
+ CACM 39, 3 (March 1996).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-24"
+
+\end_inset
+
+CHANG, Yu-Hsuan, CHU, Chung-Hua, CHEN, Ming-Syan.
+ 
+\series bold
+A General Scheme for Extracting QR Code from a non-uniform background in
+ Camera Phones and Applications
+\series default
+, Simpósio Internacional de Multimídia - IEEE, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+
+\series bold
+Ladybug
+\series default
+.
+ Disponível em: <http://www.ptgrey.com/products/ladybug2/images/Ladybug2_large.jpg>
+, acessado em 20 de agosto de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-16"
+
+\end_inset
+
+
+\series bold
+Field of View.
+ 
+\series default
+Disponível em: <http://wiki.panotools.org/Field_of_View>, acessado em 7 de
+ agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+GROHS, Emanuel Motta, MAESTRI, Patrick Renan Bernardes.
+ 
+\series bold
+Realidade Aumentada para Informações Geográficas
+\series default
+.
+ Pontifícia Universidade Católica do Rio Grande do Sul, 2002.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-19"
+
+\end_inset
+
+GUEDES, LEANDRO.
+ 
+\series bold
+Paralaxe Trigonométrica
+\series default
+.
+ Disponível em: <http://astronomia.blog.br/paralaxe-trigonometrica>, acessado
+ em 22 de agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+
+\series bold
+Hallway Projection
+\series default
+.
+ Disponível em: <http://www.flickr.com/photos/lrargerich/2909862293/>, acessado
+ em 18 de agosto de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+
+\series bold
+Handheld Augmented Reality
+\series default
+.
+ Disponível em: <http://handheldar.icg.tugraz.at/>, acessado em 9 de março
+ de 2013.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+
+\series bold
+ISMAR
+\series default
+ <http://ismar.vgtc.org>
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-26"
+
+\end_inset
+
+ISO/IEC 18004:2006.
+
+\series bold
+ Information technology - Automatic identification and data capture techniques-Q
+R Code 2005 bar code symbology specification
+\series default
+, 2006.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+
+\series bold
+Kelvingrove
+\series default
+.
+ Disponível em: <http://www.flickr.com/photos/martinb/3477119314/>, acessado
+ em 18 de agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+KIRNER, C.; SISCOUTTO, R.
+ 
+\series bold
+Realidade Virtual e Aumentada: Conceitos, projetos e aplicações
+\series default
+.
+ Petrópolis: Laboratório Nacional de ComputaçãoCientífica, 2007.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-11"
+
+\end_inset
+
+LEVOY, MARC.
+ 
+\series bold
+Cylindrical Panoramas
+\series default
+.
+ Disponível em: <http://graphics.stanford.edu/courses/cs178/applets/projection.html
+>, acessado em 1 de setembro de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+
+\series bold
+Marktplatz Weißenfels
+\series default
+ <http://www.flickr.com/photos/rudolf_schuba/417327148/>
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-21"
+
+\end_inset
+
+
+\series bold
+Omnidirectional Camera
+\series default
+.
+ Disponível em: <http://en.wikipedia.org/wiki/Omnidirectional_camera>, acessado
+ em 23 de outubro de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-13"
+
+\end_inset
+
+
+\series bold
+Omnidirectional Vision
+\series default
+.
+ Disponível em: <http://cswww.essex.ac.uk/mv/images.html>
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-20"
+
+\end_inset
+
+
+\series bold
+Panorama 360°x180°
+\series default
+.
+ Disponível em: <http://valerie.desnoux.free.fr/pano/pano_en.html>, acessado
+ em 1 de outubro de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+
+\series bold
+Panoramascope : Augmented Reality 
+\series default
+<http://panoramascope.com/>
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+
+\series bold
+Panoramic Image Projections
+\series default
+.
+ Disponível em: <http://www.cambridgeincolour.com/tutorials/image-projections.htm>,
+ acessado em 30 de setembro de 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-11"
+
+\end_inset
+
+
+\series bold
+Paritalie
+\series default
+.
+ Disponível em: <http://www.flickr.com/photos/gadl/3399071161/>, acessado
+ em 18 de agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+
+\series bold
+Projections
+\series default
+.
+ Disponível em: <http://www.ptgui.com/man/projections.html> acessado em 23
+ de agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+ 
+\series bold
+SIGGRAPH
+\series default
+.
+ Endereço oficial: <http://www.siggraph.org>.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+ 
+\series bold
+SIGGRAPH Mobile
+\series default
+.
+
+\series bold
+ 
+\series default
+Endereço oficial: <http://s2012.siggraph.org/submitters/siggraph-mobile>.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+Slater, Dan.
+ 
+\series bold
+Using the 6 mm Nikon fisheye lens with the Nikon D1 camera.
+ 
+\series default
+Disponível em: <http://www.sandydan.com/photo/wide/fish/index.htm>, 2000.
+ Acessado em 22 de agosto de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+SOLER, L.; NICOLAU, S.; FASQUEL, J.B.; AGNUS, V.; CHARNOZ, A.; HOSTETTLER; A.,
+ MOREAU, J.; FOREST, C.; MUTTER, D.; MRESCAUX, J.
+ - 
+\series bold
+Virtual reality and augmented reality applied to laparoscopic and notes
+ procedures
+\series default
+ - 5th IEEE International Symposium em 14-17 de Maio de 2008.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Spacek, Libor.
+ 
+\series bold
+Omnidireccional Vision
+\series default
+.
+ <http://cswww.essex.ac.uk/mv/images.html>, 2007.
+ Acessado em 30 de setembro de 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+WAGNER, DANIEL; MULLONI, ALESSANDRO; LANGLOTZ, TOBIAS; SCHMALSTIEG, DIETER.
+
+\series bold
+ Real-time Panoramic Mapping and Tracking on Mobile Phones
+\series default
+.
+ Institute for Computer Graphics and Vision - Graz University of Technology,
+ 2010.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+
+\series bold
+What is a panorama?
+\series default
+.
+ Disponível em: <www.panoguide.com/howto/panoramas/whatis.jsp>, acessado em
+ 22 de agosto de 2012.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+APÊNDICES
+\end_layout
+
+\begin_layout Subsection
+APÊNDICE 1: QR CODE
+\end_layout
+
+\begin_layout Standard
+O QR Code foi criado em 1994 no Japão e, inicialmente, era utilizado para
+ rastrear encomendas.
+ Conforme foi se tornando mais acessível, graças a popularização dos smartphones
+, novas funções vêm surgindo principalmente na área de publicidade, onde
+ um QR Code pode guardar links para portais, menus interativos, etc.
+\end_layout
+
+\begin_layout Standard
+Além da área de dados, onde a informação fica guardada, o marcador possui
+ alguns padrões que são utilizados para facilitar a leitura, proporcionar
+ outras funcionalidades e melhorar seu desempenho, são os 
+\emph on
+finder patterns
+\emph default
+, 
+\emph on
+alignment patterns
+\emph default
+, 
+\emph on
+timing patterns
+\emph default
+, e a 
+\emph on
+quiet zone
+\emph default
+.
+ Esses padrões também permitem que um QR Code seja lido em qualquer direção,
+ deformado, danificado, com as cores invertidas ou mesmo espelhado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/pattern geral.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Estr. QR"
+
+\end_inset
+
+Estrutura de um QR Code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+FINDER PATTERN
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalmente, são símbolos de duas dimensões que levam muito tempo para serem
+ decodificados, pois é um trabalho custoso encontrar sua posição utilizando
+ o processo de ler a imagem e compará-la com padrões lineares.
+ O QR Code possui 3 marcadores chamados 
+\emph on
+finder patterns
+\emph default
+, posicionados nos cantos, que servem para facilitar essa localização.
+ São 3 símbolos em forma de quadrados de cores preto e branco (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estr. QR"
+
+\end_inset
+
+).
+ O interessante desse marcador, é que traçando uma linha que passa por esse
+ símbolo em qualquer direção, a razão entre a alternância de branco e preto
+ será a mesma, facilitando a leitura do código em qualquer direção.
+\end_layout
+
+\begin_layout Standard
+Com a identificação da posição dos três marcadores, o decodificador tem
+ automaticamente os valores de L, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+Θ
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, X e Y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:finder pattern"
+
+\end_inset
+
+).
+ Esse processo dá ao QR Code uma leitura cerca de 20 vezes mais rápida que
+ símbolos matriciais que não utilizam esse método (ISO/IEC, 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/primeiro pattern.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:finder pattern"
+
+\end_inset
+
+Variáveis decodificadas pelos 
+\emph on
+finder patterns
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Alignment e Timing Patterns 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+São padrões que estão ligados a correção de distorções, os 
+\emph on
+alignment patterns
+\emph default
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estr. QR"
+
+\end_inset
+
+) são áreas pelo QR code que possuem um ponto preto no centro e, de acordo
+ com a posição em que ele se encontra, é possível calcular o erro proporcionado
+ pela distorção, tomando como base a posição que ele deveria estar.
+ Já os 
+\emph on
+timing patterns
+\emph default
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estr. QR"
+
+\end_inset
+
+) são duas linhas de sequência preto e branco que marcam as direções vertical
+ e horizontal (CHANG, 2007).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagens/segundo pattern.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagens/segundo pattern2.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Exemplos de QR Codes distorcidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Quiet Zone
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Quiet Zone constitui-se apenas de uma margem em volta do QR Code, de quatro
+ ou mais células que serve para facilitar o reconhecimento do fim da imagem
+ pelo decodificador.
+\end_layout
+
+\begin_layout Subsubsection
+Área de Dados
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nessa área os dados que são gravados no QR Code estão disponibilizados na
+ forma binária, sendo uma cor para 0 e outra para 1.
+ Além disso, na área de dados também se encontram várias células correspondentes
+ a bits de paridade colocados para correção de erros segundo o 
+\emph on
+algoritmo de Reed-Solomon
+\emph default
+.
+ De acordo com o modo que o QR Code é feito, ele pode suportar danos de
+ até 30% (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:QR danificado"
+
+\end_inset
+
+) de seu conteúdo e ainda sim responder com os dados corretamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/terceiro pattern.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:QR danificado"
+
+\end_inset
+
+Exemplo de QR Code danificado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

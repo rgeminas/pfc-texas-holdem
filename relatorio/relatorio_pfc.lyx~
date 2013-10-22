@@ -77,7 +77,7 @@ theorems-sec-bytype
 \output_sync 0
 \bibtex_command bibtex
 \index_command default
-\float_placement H
+\float_placement h
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
@@ -2508,6 +2508,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2605,6 +2609,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -2613,6 +2621,10 @@ Topologia Backpropagation
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
