@@ -8,18 +8,6 @@
 \usepackage{tocbibind}
 \usepackage{tocloft}
 
-\renewcommand \thefigure{FIG.~\ifnum \c@section>\z@ \thesubsection.\fi \@arabic\c@figure}
-\def\fps@figure{tbp}
-\def\ftype@figure{1}
-\def\ext@figure{lof}
-\def\fnum@figure{\thefigure}
-
-\renewcommand \thetable{TAB.~\ifnum \c@section>\z@ \thesubsection.\fi \@arabic\c@table}
-\def\fps@table{tbp}
-\def\ftype@table{1}
-\def\ext@table{lot}
-\def\fnum@table{\thetable}
-
 \renewcommand\@pnumwidth{1.55em}%era 1.55
 \renewcommand\@tocrmarg{5em}%era 2.55--5
 \renewcommand\@dotsep{2} %era 3--2
