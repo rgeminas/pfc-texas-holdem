@@ -4858,7 +4858,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cdlearning.png
-	scale 45
+	scale 80
 
 \end_inset
 
@@ -4959,7 +4959,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cddatamodel.png
-	scale 45
 
 \end_inset
 
@@ -4996,7 +4995,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cdfacade.png
-	scale 45
+	scale 80
 
 \end_inset
 
