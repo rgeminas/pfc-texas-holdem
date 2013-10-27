@@ -1346,8 +1346,8 @@ Redes neurais vem sendo utilizadas para a resolução de problemas de decisão
 Texas Hold'em
 \shape default
 , é proposta a utilização de várias redes neurais na modelagem de oponentes
- para permitir uma melhor análise de perfis de jogadores para a formulação
- implícita de contra-estratégias pela rede.
+ heuristicamente selecionados para permitir uma melhor análise de perfis
+ de jogadores para a formulação implícita de contra-estratégias pela rede.
  A adequação de redes neurais nesses casos já foi comprovada em diversos
  trabalhos.
 \end_layout
@@ -5094,6 +5094,28 @@ status open
 \backslash
 indent
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CRONOGRAMA DE ATIVIDADES
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/cronograma.png
+	scale 75
 
 \end_inset
 
