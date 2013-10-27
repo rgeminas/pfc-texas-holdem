@@ -47,7 +47,7 @@ theorems-sec-bytype
 \end_modules
 \maintain_unincluded_children false
 \language brazilian
-\language_package auto
+\language_package babel
 \inputencoding auto
 \fontencoding global
 \font_roman default
