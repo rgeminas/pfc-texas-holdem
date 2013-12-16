@@ -1457,9 +1457,36 @@ indent
 \end_layout
 
 \begin_layout Standard
-Devido às características imperfeitas do jogo, o pôquer vem sendo estudado
- na área de aprendizado de máquina.
- O objetivo desses estudos é construir agentes autônomos que sejam capazes
+No emprego militar da guerra, mesmo com esforços de inteligência e contra-inteli
+gência, a situação do campo de batalha é quase sempre uma representação
+ incompleta da realidade, o que impossibilita a tomada de decisões pela
+ simples determinação de todos os resultados possíveis pela mera simulação.
+ Isto torna métodos de aprendizado de máquina importantes para o emprego
+ militar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
+ Deste modo, cria-se a necessidade de uma verdadeira inteligência artificial
+ que tenha capacidade de tomar decisões baseada em informação incompleta.
+ Devido às características de informação incompleta do jogo, o pôquer é
+ frequentemente estudado na área de aprendizado de máquina tanto como objetivo
+ fim quanto como um campo de testes de abordagens de aprendizado
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2,key-3"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+O objetivo desses estudos é construir agentes autônomos que sejam capazes
  de jogar segundo alguma estratégia.
  A maior parte dos estudos na área advém do grupo de inteligência artificial
  aplicada ao pôquer da Universidade de Alberta.
@@ -1474,9 +1501,9 @@ key "key-2"
 
 , com algoritmos de avaliação sendo utilizados principalmente com o objetivo
  de selecionar a estratégia mais interessante para a situação atual dentre
- estas estratégias conforme resposta do oponente, de modo a se manter a
- menor quantidade de tempo possível em uma estratégia que se é percebida
- como não-ideal.
+ estas estratégias conforme resposta do oponente.
+ Deste modo, almeja se manter a menor quantidade de tempo possível em uma
+ estratégia percebida como não-ideal.
  Esta abordagem é baseada mais fortemente no fundamento matemático da teoria
  do jogo do que no melhoramento da estratégia em si.
 \end_layout
@@ -1654,30 +1681,28 @@ indent
 \begin_layout Standard
 Redes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
  oponentes no pôquer quanto para a resolução de problemas de decisão, como
- já foi mostrado em trabalhos correlatos.
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-QUAIS trABALHOS?
-\end_layout
+ já foi mostrado em trabalhos correlatos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4,key-3"
 
 \end_inset
 
+.
  Contudo, as implicações decorrentes da utilização de uma rede neural como
  agente 
 \shape italic
 stand-alone 
 \shape default
-capaz de jogar competitivamente ainda não foram exploradas.
- Apesar da utilização de uma rede neural como estratégia de jogo estar condicion
-ada aos jogadores cujos jogos forem usados para treinar a rede, estando
- deste modo sujeitos a certa exploração por parte de um oponente que jogasse
- de modo anormal quando comparado com os oponentes do jogador base nos jogos
+capaz de jogar competitivamente ainda não foram completamente exploradas.
+ A utilização de uma rede neural como estratégia de jogo está condicionada
+ aos jogadores cujos jogos forem usados para treinar a rede, estando deste
+ modo sujeitos a certa exploração por parte de um oponente que jogasse de
+ modo anormal quando comparado com os oponentes do jogador base nos jogos
  utilizados para testar a rede.
- A utilização de perfis de jogadores e a subsequente classificação dos oponentes
- dentre estes perfis pode ser utilizada de modo a diminuir o impacto desta
- potencial fraqueza.
+ Contudo, a utilização de perfis de jogadores e a subsequente classificação
+ dos oponentes dentre estes perfis pode ser utilizada de modo a diminuir
+ o impacto desta potencial fraqueza.
 \end_layout
 
 \begin_layout Standard
@@ -1795,7 +1820,8 @@ Uma importante técnica de aprendizado de máquina atualmente, é a estrutura
  funcionamento do cérebro humano.
  Por esse motivo, é a técnica que mais auxilia no entendimento da inteligência
  humana, e que se espera obter uma inteligência artificial mais próxima
- daquela 
+ daquela.
+ O exposto abaixo está relatado em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-5-2"
@@ -1803,7 +1829,6 @@ key "key-5-2"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -3918,20 +3943,140 @@ ESTRUTURA DA SOLUÇÃO
 \end_layout
 
 \begin_layout Subsection
-MODELAGEM DO OPONENTE
+ESTRUTURA GERAL
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Colocar os diagramas aqui.
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+ A solução proposta para a criação de um agente 
+\shape italic
+stand-alone
+\shape default
+ capaz de competir é composta de três componentes principais, que serão
+ expostos nas seções subsequentes.
+ São eles:
+\end_layout
+
+\begin_layout Itemize
+Uma serie de redes neurais capaz de cada modelar um oponente (ou uma série
+ de oponentes), que formam os 
+\shape italic
+perfis de jogador.
+ 
+\shape default
+Os dados que compõem cada perfil são selecionados heuristicamente;
+\end_layout
+
+\begin_layout Itemize
+Uma rede neural capaz de classificar as últimas jogadas de um oponente em
+ algum dos perfis do item acima tendo em mãos a ação simulada do perfil
+ - esta será denominada 
+\shape italic
+classificador
+\shape default
+;
+\end_layout
+
+\begin_layout Itemize
+Uma rede neural que modela um jogador que é bem-sucedido (em termos gerais)
+ contra jogadores com os variados perfis.
+ Esta será chamada 
+\shape italic
+rede principal
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+O funcionamento básico do sistema dar-se-á da seguinte forma: ao se jogar
+ contra um oponente, primeiro o classificador identifica qual é o perfil
+ de jogador mais adequado ao oponente e produz uma indicação de qual perfil
+ é mais adequado.
+ Tendo esta informação, executa-se o perfil de jogador escolhido e são geradas
+ as probabilidades de 
+\shape italic
+fold
+\shape default
+, 
+\shape italic
+call
+\shape default
+ e 
+\shape italic
+raise
+\shape default
+ dada a situação atual do jogo.
+ Estas probabilidades são então introduzidas como parâmetros de entrada
+ da rede neural principal de modo que a rede principal possa utilizar estas
+ probabilidades para agir de maneira diferente, a depender da tendência
+ do jogador e do peso atribuído à informação de perfil pela rede principal.
+ Por fim, as informações do estado atual e do perfil modelado para os oponentes
+ são usados como entrada para a rede principal, que determina uma ação a
+ ser tomada (
+\shape italic
+fold
+\shape default
+, 
+\shape italic
+call
+\shape default
+ ou 
+\shape italic
+raise
+\shape default
+, com a porcentagem de 
+\shape italic
+raise
+\shape default
+ no caso apropriado).
+ Esta ação pode então ser executada no jogo.
+\end_layout
+
+\begin_layout Standard
+Esta abordagem é, em termos de expressividade matemática, equivalente a
+ uma rede neural que contivesse uma chave única representando o jogador
+ em uma estrutura de três camadas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+.
+ Por meio da modularização e da classificação em perfi, tenciona-se diminuir
+ o volume de dados necessário para se realizar o treinamento da rede até
+ que ela possa jogar de maneira satisfatória.
+\end_layout
+
+\begin_layout Subsection
+MODELAGEM DO OPONENTE
 \end_layout
 
 \begin_layout Standard
@@ -3973,13 +4118,29 @@ reference "tab:Parâmetros-de-saída-modelagem"
  que são de potencial influência sobre a ação do oponente, tal como a posição
  do mesmo na mesa, uma vez que a utilização da mesma implicaria em um encadeamen
 to de previsões para prever as ações dos últimos jogadores na fila.
- Outra simplificação a ser realizada na classificação no decorrer de um
- jogo é assumir que as probabilidades de melhor mão estão identicamente
+ 
+\end_layout
+
+\begin_layout Standard
+Outra importante simplificação a ser realizada na classificação no decorrer
+ de um jogo é assumir que as probabilidades de melhor mão estão identicamente
  distribuídas dentre os jogadores cujas mãos são desconhecidas e que estão
  remanescentes no jogo - deste modo, mesmo quando não se sabem as cartas
  do agente, pode-se utilizar alguma métrica de modo a estimar as ações do
  oponente.
- As saídas desta rede neural são representativas do perfil do jogador.
+ Isto é especialmente relevante quando se leva em conta que a maioria dos
+ bancos de dados de mãos não contém as informações referentes às mãos dos
+ jogadores que realizam 
+\shape italic
+fold
+\shape default
+, levando a uma informação incompleta na construção da rede.
+ A não-utilização desta simplificação tornaria o treinamento da rede inviável.
+\end_layout
+
+\begin_layout Standard
+As saídas desta rede neural de são representativas do perfil do jogador
+ exposto à situação atual de jogo.
 \end_layout
 
 \begin_layout Standard
@@ -4231,7 +4392,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Parâmetros de entrada
+Parâmetros de saída
 \end_layout
 
 \end_inset
@@ -4251,7 +4412,7 @@ Domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fold?
+Probabilidade de fold
 \end_layout
 
 \end_inset
@@ -4260,7 +4421,7 @@ Fold?
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f_{r}\in\{0,1\}$
+\begin_inset Formula $f_{r}\in[0,1]$
 \end_inset
 
 
@@ -4274,7 +4435,7 @@ Fold?
 \begin_inset Text
 
 \begin_layout Plain Layout
-Call?
+Probabilidade de call
 \end_layout
 
 \end_inset
@@ -4283,7 +4444,7 @@ Call?
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $k_{r}\in\{0,1\}$
+\begin_inset Formula $k_{r}\in[0,1]$
 \end_inset
 
 
@@ -4297,7 +4458,7 @@ Call?
 \begin_inset Text
 
 \begin_layout Plain Layout
-Raise?
+Probabilidade de raise
 \end_layout
 
 \end_inset
@@ -4306,7 +4467,7 @@ Raise?
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $c_{r}\in\{0,1\}$
+\begin_inset Formula $c_{r}\in[0,1]$
 \end_inset
 
 
@@ -4380,17 +4541,29 @@ REDE PRINCIPAL E CLASSIFICAÇÃO EM PERFIS
 \end_layout
 
 \begin_layout Standard
-A topologia da rede principal é similar, contudo, não há necessidade de
- se estimar a probabilidade de haver a melhor mão, uma vez que presumimos
- que se sabem as cartas na mão.
- Para cada potencial oponente (até um máximo de 7) serão adicionadas as
- informações de perfil adquiridas nos perfis que melhor se encaixarem às
- informações da tabela 4.1.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent 
+\end_layout
+
+\end_inset
+
+Para cada potencial oponente (até um máximo de 7) serão adicionadas as informaçõ
+es de perfil adquiridas nos perfis que melhor se encaixarem às informações
+ da tabela 4.1.
  As jogadas utilizadas para classificar o perfil seguirão um esquema de
  janela deslizante, de modo a evitar que um oponente que troque de estratégia
- com frequência seja constantemente classificado de forma incorreta.
- Deste modo,também descrevemos, uma outra rede de modo a classificar os
- jogadores em perfis, com sua topologia descrita nas tabelas 
+ com pouca frequência seja classificado de forma incorreta devido ao peso
+ de suas ações iniciais, que possivelmente não são mais relevantes ao estado
+ atual do jogo.
+ Contudo, um oponente que troque de estratégia constantemente continuaria
+ podendo evitar uma classificação precisa.
+ A topologia da rede neural do classificador está descrita nas tabelas 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Parâmetros-de-entrada-perfilamento"
@@ -4405,6 +4578,15 @@ reference "tab:Parâmetros-de-saída-perfilamento"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+A topologia da rede principal é similar à utilizada para realizar a modelagem
+ do perfil do oponente, com duas diferenças principais: primeiro, não há
+ necessidade de se estimar a probabilidade de haver a melhor mão, uma vez
+ que presumimos que se sabem as cartas na mão do próprio jogador.
+ Além disso, a entrada da rede principal é acrescida da saída da rede de
+ perfil.
 \end_layout
 
 \begin_layout Standard
@@ -4718,7 +4900,7 @@ name "tab:Parâmetros-de-entrada-perfilamento"
 \end_inset
 
 Parâmetros de entrada da RN utilizada para classificar o oponente para cada
- uma das jogadas em uma janela deslizante
+ uma das jogadas em uma janela deslizante.
 \end_layout
 
 \end_inset
@@ -4749,7 +4931,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Parâmetros de entrada
+Parâmetros de saída
 \end_layout
 
 \end_inset
@@ -4856,6 +5038,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+O programa final será composto do classificador e da rede principal.
+ Os perfis são utilizados apenas para treinar estas duas redes.
 \begin_inset Graphics
 	filename imagens/cdlearning.png
 	scale 80
@@ -5024,11 +5208,78 @@ Diagrama de classe para a fachada
 
 \begin_layout Standard
 Uma vez obtidos os dados, faz-se necessário utilizar alguma heurística para
- selecionar os melhores jogadores.
+ selecionar os melhores jogadores, pois precisamos deles para treinar a
+ rede-fim.
  Utilizaremos como métrica inicial a quantidade de fichas adquiridas pelo
- jogador no decorrer do tempo visto.
- Também é importante seccionar os jogadores em diferentes perfis para treinar
+ jogador no decorrer do tempo visto dividido pelo número de mãos na qual
+ ele participou.
+ 
+\end_layout
+
+\begin_layout Standard
+Também é importante seccionar os jogadores em diferentes perfis para treinar
  diferentes modelagens de oponente.
+ A primeira abordagem que será utilizada para tanto é a de classificar os
+ jogadores dentre 
+\shape italic
+loose 
+\shape default
+(que tende a entrar em mãos mesmo quando a probabilidade inicial de possuir
+ a melhor mão é baixa) e 
+\shape italic
+tight 
+\shape default
+(que tende a não entrar em mãos a não ser que tenha uma alta probabilidade
+ de ter a melhor mão).
+ Uma métrica para classificar jogadores entre estes dois extremos é a quantidade
+ de 
+\shape italic
+folds
+\shape default
+ em relação ao número total de mãos.
+ Jogadores 
+\shape italic
+loose
+\shape default
+ raramente realizam fold, ao contrário de jogadores 
+\shape italic
+tight
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+As faixas de corte utilizadas serão determinadas da seguinte maneira: assumindo
+ uma distribuição normal da taxa de 
+\shape italic
+fold
+\shape default
+ e uma população com desvio padrao 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ e média 
+\begin_inset Formula $\mu$
+\end_inset
+
+, define-se o jogador com média abaixo de 
+\begin_inset Formula $\mu-\sigma/2$
+\end_inset
+
+ como 
+\shape italic
+tight
+\shape default
+, o jogador acima de 
+\begin_inset Formula $\mu+\sigma/2$
+\end_inset
+
+ como 
+\shape italic
+loose
+\shape default
+ e o jogador entre estas duas faixas como moderado.
 \end_layout
 
 \begin_layout Standard
@@ -5281,11 +5532,58 @@ key "key-5-2"
 \end_inset
 
 Russell S., Norvig P.
- - 
+ 
 \series bold
 Artificial Intelligence: A Modern Approach (3rd Edition)
 \series default
 , 20??.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+desJardins - 
+\series bold
+Machine Learning for Military Operations
+\series default
+, Rome Laboratory, Air Force Materiel Command, 1996;
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Spaanenburg, ten Berg.
+ 
+\series bold
+Modular and Hierarchical Specialization for Neural Networks
+\series default
+ - Lund University, Department of Information Technology, 2003;
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referências
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Hornik.
+ 
+\series bold
+Approximation capabilities of multilayer feedforward networks
+\series default
+, Neural Networks, Volume 4, Issue 2, pg 251-257, 1991;
 \end_layout
 
 \end_body
