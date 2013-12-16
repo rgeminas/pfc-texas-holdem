@@ -4070,7 +4070,7 @@ key "key-3"
 \end_inset
 
 .
- Por meio da modularização e da classificação em perfi, tenciona-se diminuir
+ Por meio da modularização e da classificação em perfis, tenciona-se diminuir
  o volume de dados necessário para se realizar o treinamento da rede até
  que ela possa jogar de maneira satisfatória.
 \end_layout
@@ -5028,6 +5028,8 @@ reference "fig:Diagrama-de-classe-fachada"
 
 , descrevendo as classes utilizadas na API de aprendizado e na interface
  com o banco de dados de mãos.
+ O programa final será composto do classificador e da rede principal.
+ Os perfis são utilizados apenas para treinar estas duas redes.
 \end_layout
 
 \begin_layout Standard
@@ -5038,8 +5040,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-O programa final será composto do classificador e da rede principal.
- Os perfis são utilizados apenas para treinar estas duas redes.
 \begin_inset Graphics
 	filename imagens/cdlearning.png
 	scale 80
