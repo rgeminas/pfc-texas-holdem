@@ -2,6 +2,8 @@ package br.eb.ime.comp.nnbot.learning;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.lang.Math;
 
 public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass extends Arrayable>
@@ -28,12 +30,14 @@ public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass exte
 	protected double[] outputErrorGradients;
 	
 	public boolean verbose;
+	protected FileWriter fw;
 
 	public NeuralNetworkLearner(double learningRate, double momentum,
-			int _sizeInput, int _sizeHidden, int _sizeOutput) {
+			int _sizeInput, int _sizeHidden, int _sizeOutput, FileWriter _fw) {
 		this.sizeHidden = _sizeHidden;
 		this.learningRate = learningRate;
 		this.momentum = momentum;
+		this.fw = _fw;
 		
 		this.sizeInput = _sizeInput;
 		this.sizeOutput = _sizeOutput;
@@ -93,37 +97,40 @@ public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass exte
 		for (TrainingSet<InputClass, OutputClass> ioSet : inputs) {
 			InputClass input = ioSet.getInput();
 			double[] inputArray = input.toArray();
-			for (int i = 0; i < inputArray.length; i++)
-			{
+			for (int i = 0; i < inputArray.length; i++) {
 				inputNeurons[i] = inputArray[i];
-			};
+			}
 
 			OutputClass output = ioSet.getOutput();
 			expectedOutput = output.toArray();
-			
-			if (verbose) {
-				System.out.println("Input: ");
-				for (double d : inputNeurons)
-				{
-					System.out.printf("%f ", d);
-				}
-				System.out.println("");
-				System.out.println("Expected: ");
-				for (double d : expectedOutput)
-				{
-					System.out.printf("%f ", d);
-				}
-				System.out.println("");
-			}
+			try {
+				if (verbose) {
+					fw.append("Input: \n");
+					for (double d : inputNeurons) {
+						fw.append(((Double) d).toString().concat(" "));
+					}
 
-			feedForward();
-			if (verbose) {
-				System.out.println("Got: ");
-				for (double d : outputNeurons)
-				{
-					System.out.printf("%f ", d);
+					fw.append("\n");
+					fw.append("Expected: ");
+
+					for (double d : expectedOutput) {
+						fw.append(((Double) d).toString().concat(" "));
+						fw.append("\n");
+					}
+				
 				}
-				System.out.println("");
+
+				feedForward();
+				if (verbose) {
+					fw.append("Got: ");
+					for (double d : outputNeurons) {
+						fw.append(((Double) d).toString().concat(" "));
+					}
+					fw.append("\n");
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 			backPropagate();
 		}

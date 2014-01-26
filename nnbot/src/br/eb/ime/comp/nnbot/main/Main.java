@@ -3,6 +3,7 @@ package br.eb.ime.comp.nnbot.main;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -25,6 +26,7 @@ public class Main {
 		BufferedReader cin = new BufferedReader(new FileReader(
 				"./testsets/100k_vowels.txt"
 				));
+		FileWriter fw = new FileWriter("./testsets/100k_vowels.out");
 		String line = cin.readLine();
 		while (line != null)
 		{
@@ -36,9 +38,9 @@ public class Main {
 	        tset.add(ts);
 	        line = cin.readLine();
 		}
-		System.out.println("");
+		cin.close();
 		
-		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.001, 0, 26, 26, 1);
+		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.001, 0, 26, 26, 1, fw);
 		nnlearner.train(tset);
 		//nnlearner.
 	}
