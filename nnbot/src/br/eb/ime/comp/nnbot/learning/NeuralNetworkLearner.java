@@ -187,6 +187,12 @@ public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass exte
 				deltaHiddenFromInput[i][j] = 0;
 			}
 		}
+		for (int i = 0; i < outputNeurons.length; i++) {
+			for (int j = 0; j < hiddenNeurons.length; j++) {
+				weightsOutputFromHiddenLayer[i][j] += deltaOutputFromHidden[i][j];
+				deltaOutputFromHidden[i][j] = 0;
+			}
+		}
 	}
 
 	public double hiddenErrorGradient(int j) {
