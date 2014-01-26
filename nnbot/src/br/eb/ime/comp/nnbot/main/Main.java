@@ -22,7 +22,7 @@ public class Main {
 		
 		ArrayList<TrainingSet<VowelsInput, ExampleOutput>> tset = new ArrayList<TrainingSet<VowelsInput, ExampleOutput>>();
 		BufferedReader cin = new BufferedReader(new FileReader(
-				"C:/Users/Renan Gemignani/Development/pfc-texas-holdem/nnbot/testsets/10k_vowels.txt"
+				"C:/Users/Renan Gemignani/Development/pfc-texas-holdem/nnbot/testsets/100k_vowels.txt"
 				));
 		String line = cin.readLine();
 		while (line != null)
@@ -37,7 +37,7 @@ public class Main {
 		}
 		System.out.println("");
 		
-		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.05, 0.1, 1, 26, 1);
+		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.001, 0, 26, 26, 1);
 		nnlearner.train(tset);
 		//nnlearner.
 	}

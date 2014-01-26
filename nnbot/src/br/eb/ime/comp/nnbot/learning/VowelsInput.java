@@ -11,8 +11,13 @@ public class VowelsInput implements Arrayable {
 	
 	public double[] toArray()
 	{
+		/*
 		double[] d = new double[1];
 		d[0] = ((double) (character - 'a'))/ 13. - 1;
+		return d;
+		*/
+		double[] d = new double[26];
+		d[character - 'a'] = 1;
 		return d;
 	}
 

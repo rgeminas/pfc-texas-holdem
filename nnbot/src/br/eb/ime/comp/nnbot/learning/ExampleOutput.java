@@ -12,7 +12,7 @@ public class ExampleOutput implements Arrayable {
 	public double[] toArray()
 	{
 		double[] d = new double[1];
-		d[0] = out? 0 : 1.;
+		d[0] = out? 1. : 0.;
 		return d;
 	}
 }
