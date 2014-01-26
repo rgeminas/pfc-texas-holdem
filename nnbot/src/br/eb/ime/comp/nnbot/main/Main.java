@@ -18,11 +18,12 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		System.out.println("winning");
+		System.out.println("Working Directory = " +
+	              System.getProperty("user.dir"));
 		
 		ArrayList<TrainingSet<VowelsInput, ExampleOutput>> tset = new ArrayList<TrainingSet<VowelsInput, ExampleOutput>>();
 		BufferedReader cin = new BufferedReader(new FileReader(
-				"C:/Users/Renan Gemignani/Development/pfc-texas-holdem/nnbot/testsets/100k_vowels.txt"
+				"./testsets/100k_vowels.txt"
 				));
 		String line = cin.readLine();
 		while (line != null)
