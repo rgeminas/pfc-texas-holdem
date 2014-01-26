@@ -1,18 +1,19 @@
 package br.eb.ime.comp.nnbot.learning;
 
-public class ExampleOutput implements Arrayable {
+public class VowelsInput implements Arrayable {
 	public int getArraySize() { return 1; };
-	private boolean out;
+	private char character;
 	
-	public ExampleOutput(boolean b)
+	public VowelsInput(char c)
 	{
-		out = b;
+		character = c;
 	}
 	
 	public double[] toArray()
 	{
 		double[] d = new double[1];
-		d[0] = out? 0 : 1.;
+		d[0] = ((double) (character - 'a'))/ 13. - 1;
 		return d;
 	}
+
 }
