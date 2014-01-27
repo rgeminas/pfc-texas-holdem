@@ -40,7 +40,7 @@ public class Main {
 		}
 		cin.close();
 		
-		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.001, 0, 26, 26, 1, fw);
+		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.01, 0, 26, 26, 1, fw);
 		nnlearner.train(tset);
 		//nnlearner.
 	}
