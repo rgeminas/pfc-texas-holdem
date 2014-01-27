@@ -65,7 +65,8 @@ public class NeuralNetworkLearner<InputClass extends Arrayable, OutputClass exte
 	}
 
 	/*
-	 * Initialize weight matrices with random values.
+	 * Initialize weight matrices with non-random values.
+	 * For why he's not random, see http://www.catb.org/jargon/html/koans.html
 	 * */
 	public void resetWeights() {
 		//Random r = new Random();
