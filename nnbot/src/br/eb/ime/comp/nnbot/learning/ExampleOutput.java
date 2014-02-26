@@ -1,18 +1,18 @@
 package br.eb.ime.comp.nnbot.learning;
 
-public class ExampleOutput extends Arrayable {
-	public static final int arraySize = 1;
-	private double output;
+public class ExampleOutput implements Arrayable {
+	public int getArraySize() { return 1; };
+	private boolean out;
 	
-	public ExampleOutput()
+	public ExampleOutput(boolean b)
 	{
-		
+		out = b;
 	}
 	
 	public double[] toArray()
 	{
 		double[] d = new double[1];
-		d[0] = output;
+		d[0] = out? 1. : 0.;
 		return d;
 	}
 }
