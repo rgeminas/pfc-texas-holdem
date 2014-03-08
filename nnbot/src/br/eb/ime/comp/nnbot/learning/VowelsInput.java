@@ -4,6 +4,7 @@ public class VowelsInput implements Arrayable {
 	public int getArraySize() { return 1; };
 	private char character;
 	
+	// This is mostly a test.
 	public VowelsInput(char c)
 	{
 		character = c;
