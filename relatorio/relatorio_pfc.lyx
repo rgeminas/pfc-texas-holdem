@@ -3954,6 +3954,81 @@ all-in
  Entretanto, nenhuma aposta pode ser inferior ao valor apostado para entrar
  na partida.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONSTRUÇÃO E TESTES DA API BASE DE REDE NEURAL
+\end_layout
+
+\begin_layout Standard
+O primeiro passo tomado na construção do projeto foi o desenvolvimento de
+ uma interface genérica básica de rede neural 
+\shape italic
+feed-forward
+\shape default
+ para ser utilizada nas topologias que serão definidas nas seções subsequentes,
+ seguindo o modelo de algoritmo delineado na seção 2.
+ A base utilizada para todas elas é a de uma rede em três camadas (input,
+ camada interna e output) com ativação sigmóide.
+\end_layout
+
+\begin_layout Standard
+Para realizar o teste desta API (garantindo seu funcionamento básico de
+ acordo com princípios de TDD) e de modo a obter considerações concretas
+ no que concerne a como transformar o modelo matemático em dados que possam
+ ser utilizados diretamente na rede com convergência adequada, foi utilizado
+ um problema de classificação trivial, muito mais simples do que o tratado
+ no resto deste trabalho.
+ Os problemas utilizados foram 
+\begin_inset Quotes sld
+\end_inset
+
+dado um caracter, decidir se o mesmo representa uma vogal ou não
+\begin_inset Quotes srd
+\end_inset
+
+, e 
+\begin_inset Quotes sld
+\end_inset
+
+dada uma reta e um dos semiplanos determinados pela mesma, determinar se
+ o semiplano contem um ponto
+\begin_inset Quotes srd
+\end_inset
+
+.
+ Com os testes de convergência definidos a seguir para duas topologias distintas
+ (e outros testes não mostrados aqui), chegou-se às seguintes conclusões
+ gerais:
+\end_layout
+
+\begin_layout Itemize
+O tratamento de informação discreta como sendo continuamente distribuída
+ no intervalo [0,1] tornou a convergência muito mais lenta no primeiro caso;
+\end_layout
+
+\begin_layout Itemize
+A magnitude do fator de aprendizado 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ não influenciou no fato de a rede convergir para um valor correto em nenhum
+ dos casos, mas acelerou esta convergência.
+\end_layout
+
+\begin_layout Standard
+Estas orientações gerais foram utilizadas para a modelagem topológica das
+ redes mostradas na próxima seção.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -4174,7 +4249,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
+<lyxtabular version="3" rows="10" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -4343,12 +4418,93 @@ Inverso da quantidade de fichas no pote
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de pré-flop? 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de flop? 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de turn? 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fase do jogo (em ordem, pre-flop, flop, turn, river) 
-\begin_inset Formula $(\phi/4)$
+Jogo na fase de river? 
+\begin_inset Formula $r$
 \end_inset
 
 
@@ -4360,7 +4516,7 @@ Fase do jogo (em ordem, pre-flop, flop, turn, river)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0\leq\phi\leq1$
+\begin_inset Formula $r\in\{0,1\}$
 \end_inset
 
 
@@ -4608,10 +4764,49 @@ A topologia da rede principal é similar à utilizada para realizar a modelagem
  necessidade de se estimar a probabilidade de haver a melhor mão, uma vez
  que presumimos que se sabem as cartas na mão do próprio jogador.
  Além disso, a entrada da rede principal é acrescida da saída da rede de
- perfil.
+ perfil, da seguinte forma: a informação saída da rede que modela o perfil
+ é acrescida à entrada da rede principal para cada jogador, conforme figura.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/mainflux.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fluxo de dados da rede neural principal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
 wide false
 sideways false
@@ -4620,7 +4815,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="2">
+<lyxtabular version="3" rows="14" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -4793,8 +4988,8 @@ Inverso da quantidade de fichas no pote
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fase do jogo (em ordem, pre-flop, flop, turn, river) 
-\begin_inset Formula $(\phi/4)$
+Jogo na fase de pré-flop? 
+\begin_inset Formula $p$
 \end_inset
 
 
@@ -4806,7 +5001,88 @@ Fase do jogo (em ordem, pre-flop, flop, turn, river)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0\leq\phi\leq1$
+\begin_inset Formula $p\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de flop? 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de turn? 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t\in\{0,1\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jogo na fase de river? 
+\begin_inset Formula $r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r\in\{0,1\}$
 \end_inset
 
 
@@ -5101,22 +5377,11 @@ Diagrama das classes utilizadas no aprendizado
 
 \end_layout
 
-\begin_layout Section
-CONSTRUÇÃO E TESTES DA API BASE DE REDE NEURAL
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-O primeiro passo tomado na construção do projeto foi o desenvolvimento de
- uma interface genérica básica de rede neural 
-\shape italic
-feed-forward
-\shape default
- para ser utilizada nas três redes, seguindo o modelo de algoritmo delineado
- na seção 2 Para realizar o teste desta API
 \end_layout
 
 \begin_layout Section
@@ -5259,8 +5524,8 @@ Uma vez obtidos os dados, faz-se necessário utilizar alguma heurística para
 \begin_layout Standard
 Também é importante seccionar os jogadores em diferentes perfis para treinar
  diferentes modelagens de oponente.
- A primeira abordagem que será utilizada para tanto é a de classificar os
- jogadores dentre 
+ A primeira abordagem utilizada para tanto é a de classificar os jogadores
+ dentre 
 \shape italic
 loose 
 \shape default
@@ -5295,7 +5560,8 @@ As faixas de corte utilizadas serão determinadas da seguinte maneira: assumindo
 \shape italic
 fold
 \shape default
- e uma população com desvio padrao 
+ (mãos nas quais o jogador deu fold / total de mãos jogadas)e uma população
+ com desvio padrao 
 \begin_inset Formula $\sigma$
 \end_inset
 
