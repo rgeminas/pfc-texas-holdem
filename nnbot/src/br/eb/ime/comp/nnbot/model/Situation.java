@@ -10,4 +10,10 @@ public class Situation implements Arrayable {
 		return null;
 	}
 
+	@Override
+	public int getArraySize() {
+		// TODO Auto-generated method stub
+		return 10;
+	}
+
 }
