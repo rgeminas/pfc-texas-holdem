@@ -1410,6 +1410,17 @@ abstractname{ABSTRACT}
 \end_layout
 
 \begin_layout Abstract
+Neural networks have been used for solving decision problems to great success,
+ especially problems with imperfect/noise-laden information, of which poker
+ is a prime example.
+ Here, we analyze Texas Hold'em poker, proposing the usage of multiple topologic
+ally-arranged neural networks to model heuristically selected opponents
+ to allow for player profile analyses and subsequently formulate counterstrategi
+es with the neural network.
+ 
+\end_layout
+
+\begin_layout Abstract
 Keywords: Neural networks, machine learning, poker.
 \end_layout
 
