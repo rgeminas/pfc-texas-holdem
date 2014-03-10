@@ -1458,38 +1458,25 @@ indent
 \end_layout
 
 \begin_layout Standard
-No emprego militar da guerra, mesmo com esforços de inteligência e contra-inteli
-gência, a situação do campo de batalha é quase sempre uma representação
- incompleta da realidade, o que impossibilita a tomada de decisões pela
- simples determinação de todos os resultados possíveis pela mera simulação.
- Isto torna métodos de aprendizado de máquina importantes para o emprego
- militar 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "key-1"
-
-\end_inset
-
-.
- Deste modo, cria-se a necessidade de uma verdadeira inteligência artificial
- que tenha capacidade de tomar decisões baseada em informação incompleta.
- Devido às características de informação incompleta do jogo, o pôquer é
- frequentemente estudado na área de aprendizado de máquina tanto como objetivo
- fim quanto como um campo de testes de abordagens de aprendizado
-\begin_inset CommandInset citation
-LatexCommand cite
-key "key-2,key-3"
-
-\end_inset
-
-.
- 
+No meio militar, são inúmeras as situações onde práticas de inteligência
+ artificial e aprendizado de máquina são utilizadas, como por exemplo decisões
+ em combate militar, reconhecimento de alvos, robótica, sensoriamento remoto,
+ biometria, etc.
 \end_layout
 
 \begin_layout Standard
-O objetivo desses estudos é construir agentes autônomos que sejam capazes
- de jogar segundo alguma estratégia.
- A maior parte dos estudos na área advém do grupo de inteligência artificial
+Na área de decisões estratégicas, uma forma de simular resultados de aprendizado
+s é sua aplicação em jogos, por serem situações que promovem interações
+ entre adversários para comparar escolhas que busquem um objetivo comum.
+ Dentre os jogos mais utilizados nessas simulações, o pôquer é um dos mais
+ presentes, por possuir uma extensa bibliografia de uso em aprendizado.
+ Além disso este jogo possui situações interessantes do ponto de vista de
+ simulações militares, por conter informações ocultas do adversário, e a
+ decisão ser influenciada por blefes e jogadas do oponente.
+\end_layout
+
+\begin_layout Standard
+A maior parte dos estudos na área advém do grupo de inteligência artificial
  aplicada ao pôquer da Universidade de Alberta.
  Uma parte dos estudos e implementações de software de pôquer faz uso de
  estratégias e contra-estratégias baseadas na teoria de equilíbrio de Nash
@@ -1510,9 +1497,13 @@ key "key-2"
 \end_layout
 
 \begin_layout Standard
-Contudo, mesmo o software baseado em estratégias fixas se vale, em alguns
- casos, da utilização de algoritmos de aprendizado de máquina baseados em
- redes neurais.
+Redes Neurais consistem uma rede de unidades de processamento que através
+ da comunicação frequente, tenta dar características de aprendizado à máquina,
+ e são utilizadas nas mais diversas áreas e pesquisas.
+ E são aplamente utilizadas em problemas de informação imperfeita.
+ Mesmo softwares baseados em estratégias fixas se valem, em alguns casos,
+ da utilização de algoritmos de aprendizado de máquina baseados em redes
+ neurais.
  Este tem o objetivo de realizar, ao menos, a modelagem dos oponentes 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1595,22 +1586,36 @@ indent
 \end_layout
 
 \begin_layout Standard
-As redes neurais são utilizadas em problemas de decisão nos casos em que
- é possível despender grande quantidade de tempo para o treinamento da rede,
- e existe quantidade suficiente de dados para tal.
- O 
-\shape italic
-Texas Hold'em
-\shape default
-, a princípio, parece não ser adequado ao modelo necessário para a utilização
- de redes neurais, uma vez que dada uma mesma entrada não existe uma resposta
- 'correta', já que qualquer resposta é dependente da subsequente ação tomada
- pelo adversário.
- Deste modo, em qualquer modelo de rede neural (RN) utilizado no pôquer
- para propósitos distintos da mera modelagem de um oponente, faz-se necessario
- utilizar alguma técnica que preveja as respostas mais prováveis do oponente
- a cada ação tomada, podendo assim julgar a adequação do modelo e realizar
- uma análise mais acurada.
+No emprego militar da guerra, mesmo com esforços de inteligência e contra-inteli
+gência, a situação do campo de batalha é quase sempre uma representação
+ incompleta da realidade, o que impossibilita a tomada de decisões pela
+ simples determinação de todos os resultados possíveis por simulação.
+ Isto torna métodos de aprendizado de máquina importantes para o emprego
+ militar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
+ Deste modo, cria-se a necessidade de uma verdadeira inteligência artificial
+ que tenha capacidade de tomar decisões baseada em informação incompleta.
+ 
+\end_layout
+
+\begin_layout Standard
+Devido às características de informação incompleta do jogo, o pôquer é frequente
+mente estudado na área de aprendizado de máquina tanto como objetivo fim
+ quanto como um campo de testes de abordagens de aprendizado
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2,key-3"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1679,7 +1684,7 @@ indent
 \end_layout
 
 \begin_layout Standard
-edes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
+Redes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
  oponentes no pôquer, quanto para a resolução de problemas de decisão, como
  já foi mostrado em trabalhos correlatos
 \begin_inset CommandInset citation
@@ -1695,6 +1700,20 @@ key "key-4,key-3"
 stand-alone, 
 \shape default
 capaz de jogar competitivamente, ainda não foram completamente exploradas.
+ O 
+\shape italic
+Texas Hold'em
+\shape default
+, a princípio, não seria adequado ao modelo necessário para a utilização
+ de redes neurais, uma vez que dada uma mesma entrada não existe uma resposta
+ 'correta', já que para qualquer ação, deve-se ser levada em conta a subsequente
+ ação tomada pelo adversário.
+ Desta forma, faz-se necessario utilizar alguma técnica que preveja as respostas
+ mais prováveis do oponente a cada ação tomada, podendo assim julgar a adequação
+ do modelo e realizar uma análise mais acurada.
+ Neste caso o uso de redes neurais se enquadra, pois o jogo passa ser um
+ problema com grande quantidade de tempo e dados disponíveis para realizar
+ um treinamento.
 \end_layout
 
 \begin_layout Standard
@@ -1726,11 +1745,25 @@ indent
 \end_layout
 
 \begin_layout Standard
-Realizaram-se estudos teóricos objetivando o levantamento de dados sobre
+Na fase de estudos teóricos, objetivou-se o levantamento de dados sobre
  redes neurais como técnica de aprendizado de máquina, além do estudo do
  jogo do pôquer em si.
- Em seguida, foram construídas a topologia da rede a ser utilizada para
- modelar o oponente, e a diagramação de classes do sistema.
+ No planejamento, foram construídas a topologia da rede a ser utilizada
+ para modelar o oponente, e a diagramação de classes do sistema.
+ Foram coletados dados para o futuro treinamento da rede em um banco disponibili
+zado pela Universidade de Alberta.
+\end_layout
+
+\begin_layout Standard
+Com base na pesquisa teórica e nos exempos conhecidos de redes desenvolvidas,
+ foi modelado a RNA para o sistema de treinamento, já posteriormente desenvolvid
+a e o reconhecedor de perfis, a ser desenvolvido na próxima etapa.
+\end_layout
+
+\begin_layout Standard
+Após o término do desenvolvimento e treino da RNA, testes serão feitos quanto
+ ao desempenho da abordagem proposta nesse trabalho, para possíveis comparações
+ com abordagens já conhecidas.
 \end_layout
 
 \begin_layout Standard
@@ -5975,7 +6008,7 @@ Russell S., Norvig P.
 \series bold
 Artificial Intelligence: A Modern Approach (3rd Edition)
 \series default
-, 20??.
+, 2010.
 \end_layout
 
 \begin_layout Bibliography
