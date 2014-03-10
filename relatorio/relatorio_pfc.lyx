@@ -553,7 +553,7 @@ CEP: 22290- 270
 
 \size small
 Este exemplar é de propriedade do Instituto Militar de Engenharia, que poderá
- incluí-lo em base de dados, armazenar em computa dor, microfilmar ou adotar
+ incluí-lo em base de dados, armazenar em computador, microfilmar ou adotar
  qualquer forma de arquivamento.
 \end_layout
 
@@ -1335,7 +1335,8 @@ Texas Hold'em
 \shape default
 , é proposta a utilização de várias redes neurais na modelagem de oponentes
  heuristicamente selecionados para permitir uma melhor análise de perfis
- de jogadores para a formulação implícita de contra-estratégias pela rede.
+ de jogadores, resultando em formulações implícitas de contra-estratégias
+ pela rede.
  A adequação de redes neurais nesses casos já foi comprovada em diversos
  trabalhos.
 \end_layout
@@ -1510,10 +1511,10 @@ key "key-2"
 
 \end_inset
 
-, com algoritmos de avaliação sendo utilizados principalmente com o objetivo
- de selecionar a estratégia mais interessante para a situação atual dentre
- estas estratégias conforme resposta do oponente.
- Deste modo, almeja se manter a menor quantidade de tempo possível em uma
+, com algoritmos de avaliação sendo utilizados, principalmente, com o objetivo
+ de selecionar a estratégia mais interessante para a situação atual conforme
+ resposta do oponente.
+ Deste modo, almeja-se manter a menor quantidade de tempo possível em uma
  estratégia percebida como não-ideal.
  Esta abordagem é baseada mais fortemente no fundamento matemático da teoria
  do jogo do que no melhoramento da estratégia em si.
@@ -1522,7 +1523,8 @@ key "key-2"
 \begin_layout Standard
 Contudo, mesmo o software baseado em estratégias fixas se vale, em alguns
  casos, da utilização de algoritmos de aprendizado de máquina baseados em
- redes neurais para realizar ao menos a modelagem dos oponentes 
+ redes neurais.
+ Este tem o objetivo de realizar, ao menos, a modelagem dos oponentes 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-3"
@@ -1530,24 +1532,25 @@ key "key-3"
 \end_inset
 
  de modo a prever as probabilidades de o oponente responder de certa forma
- dado seu histórico de jogadas, como no caso de uma das máquinas descritas
- em 
+ dado seu histórico de jogadas.
+ As máquinas descritas em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "opponent_modeling"
 
 \end_inset
 
-, em que a abordagem utilizada para construção do agente-fim não é descrita,
- contudo, redes neurais são usadas para prever as jogadas do oponente, iniciando
--se com uma rede limpa que é consequentemente adaptada à medida que o oponente
- age.
+ exemplificam isso, na qual a abordagem utilizada para construção do agente-fim
+ não é descrita.
+ Entretanto, redes neurais são usadas para prever as jogadas do oponente,
+ iniciando-se com uma rede limpa que é consequentemente adaptada à medida
+ que o oponente age.
  Uma desvantagem dessa utilização da rede neural é a possível infactibilidade
  de se treinar a rede satisfatoriamente em tempo real em um ambiente com
  agentes humanos.
- Mesmo com essa desvantagem, a modelagem de redes neurais mostra-se mais
- acurada do que uma modelagem baseada puramente em pesos relativos a cada
- tupla ação-mão possível como a mostrada em 
+ Mesmo com essa desvantagem, a modelagem de redes neurais se mostra mais
+ promissora que uma modelagem baseada puramente em pesos relativos a cada
+ tupla ação-mão possível, tal como em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "opponent_modeling_old"
@@ -1566,12 +1569,12 @@ key "key-4"
 
 \end_inset
 
-, contudo sem tomar em consideração as especificidades do modo com que o
- oponente joga, levando a uma abordagem relativamente simples no que concerne
- a modelagem em si da rede, focando na evolução dos agentes pré-determinados
- via combinação dos mesmos e utilização de heurísticas co-evolucionárias
- como halls da fama para realizar a seleção dos agentes que mais se adaptassem,
- descartando modelos menos eficientes.
+, porém sem tomar em consideração as especificidades do modo de jogo do
+ oponente, levando a uma abordagem relativamente simples no que concerne
+ a modelagem da rede em si, e focando na evolução dos agentes pré-determinados
+ via combinação dos mesmos e utilização de heurísticas co-evolucionárias,
+ como o algoritmo halls da fama, por exemplo, que realiza a seleção dos
+ agentes que mais se adaptam, descartando modelos menos eficientes.
 \end_layout
 
 \begin_layout Standard
@@ -1603,24 +1606,22 @@ indent
 \end_layout
 
 \begin_layout Standard
-A utilização de redes neurais aplicadas a problemas de decisão em casos
- em que pode-se utilizar de grandes quantidades de tempo para realizar o
- treinamento da rede e no qual existe quantidade suficiente de dados para
- a realização do mesmo.
+As redes neurais são utilizadas em problemas de decisão nos casos em que
+ é possível despender grande quantidade de tempo para o treinamento da rede,
+ e existe quantidade suficiente de dados para tal.
  O 
 \shape italic
 Texas Hold'em
 \shape default
-, em princípio, parece não se prestar exatamente ao modelo necessário para
- a utilização de redes neurais, uma vez que dada uma mesma entrada, não
- existe uma resposta 'correta', dado que a adequação de qualquer resposta
- é dependente da subsequente ação tomada pelo adversário.
+, a princípio, parece não ser adequado ao modelo necessário para a utilização
+ de redes neurais, uma vez que dada uma mesma entrada não existe uma resposta
+ 'correta', já que qualquer resposta é dependente da subsequente ação tomada
+ pelo adversário.
  Deste modo, em qualquer modelo de rede neural (RN) utilizado no pôquer
- para propósitos distintos da mera modelagem de um oponente (dado seu histórico)
- para uso em outra aplicação, faz-se necessario utilizar alguma técnica
- de modo a prever as respostas mais prováveis do oponente a cada ação tomada,
- podendo assim julgar sua adequação, possibilitando assim uma análise mais
- acurada.
+ para propósitos distintos da mera modelagem de um oponente, faz-se necessario
+ utilizar alguma técnica que preveja as respostas mais prováveis do oponente
+ a cada ação tomada, podendo assim julgar a adequação do modelo e realizar
+ uma análise mais acurada.
 \end_layout
 
 \begin_layout Standard
@@ -1652,13 +1653,12 @@ indent
 \end_layout
 
 \begin_layout Standard
-No presente trabalho, tenciona-se melhorar a maneira com que uma análise
- prévia do oponente pode ser utilizada como entrada adicional para uma rede
- neural de forma a conseguir classificá-lo em um dentre uma série de perfis
- distintos pré-gerados e treinados, também modelados utilizando redes neurais,
- informação esta que será utilizada como parâmetro de entrada pela rede
- de modo a conseguir gerar uma contra-estratégia para um determinado perfil
- de oponente.
+No presente trabalho, objetiva-se melhorar o modo com que uma análise prévia
+ do oponente pode ser utilizada como entrada adicional para uma rede neural,
+ de forma a conseguir classificá-lo em um, dentre uma série de perfis distintos
+ pré-gerados, treinados e também modelados utilizando redes neurais.
+ Tal informação será utilizada como parâmetro de entrada pela rede para
+ gerar uma contra-estratégia específica para determinado perfil de oponente.
 \end_layout
 
 \begin_layout Standard
@@ -1690,8 +1690,8 @@ indent
 \end_layout
 
 \begin_layout Standard
-Redes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
- oponentes no pôquer quanto para a resolução de problemas de decisão, como
+edes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
+ oponentes no pôquer, quanto para a resolução de problemas de decisão, como
  já foi mostrado em trabalhos correlatos
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1700,20 +1700,12 @@ key "key-4,key-3"
 \end_inset
 
 .
- Contudo, as implicações decorrentes da utilização de uma rede neural como
- agente 
+ Contudo, as implicações decorrentes do uso de uma rede neural como agente
+ 
 \shape italic
-stand-alone 
+stand-alone, 
 \shape default
-capaz de jogar competitivamente ainda não foram completamente exploradas.
- A utilização de uma rede neural como estratégia de jogo está condicionada
- aos jogadores cujos jogos forem usados para treinar a rede, estando deste
- modo sujeitos a certa exploração por parte de um oponente que jogasse de
- modo anormal quando comparado com os oponentes do jogador base nos jogos
- utilizados para testar a rede.
- Contudo, a utilização de perfis de jogadores e a subsequente classificação
- dos oponentes dentre estes perfis pode ser utilizada de modo a diminuir
- o impacto desta potencial fraqueza.
+capaz de jogar competitivamente, ainda não foram completamente exploradas.
 \end_layout
 
 \begin_layout Standard
@@ -1745,11 +1737,11 @@ indent
 \end_layout
 
 \begin_layout Standard
-Primeiramente, realizaram-se estudos teóricos objetivando o levantamento
- de dados sobre redes neurais como técnica de aprendizado de máquina, além
- do estudo do jogo do pôquer em si.
+Realizaram-se estudos teóricos objetivando o levantamento de dados sobre
+ redes neurais como técnica de aprendizado de máquina, além do estudo do
+ jogo do pôquer em si.
  Em seguida, foram construídas a topologia da rede a ser utilizada para
- modelar o oponente e a diagramação de classes do sistema como um todo.
+ modelar o oponente, e a diagramação de classes do sistema.
 \end_layout
 
 \begin_layout Standard
@@ -2059,8 +2051,6 @@ Os dendritos recebem sinais elétricos dos outros neurônios através das sinaps
 \begin_layout Standard
 Conjuntos de redes de neurônios, são agrupados em áreas de responsabilidades
  como cerebelo, hipotálamo, córtex, etc.
- Aumentando a complexibilidade do sistema e intensificando o poder de processame
-nto do cérebro, mas isso foge do escopo das redes neurais tradicionais.
 \end_layout
 
 \begin_layout Standard
@@ -2260,7 +2250,7 @@ nto das entradas vindas das conexões.
  entrada, geralmente uma combinação linear destas ou uma análise comparativa
  dessa combinação.
  Essa saída só pode depender dos elementos de entrada, sem influência de
- dados externos e deve ser único.
+ dados externos e deve ser única.
 \end_layout
 
 \begin_layout Standard
@@ -2570,8 +2560,8 @@ sigmoid
  o problema da função step, deixando-a totalmente continua.
  Essas características permitem uma transição gradual e não linear entre
  dois estados.
- Este tipo de função é utilizada também em outras áreas como sociologia
- e química.
+ Este tipo de função é utilizada também em outras áreas de estudo como sociologi
+a e química.
  
 \end_layout
 
@@ -2614,11 +2604,12 @@ Função sigmóide
 
 \begin_layout Standard
 Neste trabalho será utilizada a função de limiar sigmóide, com uma otimização
- que é muito utilizada no ramo das redes neurais, que é mudar os limites
- da função para não trabalhar com números negativos, serão usados os valores
- da sigmoid variando entre 0 e 1, sendo aceito e não aceito respectivamente.
- A principal utilidade da sigmóide no que tange uma rede neural é que sua
- derivada é exprimível de uma forma bastante simples: 
+ que é muito utilizada no ramo das redes neurais, que é a mudança dos limites
+ da função para não trabalhar com números negativos.
+ Serão usados os valores da sigmoid variando entre 0 e 1, sendo aceito e
+ não aceito respectivamente.
+ A principal utilidade da sigmóide, no que tange a uma rede neural, é que
+ sua derivada é expressa de uma forma bastante simples: 
 \begin_inset Formula $f\text{´(x)=f(x)*(1-f(x))}$
 \end_inset
 
@@ -2628,8 +2619,8 @@ Neste trabalho será utilizada a função de limiar sigmóide, com uma otimizaç
 backpropagation
 \shape default
 , que depende desta derivada.
- Sendo o cálculo da mesma rápidamente efetuado, a iteração do algoritmo
- torna-se mais rápida.
+ Com o cálculo da mesma rápidamente efetuado, a iteração do algoritmo se
+ torna mais rápida.
 \end_layout
 
 \begin_layout Standard
@@ -2771,7 +2762,7 @@ Conexão feed-forward
 \end_layout
 
 \begin_layout Standard
-Na retro-alimentação, os sinais de saída são utilizadas para alimentar camadas
+Na retro-alimentação, os sinais de saída são utilizados para alimentar camadas
  anteriores.
 \end_layout
 
@@ -4178,7 +4169,7 @@ key "key-3"
 \end_inset
 
 .
- Por meio da modularização e da classificação em perfi, tenciona-se diminuir
+ Por meio da modularização e da classificação em perfis, tenciona-se diminuir
  o volume de dados necessário para se realizar o treinamento da rede até
  que ela possa jogar de maneira satisfatória.
 \end_layout
@@ -5403,6 +5394,8 @@ reference "fig:Diagrama-de-classe-fachada"
 
 , descrevendo as classes utilizadas na API de aprendizado e na interface
  com o banco de dados de mãos.
+ O programa final será composto do classificador e da rede principal.
+ Os perfis são utilizados apenas para treinar estas duas redes.
 \end_layout
 
 \begin_layout Standard
@@ -5413,8 +5406,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-O programa final será composto do classificador e da rede principal.
- Os perfis são utilizados apenas para treinar estas duas redes.
 \begin_inset Graphics
 	filename imagens/cdlearning.png
 	scale 80
@@ -5475,17 +5466,72 @@ indent
 \end_layout
 
 \begin_layout Standard
-Para realizar o treinamento da rede, serão usados um ou mais banco de dados
- de mãos de jogos já existentes, que serão unificados em uma única estrutura
- de dados apresentada na figura 
+Para realizar o treinamento da rede, foram coletados dados de um extenso
+ banco chamado IRC Poker Database, que foi adaptado na estrutura de dados
+ apresentada na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-das-classes"
 
 \end_inset
 
- e inseridos em um banco de dados MySQL.
- Para realizar a interface com o banco de dados, utilizar-se-á a estrutura
+ e inserido em um banco de dados MySQL.
+ 
+\end_layout
+
+\begin_layout Subsection
+IRC Poker Database
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Antes da existência de serviços de poker online com dinheiro real, os entusiasta
+s do jogo podiam treinar e testar suas táticas em servidores do IRC preparados
+ para o jogo.
+ Essa estrutura de salas de jogos se desenvolveu a ponto de serem criados
+ canais para diferentes modalidades e experiência no jogo.
+\end_layout
+
+\begin_layout Standard
+Em 1995, Michael Maurer, criou um programa chamado 
+\begin_inset Quotes sld
+\end_inset
+
+Observer
+\begin_inset Quotes srd
+\end_inset
+
+, que logava nas salas de jogos, e registrava todas as mãos jogadas (exceto
+ as mãos cobertas), resultando em um banco de dados de mais de 10 milhões
+ de jogadas, dos mais diversos níveis de jogadores, desde principiantes
+ até profissionais, como por exemplo Chris Ferguson, que ganhou 5 vezes
+ o World Series of Poker, inclusive sendo campeão mundial do evento principal
+ em 2000.
+\end_layout
+
+\begin_layout Standard
+Neste trabalho serão utilizados os dados de 4 canais deste banco, consistindo
+ em mais de 3 GB de dados, e para fazer a adaptação à estrutura citada acima,
+ foram utilizadas rotinas em Java, Shell Script e SQL.
+\end_layout
+
+\begin_layout Standard
+Para realizar a interface com o banco de dados, utilizar-se-á a estrutura
  de classes descritas nas figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5574,6 +5620,26 @@ Diagrama de classe para a fachada
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Seleção dos dados
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
 \end_layout
 
 \end_inset
