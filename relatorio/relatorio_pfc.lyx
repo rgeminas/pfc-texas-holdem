@@ -4240,6 +4240,47 @@ As saídas desta rede neural de são representativas do perfil do jogador
  exposto à situação atual de jogo.
 \end_layout
 
+\begin_layout Subsubsection
+ESTIMAÇÃO DAS PROBABILIDADES
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um dos problemas de maior complexidade encontrados ao se realizar a transformaçã
+o dos dados puros para a parametrização requerida pela rede foi, dada a
+ situação da mesa, encontrar de fato a probabilidade de a mão ser a melhor
+ da mesa.
+ Existem cálculos que computam a probabilidade de se atingir um determinado
+ jogo (os chamados cálculos de outs), contudo, estas probabilidades não
+ represntam a chance de se vencer a mão de fato.
+ Por outro lado, o número de mãos necessário para se determinar a probabilidade
+ exata da melhor mão é intratável sem a utilização de enormes tabelas de
+ consulta que não caberiam na memória física disponível.
+ Decidimos, então, utilizar o método de Monte Carlo (amostragem aleatória)
+ para determinar uma probabilidade aproximada, contando quantas vitórias
+ ocorreram na amostragem.
+ Tal método é tanto mais preciso do que a estimação via Outs (que não leva
+ em conta de forma alguma o jogo do oponente), quanto é quase tão rápido
+ quanto o uso de tabelas de consulta sem o consequente uso excessivo de
+ memória.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float table
 wide false
@@ -4590,7 +4631,24 @@ Domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-Probabilidade de fold
+Fold?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+ 
+\begin_inset Formula $f_{r}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4599,7 +4657,7 @@ Probabilidade de fold
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f_{r}\in[0,1]$
+\begin_inset Formula $f_{r}\in\{0,1\}$
 \end_inset
 
 
@@ -4613,7 +4671,11 @@ Probabilidade de fold
 \begin_inset Text
 
 \begin_layout Plain Layout
-Probabilidade de call
+Call? 
+\begin_inset Formula $k_{r}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4622,7 +4684,7 @@ Probabilidade de call
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $k_{r}\in[0,1]$
+\begin_inset Formula $k_{r}\in\{0,1\}$
 \end_inset
 
 
@@ -4636,7 +4698,11 @@ Probabilidade de call
 \begin_inset Text
 
 \begin_layout Plain Layout
-Probabilidade de raise
+Raise? 
+\begin_inset Formula $c_{r}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4645,7 +4711,7 @@ Probabilidade de raise
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $c_{r}\in[0,1]$
+\begin_inset Formula $c_{r}\in\{0,1\}$
 \end_inset
 
 
@@ -5377,13 +5443,6 @@ Diagrama das classes utilizadas no aprendizado
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 SELEÇÃO DE JOGADORES PARA TREINAMENTO DA REDE
 \end_layout
@@ -5488,7 +5547,7 @@ status open
 
 \end_inset
 
-
+focando
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -5586,6 +5645,7 @@ tight
 loose
 \shape default
  e o jogador entre estas duas faixas como moderado.
+ 
 \end_layout
 
 \begin_layout Standard
