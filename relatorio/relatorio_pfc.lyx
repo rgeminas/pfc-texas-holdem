@@ -249,7 +249,7 @@ RIO DE JANEIRO
 
 \series bold
 \size small
-2013
+2014
 \end_layout
 
 \begin_layout Standard
@@ -414,7 +414,7 @@ Projeto de Final de Curso apresentado ao Curso de Engenharia de Computação
 
 \size small
 Orientador: Prof.
- Marcos Veloso Peixoto – D.C.
+ Marcos Veloso Peixoto, D.I.
 \end_layout
 
 \end_inset
@@ -449,7 +449,7 @@ RIO DE JANEIRO
 \align center
 
 \size small
-2013
+2014
 \end_layout
 
 \begin_layout Standard
@@ -723,7 +723,7 @@ n f.
 \begin_layout Plain Layout
 
 \size small
-Dissertação (graduação) - Instituto Militar de Engenharia, 2013.
+Dissertação (graduação) - Instituto Militar de Engenharia, 2014.
 \end_layout
 
 \begin_layout Plain Layout
@@ -887,7 +887,7 @@ Aprovado em __/__/____ pela seguinte Banca Examinadora:
 \align center
 
 \size small
-Orientador: Marcos Veloso Peixoto – D.I.
+Orientador: Marcos Veloso Peixoto, D.I.
 \end_layout
 
 \begin_layout Standard
@@ -968,7 +968,7 @@ RIO DE JANEIRO
 \align center
 
 \size small
-2013
+2014
 \end_layout
 
 \begin_layout Standard
@@ -1857,7 +1857,7 @@ Uma importante técnica de aprendizado de máquina atualmente, é a estrutura
  Por esse motivo, é a técnica que mais auxilia no entendimento da inteligência
  humana, e que se espera obter uma inteligência artificial mais próxima
  daquela.
- O exposto abaixo está relatado em 
+ O exposto abaixo foi baseado no exposto em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-5-2"
@@ -1875,7 +1875,7 @@ key "key-5-2"
 \end_layout
 
 \begin_layout Subsection
-HISTÓRICO
+HISTÓRIC
 \end_layout
 
 \begin_layout Standard
@@ -2018,8 +2018,11 @@ O cérebro humano é composto por unidades chamadas neurônios, cerca de 100
  Apesar de cada neurônio trabalhar na faixa de menos de 1 kHz (uma taxa
  muito baixa se comparado a um computador moderno que trabalha em GHz),
  seu poder de processamento é muito elevado devido às múltiplas conexões
- entre eles e pela comunicação rápida, que permite que os 10¹¹ neurônios
- trabalhem ao mesmo tempo.
+ entre eles e pela comunicação rápida, que permite que os 
+\begin_inset Formula $10^{11}$
+\end_inset
+
+ neurônios trabalhem ao mesmo tempo.
 \end_layout
 
 \begin_layout Standard
@@ -2643,7 +2646,7 @@ Neste trabalho será utilizada a função de limiar sigmóide, com uma otimizaç
  não aceito respectivamente.
  A principal utilidade da sigmóide, no que tange a uma rede neural, é que
  sua derivada é expressa de uma forma bastante simples: 
-\begin_inset Formula $f\text{´(x)=f(x)*(1-f(x))}$
+\begin_inset Formula $f'(x)=f(x)*(1-f(x))$
 \end_inset
 
 .
@@ -2951,11 +2954,11 @@ A atualização dos pesos neste modelo, é feita iniciando-se pelo erro da
 
 \begin_layout Standard
 O erro da útima saída é dado por 
-\begin_inset Formula $\varepsilon_{i}(t)=S(t)(1\text{−}S(t))(di(t)\text{−}S(t))$
+\begin_inset Formula $\varepsilon_{i}(t)=S(t)(1\text{-}S(t))(d_{i}(t)\text{-}S(t))$
 \end_inset
 
  e com ele são ajustados os pesos da última camada por 
-\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon i(t)e_{n}(t)$
+\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon_{i}(t)e_{n}(t)$
 \end_inset
 
 .
@@ -2966,7 +2969,7 @@ O erro da útima saída é dado por
 , denominado taxa de aprendizado, tem a seguinte importância: quanto menor,
  mais lenta e precisa é a convergência do algorítmo.Com isso, os erros das
  camadas anteriores podem ser calculados por 
-\begin_inset Formula $\varepsilon_{i}(t)=e_{n}(t)(1\text{−}e_{n}(t))\underset{k}{\sum}\varepsilon_{k}p_{ik}(t)$
+\begin_inset Formula $\varepsilon_{i}(t)=e_{n}(t)(1\text{-}e_{n}(t))\underset{k}{\sum}\varepsilon_{k}p_{ik}(t)$
 \end_inset
 
 , onde 
@@ -2979,7 +2982,7 @@ O erro da útima saída é dado por
 
  é o peso associado a esta ligação.
  E com este erro recalcula-se os pesos das camadas intermediárias 
-\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon_{i}(t)e_{n}(t)+\mu(p_{i}(t)\text{−}p_{i}(t\text{−}1))$
+\begin_inset Formula $p_{i}(t+1)=p_{i}(t)+\alpha\varepsilon_{i}(t)e_{n}(t)+\mu(p_{i}(t)-p_{i}(t-1))$
 \end_inset
 
  .
@@ -2997,8 +3000,8 @@ O erro da útima saída é dado por
 \begin_inset Formula $\mu$
 \end_inset
 
-é normalmente feita de modo empírico, de acordo com os dados possuídos e
- a topologia da rede.
+ é normalmente feita de modo empírico, de acordo com os dados possuídos
+ e a topologia da rede.
 \end_layout
 
 \begin_layout Standard
@@ -4003,6 +4006,22 @@ CONSTRUÇÃO E TESTES DA API BASE DE REDE NEURAL
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 O primeiro passo tomado na construção do projeto foi o desenvolvimento de
  uma interface genérica básica de rede neural 
 \shape italic
@@ -4901,10 +4920,6 @@ Fluxo de dados da rede neural principal
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5508,12 +5523,49 @@ reference "fig:Diagrama-das-classes"
 
 \end_inset
 
- e inserido em um banco de dados MySQL.
+ e inserido em um banco de dados MySQL, cujo esquema está descrito na figura
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/db_model.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama relacional do banco de dados utilizado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-IRC Poker Database
+IRC POKER DATABASE
 \end_layout
 
 \begin_layout Standard
@@ -5661,7 +5713,7 @@ Diagrama de classe para a fachada
 \end_layout
 
 \begin_layout Subsection
-Seleção dos dados
+SELEÇÃO DOS DADOS
 \end_layout
 
 \begin_layout Standard
@@ -5756,13 +5808,6 @@ loose
 \shape default
  e o jogador entre estas duas faixas como moderado.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
