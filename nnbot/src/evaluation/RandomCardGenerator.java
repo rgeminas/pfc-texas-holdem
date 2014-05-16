@@ -1,10 +1,14 @@
 package evaluation;
 
+import java.util.ArrayList;
+
+import br.eb.ime.comp.nnbot.model.Card;
+
 public class RandomCardGenerator {
-	double estimateFlopOddsByMonteCarlo(Card m1, Card m2, Card t1, Card t2, Card t3, Card t4)
-		{
-			
-			return 0;
-		}
+	Card GenerateRandomCard(ArrayList<Card> cardsAlreadyOut)
+	{
+		
+		return null;
+	}
 }
 

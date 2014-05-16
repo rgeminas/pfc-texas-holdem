@@ -26,45 +26,53 @@ public class HandEvaluator {
 		Collections.sort(mine);
 		Collections.sort(theirs);
 		
-		// check for straight
 		int lastCard = -1;
-		Suit lastSuit;
-		int cardsTilStraight = 4;
+		int cardsTilStraight = 5;
 		boolean isStraighting = true;
-		ArrayList<Card> flushableCards = new ArrayList<Card>();
+		ArrayList<Integer> countPerSuit = new ArrayList<Integer>();
+		ArrayList<Card> maxCardPerSuit = new ArrayList<Card>();
+		Card highCard;
+		for (int i = 0; i < 4; i++)
+		{
+			countPerSuit.add(0);
+			maxCardPerSuit.add(new Card(Value.TWO, Suit.SPADES));
+		}
+		// For checking pairs, threes and quads;
+		ArrayList<Integer> countPerValue = new ArrayList<Integer>();
+		{
+			countPerValue.add(0);
+		}
 		for (Card a : mine)
 		{
+			countPerSuit.set(a.getSuit().ordinal(), countPerSuit.get(a.getSuit().ordinal()) + 1);
+			if (maxCardPerSuit.get(a.getSuit().ordinal()).compareTo(a) < 0)
+			{
+				maxCardPerSuit.set(a.getSuit().ordinal(), a);	
+			}
+			
+			countPerValue.set(a.getValue().ordinal(), countPerSuit.get(a.getValue().ordinal()) + 1);
+			lastCard = a.getValue().ordinal();
 			if (lastCard == -1) 
 			{
-				lastCard = a.getValue().ordinal();
-				flushableCards.add(a);
 				continue;
 			}
 			else if (a.getValue().ordinal() == lastCard)
 			{
-				flushableCards.add(a);
 				continue;
 			}
 			if (Math.abs(a.getValue().ordinal() - lastCard) == 1)
 			{
-				lastCard = a.getValue().ordinal();
-				flushableCards.add(a);
 				cardsTilStraight--;
-				if (cardsTilStraight == 0) break;
+				highCard = a;
 			}
 			else
 			{
-				flushableCards.clear();
 				lastCard = a.getValue().ordinal();
-				flushableCards.add(a);
 				cardsTilStraight = 4;
 			}
 		}
-		// Then we have a straight. Check for straight flush.
-		if (cardsTilStraight == 0)
-		{
-			
-		}
+		
+		
 		
 		return true;
 	}

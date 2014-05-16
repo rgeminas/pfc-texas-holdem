@@ -24,23 +24,23 @@ public class Main {
 		
 		ArrayList<TrainingSet<VowelsInput, ExampleOutput>> tset = new ArrayList<TrainingSet<VowelsInput, ExampleOutput>>();
 		BufferedReader cin = new BufferedReader(new FileReader(
-				"./testsets/100k_vowels.txt"
+				"./testsets/10k_edges.txt"
 				));
-		FileWriter fw = new FileWriter("./testsets/100k_vowels.out");
+		FileWriter fw = new FileWriter("./testsets/10k_edges.out");
 		String line = cin.readLine();
 		while (line != null)
 		{
 			String[] strings = line.split("[ \t]+");
 			TrainingSet<VowelsInput, ExampleOutput> ts = new TrainingSet<VowelsInput, ExampleOutput>();
-	        ts.setInput(new VowelsInput(strings[0].charAt(0)));
-	        ts.setOutput(new ExampleOutput(strings[1].charAt(0) == '1'));
+	        ts.setInput(new VowelsInput(Double.parseDouble(strings[0]), Double.parseDouble(strings[1])));
+	        ts.setOutput(new ExampleOutput(strings[2].equals("1")));
 	        
 	        tset.add(ts);
 	        line = cin.readLine();
 		}
 		cin.close();
 		
-		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.01, 0, 26, 26, 1, fw);
+		NeuralNetworkLearner<VowelsInput, ExampleOutput> nnlearner = new NeuralNetworkLearner<VowelsInput, ExampleOutput>(.1, 0, 2, 6, 1, fw);
 		nnlearner.train(tset);
 		//nnlearner.
 	}
