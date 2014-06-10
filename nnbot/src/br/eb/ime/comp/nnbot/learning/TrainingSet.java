@@ -4,6 +4,12 @@ public class TrainingSet<InputClass, OutputClass> {
 	private InputClass input;
 	private OutputClass output;
 	
+	public TrainingSet(InputClass ic, OutputClass oc)
+	{
+		input = ic;
+		output = oc;
+	}
+	
 	public InputClass getInput() {
 		return input;
 	}

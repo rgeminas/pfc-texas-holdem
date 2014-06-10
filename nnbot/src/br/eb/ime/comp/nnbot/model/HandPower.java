@@ -1,7 +1,7 @@
 package br.eb.ime.comp.nnbot.model;
 
 public enum HandPower {
-	NONE, 
+	HI_CARD, 
 	PAIR, 
 	TWO_PAIR, 
 	THREE,

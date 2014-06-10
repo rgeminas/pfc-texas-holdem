@@ -2,6 +2,8 @@ package br.eb.ime.comp.nnbot.model;
 
 import java.util.ArrayList;
 
+import evaluation.RandomCardGenerator;
+
 public class OddsEstimator {
 	
 	public static final double[][] preFlopOdds = {
@@ -20,7 +22,7 @@ public class OddsEstimator {
 	    {55, 50, 47, 44, 42, 39, 37, 35, 34, 34, 33, 31, 50}
 	};
 
-	public static final int triesPerOpponent = 1000000;
+	public static final int triesPerOpponent = 500;
 	
 	double estimateOddsOnPreFlop(Card first, Card second, int opponentCount)
 	{
@@ -39,21 +41,65 @@ public class OddsEstimator {
 		return baseOdds / 100;
 	}
 	
-	double estimateFlopOddsByMonteCarlo(Card m1, Card m2, Card t1, Card t2, Card t3)
+	static public double estimateFlopOddsByMonteCarlo(ArrayList<Card> mine, ArrayList<Card> table, ArrayList<ArrayList<Card>> opponents)
 	{
-		ArrayList<Card> cards = new ArrayList<Card>();
-		cards.add(m1); cards.add(m2); cards.add(t1); cards.add(t2); cards.add(t3);
+		double winCount = 0;
 		
-		return 0;
-	}
-	double estimateFlopOddsByMonteCarlo(Card m1, Card m2, Card t1, Card t2, Card t3, Card t4)
-	{
+		ArrayList<Card> baseAlreadyOut = new ArrayList<Card>();
+		baseAlreadyOut.addAll(mine); baseAlreadyOut.addAll(table);
+		for (ArrayList<Card> opp : opponents)
+		{
+			baseAlreadyOut.addAll(opp);
+		}
 		
-		return 0;
-	}
-	double estimateFlopOddsByMonteCarlo(Card m1, Card m2, Card t1, Card t2, Card t3, Card t4, Card t5)
-	{
-		
-		return 0;
+		for (int i = 0; i < 500; i++)
+		{
+			ArrayList<Card> newOut = new ArrayList<Card>();
+			newOut.addAll(baseAlreadyOut);
+
+
+			ArrayList<Card> newTable = new ArrayList<Card>();
+			newTable.addAll(table);
+			while (newTable.size() < 5)
+			{
+				Card c = RandomCardGenerator.randomCard(newOut);
+				newTable.add(c);
+				newOut.add(c);
+			}
+			
+			ArrayList<Card> newMine = new ArrayList<Card>();
+			newMine.addAll(mine);
+			
+			while (newMine.size() < 2)
+			{
+				Card c = RandomCardGenerator.randomCard(newOut);
+				newMine.add(c);
+				newOut.add(c);
+			}
+			newMine.addAll(newTable);
+
+			
+			ArrayList<ArrayList<Card>> newOpps = new ArrayList<ArrayList<Card>>(); 
+			for (ArrayList<Card> opp : opponents)
+			{
+				ArrayList<Card> newOpp = new ArrayList<Card>();
+				newOpp.addAll(opp);
+				
+				while (newOpp.size() < 2)
+				{
+					Card c = RandomCardGenerator.randomCard(newOut);
+					newOpp.add(c);
+					newOut.add(c);
+				}
+				newOpp.addAll(newTable);
+				newOpps.add(newOpp);
+			}
+			newMine.addAll(newTable);
+			if (HandEvaluator.compare(newMine, newOpps, newTable))
+			{
+				winCount += 1;
+			}
+		}
+		return winCount / 500;
 	}
 }
