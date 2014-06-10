@@ -664,7 +664,7 @@ Poker Texas Hold'em
 \begin_layout Plain Layout
 
 \size small
-Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Genignani
+Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani
 \end_layout
 
 \begin_layout Plain Layout
@@ -1008,16 +1008,66 @@ status open
 \begin_layout Plain Layout
 
 \size small
-“ A primeira coisa a entender é que você não entende”.
+“In the days when Sussman was a novice, Minsky once came to him as he sat
+ hacking at the PDP-6.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ $
+“What are you doing?”, asked Minsky.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“I am training a randomly wired neural net to play Tic-Tac-Toe” Sussman
+ replied.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“Why is the net wired randomly?”, asked Minsky.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“I do not want it to have any preconceptions of how to play”, Sussman said.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Minsky then shut his eyes.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“Why do you close your eyes?”, Sussman asked his teacher.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+“So that the room will be empty.”
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+At that moment, Sussman was enlightened.”.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $
 \end_inset
 
-SOREN AABYE KIERKEGAARD
+Anônimo
 \end_layout
 
 \end_inset
@@ -1328,7 +1378,7 @@ abstractname{RESUMO}
 \begin_layout Abstract
 As redes neurais vem sendo usadas para a resolução de problemas de decisão
  com grande sucesso, especialmente problemas de informação imperfeita ou
- ruidosa dos quais o pôquer é um exemplo.
+ ruidosa, dos quais o pôquer é um exemplo.
  Neste trabalho, aplicado ao jogo do pôquer 
 \shape italic
 Texas Hold'em
@@ -1725,10 +1775,10 @@ correta
  tomada pelo adversário.
  Desta forma, faz-se necessario utilizar alguma técnica que preveja as respostas
  mais prováveis do oponente a cada ação tomada, podendo assim julgar a adequação
- do modelo e realizar uma análise mais acurada.
- Neste caso, o uso de redes neurais se enquadra, pois o jogo passa ser um
- problema com grande quantidade de tempo e dados disponíveis para realizar
- um treinamento.
+ do modelo e realizar uma análise mais correta.
+ Neste caso, o uso de redes neurais se enquadra naturalmente, pois o jogo
+ passa ser um problema com grande quantidade de tempo e dados disponíveis
+ para realizar um treinamento.
 \end_layout
 
 \begin_layout Standard
@@ -1765,13 +1815,13 @@ Na fase de pesquisa teórica, objetivou-se o levantamento de dados sobre
  jogo do pôquer em si.
  No planejamento, foram construídas a topologia da rede a ser utilizada
  para modelar o oponente, e a diagramação de classes do sistema.
- Foram coletados dados para o futuro treinamento da rede em um banco disponibili
-zado pela Universidade de Alberta.
+ Foram coletados dados para o treinamento da rede em um banco disponibilizado
+ pela Universidade de Alberta.
 \end_layout
 
 \begin_layout Standard
 Com base na pesquisa teórica e nos exempos conhecidos de redes desenvolvidas,
- foi modelado a RNA para o sistema de treinamento, e o reconhecedor de perfis.
+ foi modelada a RNA para o sistema de treinamento, e o reconhecedor de perfis.
 \end_layout
 
 \begin_layout Standard
@@ -1814,15 +1864,14 @@ No capítulo 2, será apresentada a fundamentação teórica acerca de redes
 \shape italic
 Texas Hold'em
 \shape default
- destinado ao leitor que não é familiarizado com o mesmo.
- No capítulo 4 é mostrada a API base de redes neurais.
- No capítulo 5 é apresentada a topologia a ser utilizada pela rede de simulação
+ destinado ao leitor não familiarizado com o mesmo.
+ No capítulo 4 é apresentada a topologia a ser utilizada pela rede de simulação
  do oponente.
- No capítulo 6 é descrita a interface com o banco de dados de mãos e as
+ No capítulo 5 é descrita a interface com o banco de dados de mãos e as
  heurísticas utilizadas para selecionar os jogadores usados para compor
  o conjunto de treinamento de cada perfil, bem como os jogadores usados
  para treinar a RN final.
- Por fim, no capítulo 7 estão as análises de resultados e no 8 as conclusões
+ Por fim, no capítulo 6 estão as análises de resultados e no 7 as conclusões
  tiradas a partir delas.
 \end_layout
 
@@ -4052,7 +4101,7 @@ Para realizar o teste desta API foram usados problemas mais simples do que
 
 \begin_layout Itemize
 O tratamento de informação discreta como sendo continuamente distribuída
- ( no intervalo [0,1]) tornou a convergência muito mais lenta no primeiro
+ (no intervalo [0,1]) tornou a convergência muito mais lenta no primeiro
  caso;
 \end_layout
 
@@ -4867,10 +4916,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/mainflux.png
@@ -5608,8 +5653,11 @@ Jesus
 \begin_layout Standard
 Neste trabalho são utilizados os dados de 4 canais deste banco, consistindo
  em mais de 3 GB de dados.
- Para fazer a adaptação à estrutura citada anteriormente, foram utilizadas
- rotinas em Java, Shell Script e SQL.
+ A modelagem deste banco não seguia o padrão de um registro por situação
+ de jogo por jogador desejado para o treinamento das redes neurais, de modo
+ que foi necessário realizar a separação dos dados.
+ Para fazer esta adaptação à estrutura, foram utilizadas rotinas pontuais
+ em Java, Shell Script e SQL.
 \end_layout
 
 \begin_layout Standard
@@ -5629,7 +5677,8 @@ reference "fig:Diagrama-de-classe-fachada"
 \end_inset
 
 .
- O padrão fachada foi usados para realizar este interfaceamento.
+ O padrão fachada foi usados para realizar este interfaceamento de forma
+ transparente para a aplicação.
 \end_layout
 
 \begin_layout Standard
@@ -5713,6 +5762,63 @@ Diagrama de classe para a fachada
 \end_layout
 
 \begin_layout Subsection
+ESTIMAÇÃO DE DADOS FALTANTES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O IRC Poker Database foi o banco de mãos mais completo encontrado livremente
+ para descarga - a maioria dos outros bancos encontrados ou possuíam um
+ número muito limitado de mãos, ou não expunham a identidade do jogador,
+ tornando impossível a associação de perfis.
+ Contudo, foi necessário estimar alguns dos dados necessários para o treinamento
+ das redes.
+\end_layout
+
+\begin_layout Standard
+Primeiramente, não eram mostradas as cartas dos jogadores que realizaram
+ fold em cada mão.
+ Uma vez que já se estava estimando a melhor probabilidade via simulação
+ de jogadas sucessivas (Monte Carlo) para as cartas da mesa, foi decidido
+ utilizar essa estimação para simular as cartas que não foram mostradas.
+\end_layout
+
+\begin_layout Standard
+Outro dado faltante no banco era a quantidade individualmente apostada por
+ cada jogador em uma situação do jogo.
+ Para se estimar as quantidades, foi feita uma média geométrica das quantidades
+ presentes no pote antes e depois da fase de jogo, considerando-se a quantidade
+ de apostas realizadas, aplicando pesos relativos, com 
+\shape italic
+raises
+\shape default
+, 
+\shape italic
+bets
+\shape default
+ e 
+\shape italic
+blinds
+\shape default
+ tendo o mesmo peso.
+\end_layout
+
+\begin_layout Subsection
 SELEÇÃO DOS DADOS
 \end_layout
 
@@ -5733,19 +5839,20 @@ indent
 \end_layout
 
 \begin_layout Standard
-Após obter os dados foi necessário utilizar alguma heurística para selecionar
- os melhores jogadores, pois precisamos destes para treinar a rede principal.
- A métrica utilizada foi a quantidade de fichas adquiridas pelo jogador
- no decorrer do tempo dividido pelo número de mãos na qual ele participou,
- e foram considerados apenas jogadores com mais de 6 mil mãos no banco.
+Após obter os dados foi necessário utilizar heurísticas para selecionar
+ os melhores jogadores para treinar a rede principal.
+ A métrica principal utilizada foi a quantidade de fichas adquiridas pelo
+ jogador no decorrer do tempo dividido pelo número de mãos na qual ele participo
+u, e foram considerados apenas jogadores com mais de 6 mil mãos no banco,
+ de modo a valorizar a consistência do jogador acima dos ganhos do mesmo.
  
 \end_layout
 
 \begin_layout Standard
 Também foi importante seccionar os jogadores em diferentes perfis para treinar
  diferentes modelagens de oponente.
- A primeira abordagem tomada para isso é a de classificar os jogadores dentre
- 
+ A primeira abordagem tomada para isso foi a de classificar os jogadores
+ dentre 
 \shape italic
 loose 
 \shape default
@@ -5838,14 +5945,15 @@ indent
 
 \begin_layout Standard
 Após o uso de parte do banco de dados de jogadas coletados, aproximadamente
- 3 milhões de mãos, com 80% dos dados usados para treinamento da rede e
- 20% para execução das rotinas de validação foram obtidos os seguintes resultado
-s:
+ 3 milhões de mãos, pois foi determinado que a quantidade de mãos obtidas
+ era excessiva, e foram selecionados destes apenas os melhores jogadores.
+ Destes, 80% dos dados usados para treinamento da rede e 20% para execução
+ das rotinas de validação foram obtidos os seguintes resultados:
 \end_layout
 
 \begin_layout Itemize
 A modelagem dos jogadores foi feita de forma relativamente acurada, obtendo-se
- 75% de concordância com o conjunto de validação.
+ aproximadamente 75% de concordância com o conjunto de validação.
  Esta concordância foi ligeiramente menor ao prever ações de 
 \emph on
 fold
@@ -5855,21 +5963,22 @@ fold
 \emph on
 fold
 \emph default
- em determinada jogada.
- Este valor é consistente com a literatura existente
+ em determinada jogada, forçando uma estimativa menos acurada.
+ Este valor é consistente com a literatura existente para modelagem de oponentes
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-3"
 
 \end_inset
 
-, e confirma a adequação do modelo de redes neurais para modelagem de oponentes;
+, e confirma a adequação do modelo de redes neurais para este fim;
 \end_layout
 
 \begin_layout Itemize
-Foi realizado o treino baseando-se no 3 melhores jogadores do banco, e a
- convergência entre os valores preditos e reais frente o número de mãos
- utilizadas no treino estão disposta na figura 
+Foi realizado o treino baseando-se no 3 melhores jogadores do banco (um
+ para cada perfil analisado).
+ A convergência entre os valores preditos e reais frente o número de mãos
+ utilizadas no treino está disposta na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:curva_aprend"
@@ -5917,9 +6026,9 @@ Curva de aprendizado
 \end_layout
 
 \begin_layout Itemize
-A classificação dos jogadores em perfis também foi suficiente para os propósitos
- do programa, obtendo-se 70% de concordância com o perfil observado para
- o jogador considerando uma janela deslizante de tamanho 10.
+A classificação dos jogadores em perfis também se mostrou suficiente para
+ os propósitos do programa, obtendo 70% de concordância com o perfil observado
+ para o jogador, considerando uma janela deslizante de tamanho 10.
  Esta concordância evidencia a adequação do modelo de RNA para solução de
  problemas de classificação;
 \end_layout
