@@ -462,434 +462,6 @@ RIO DE JANEIRO
 \end_layout
 
 \begin_layout Standard
-
-\size small
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-c2013
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-INSTITUTO MILITAR DE ENGENHARIA
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-Praça General Tibúrcio, 80 – Praia Vermelha 
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-Rio de Janeiro - RJ 
-\begin_inset space \hspace{}
-\length 1cm
-\end_inset
-
-CEP: 22290- 270
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-Este exemplar é de propriedade do Instituto Militar de Engenharia, que poderá
- incluí-lo em base de dados, armazenar em computador, microfilmar ou adotar
- qualquer forma de arquivamento.
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-É permitida a menção, reprodução parcial ou integral e a transmissão entre
- bibliotecas deste trabalho, sem modificação de seu texto, em qualquer meio
- que esteja ou venha a ser fixado, para pesquisa acadêmica, comentários
- e citações, desde que sem finalidade comercial e que seja feita a referência
- bibliográfica completa.
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-Os conceitos expressos neste trabalho são de responsabilidade do(s) autor(es)
- e do(s) orientador(es).
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset VSpace 1.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align right
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "129mm"
-special "none"
-height "76mm"
-height_special "none"
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "17mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\size footnotesize
-004.6
-\end_layout
-
-\begin_layout Plain Layout
-
-\size footnotesize
-O48t
-\end_layout
-
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "108mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Althoff, Paulo Eduardo/ Gemignani, Renan/ Oliveira, Carlos Alberto Villote
- de.
-\end_layout
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani
-\length 6mm
-\end_inset
-
-Emprego de Redes Neurais para o 
-\emph on
-Poker Texas Hold'em
-\emph default
-/ Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani;
- orientados por Marcos Veloso Peixoto - Rio de Janeiro: Instituto Militar
- de Engenharia, 2014.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 17mm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "108mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 6mm
-\end_inset
-
-47 p.
- : il.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 17mm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "108mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 6mm
-\end_inset
-
-Projeto de Fim de Curso (PROFIC) - Instituto Militar de Engenharia, - Rio
- de Janeiro, 2014.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 17mm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "108mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 6mm
-\end_inset
-
-1.
- Engenharia de Computação - Projeto Final de Curso 2.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-
-\size footnotesize
-\begin_inset space \hspace{}
-\length 17mm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "108mm"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing single
-\align right
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \align center
 
 \series bold
@@ -1137,26 +709,26 @@ status open
 \begin_layout Plain Layout
 
 \size small
-“What are you doing?”, asked Minsky.
+'What are you doing?', asked Minsky.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-“I am training a randomly wired neural net to play Tic-Tac-Toe” Sussman
+'I am training a randomly wired neural net to play Tic-Tac-Toe' Sussman
  replied.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-“Why is the net wired randomly?”, asked Minsky.
+'Why is the net wired randomly?', asked Minsky.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-“I do not want it to have any preconceptions of how to play”, Sussman said.
+'I do not want it to have any preconceptions of how to play', Sussman said.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1168,13 +740,13 @@ Minsky then shut his eyes.
 \begin_layout Plain Layout
 
 \size small
-“Why do you close your eyes?”, Sussman asked his teacher.
+'Why do you close your eyes?', Sussman asked his teacher.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size small
-“So that the room will be empty.”
+'So that the room will be empty.'
 \end_layout
 
 \begin_layout Plain Layout
@@ -4316,10 +3888,6 @@ all-in
 
 \begin_layout Section
 ESTRUTURA DA SOLUÇÃO
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
