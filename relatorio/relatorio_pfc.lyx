@@ -603,8 +603,7 @@ Os conceitos expressos neste trabalho são de responsabilidade do(s) autor(es)
 
 \begin_layout Standard
 \noindent
-
-\size small
+\align right
 \begin_inset Box Boxed
 position "t"
 hor_pos "c"
@@ -612,7 +611,28 @@ has_inner_box 1
 inner_pos "t"
 use_parbox 0
 use_makebox 0
-width "100col%"
+width "129mm"
+special "none"
+height "76mm"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "17mm"
 special "none"
 height "1in"
 height_special "totalheight"
@@ -620,73 +640,76 @@ status open
 
 \begin_layout Plain Layout
 
-\size small
-____
-\begin_inset space \hspace{}
-\length 0.5cm
+\size footnotesize
+004.6
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+O48t
+\end_layout
+
 \end_inset
 
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "108mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
 Althoff, Paulo Eduardo/ Gemignani, Renan/ Oliveira, Carlos Alberto Villote
- de
+ de.
 \end_layout
 
 \begin_layout Plain Layout
 
-\size small
-\begin_inset space \hspace{}
-\length 1cm
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\size small
-Emprego de Redes Neurais para o 
-\shape italic
-Poker Texas Hold'em
-\shape default
-, no Rio de Janeiro / 
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
+\size footnotesize
 Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani
+\length 6mm
+\end_inset
+
+Emprego de Redes Neurais para o 
+\emph on
+Poker Texas Hold'em
+\emph default
+/ Carlos Alberto Villote de Oliveira, Paulo Eduardo Althoff, Renan Gemignani;
+ orientados por Marcos Veloso Peixoto - Rio de Janeiro: Instituto Militar
+ de Engenharia, 2014.
 \end_layout
 
-\begin_layout Plain Layout
-
-\size small
-- Rio de Janeiro : Instituto Militar de Engenharia, 2013.
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset VSpace 0.5cm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\paragraph_spacing single
 
-\size small
+\size footnotesize
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
 \begin_inset space \hspace{}
-\length 1cm
+\length 17mm
 \end_inset
 
 
@@ -697,54 +720,153 @@ has_inner_box 1
 inner_pos "t"
 use_parbox 0
 use_makebox 0
-width "100col%"
+width "108mm"
 special "none"
 height "1in"
 height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+\paragraph_spacing single
 
-\size small
-n f.
- : il., graf., tab.
- : - cm.
+\size footnotesize
+\begin_inset space \hspace{}
+\length 6mm
+\end_inset
+
+47 p.
+ : il.
 \end_layout
 
-\begin_layout Plain Layout
-
-\size small
-\begin_inset VSpace 0.5cm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\paragraph_spacing single
 
-\size small
-Dissertação (graduação) - Instituto Militar de Engenharia, 2014.
-\end_layout
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset VSpace 0.5cm
+\size footnotesize
+\begin_inset VSpace 2mm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\paragraph_spacing single
 
-\size small
+\size footnotesize
+\begin_inset space \hspace{}
+\length 17mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "108mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset space \hspace{}
+\length 6mm
+\end_inset
+
+Projeto de Fim de Curso (PROFIC) - Instituto Militar de Engenharia, - Rio
+ de Janeiro, 2014.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset space \hspace{}
+\length 17mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "108mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset space \hspace{}
+\length 6mm
+\end_inset
+
 1.
- Formação.
+ Engenharia de Computação - Projeto Final de Curso 2.
  
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+
+\size footnotesize
+\begin_inset space \hspace{}
+\length 17mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "108mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\align right
 
 \end_layout
 
@@ -1458,17 +1580,31 @@ abstractname{ABSTRACT}
 
 \begin_layout Abstract
 Neural networks have been used for solving decision problems to great success,
- especially problems with imperfect/noise-laden information, of which poker
+ especially problems with imperfect/noise-laden information, of which 
+\emph on
+poker
+\emph default
  is a prime example.
- Here, we analyze Texas Hold'em poker, proposing the usage of multiple topologic
-ally-arranged neural networks to model heuristically selected opponents
- to allow for player profile analyses and subsequently formulate counterstrategi
-es with the neural network.
+ Here, we analyze 
+\emph on
+Texas Hold'em
+\emph default
+ 
+\emph on
+poker
+\emph default
+, proposing the usage of multiple topologically-arranged neural networks
+ to model heuristically selected opponents to allow for player profile analyses
+ and subsequently formulate counterstrategies with the neural network.
  
 \end_layout
 
 \begin_layout Abstract
-Keywords: Neural networks, machine learning, poker.
+Keywords: Neural networks, machine learning, 
+\emph on
+poker
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1526,19 +1662,33 @@ Existem inúmeras situações de uso de práticas de inteligência artificial
 Na área de decisão estratégica, uma forma de simular resultados de aprendizado
  é a aplicação em jogos, por serem situações que promovem interações entre
  adversários para comparar escolhas que busquem um objetivo comum.
- O pôquer é um dos jogos mais utilizados nessas simulações por possuir uma
- extensa bibliografia de uso em aprendizado de máquina.
- Além disso, o pôquer também possui situações interessantes por conter informaçõ
-es ocultas do adversário, e a decisão ser influenciada por blefes e jogadas
- do oponente.
+ O 
+\emph on
+poker
+\emph default
+ é um dos jogos mais utilizados nessas simulações por possuir uma extensa
+ bibliografia de uso em aprendizado de máquina.
+ Além disso, o 
+\emph on
+poker
+\emph default
+ também possui situações interessantes por conter informações ocultas do
+ adversário, e a decisão ser influenciada por blefes e jogadas do oponente.
 \end_layout
 
 \begin_layout Standard
 A maior parte dos estudos na área advém do grupo de inteligência artificial
- aplicada ao pôquer da Universidade de Alberta.
- Uma parte dos estudos e implementações de software de pôquer faz uso de
- estratégias e contra-estratégias baseadas na teoria de equilíbrio de Nash
- 
+ aplicada ao 
+\emph on
+poker
+\emph default
+ da Universidade de Alberta.
+ Uma parte dos estudos e implementações de software de 
+\emph on
+poker
+\emph default
+ faz uso de estratégias e contra-estratégias baseadas na teoria de equilíbrio
+ de Nash 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-2"
@@ -1611,8 +1761,12 @@ key "key-4"
  oponente, levando a uma abordagem relativamente simples no que concerne
  a modelagem da rede em si, e focando na evolução dos agentes pré-determinados
  via combinação dos mesmos e utilização de heurísticas co-evolucionárias,
- como por exemplo o algoritmo halls da fama, que realiza a seleção dos agentes
- que mais se adaptam e descarta modelos menos eficientes.
+ como por exemplo o algoritmo 
+\emph on
+halls
+\emph default
+ da fama, que realiza a seleção dos agentes que mais se adaptam e descarta
+ modelos menos eficientes.
 \end_layout
 
 \begin_layout Standard
@@ -1662,9 +1816,12 @@ key "key-1"
 \end_layout
 
 \begin_layout Standard
-Devido às características de informação incompleta do jogo, o pôquer é frequente
-mente estudado na área de aprendizado de máquina tanto como objetivo fim
- quanto como campo de testes de abordagens de aprendizado
+Devido às características de informação incompleta do jogo, o 
+\emph on
+poker
+\emph default
+ é frequentemente estudado na área de aprendizado de máquina tanto como
+ objetivo fim quanto como campo de testes de abordagens de aprendizado
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-2,key-3"
@@ -1742,8 +1899,12 @@ indent
 
 \begin_layout Standard
 Redes neurais tem se mostrado ferramentas úteis tanto para a modelagem de
- oponentes no pôquer, quanto para a resolução de problemas de decisão, como
- já foi mostrado em trabalhos correlatos
+ oponentes no 
+\emph on
+poker
+\emph default
+, quanto para a resolução de problemas de decisão, como já foi mostrado
+ em trabalhos correlatos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-4,key-3"
@@ -1773,7 +1934,7 @@ correta
 
 , já que para qualquer ação, deve-se ser levada em conta a subsequente ação
  tomada pelo adversário.
- Desta forma, faz-se necessario utilizar alguma técnica que preveja as respostas
+ Desta forma, faz-se necessário utilizar alguma técnica que preveja as respostas
  mais prováveis do oponente a cada ação tomada, podendo assim julgar a adequação
  do modelo e realizar uma análise mais correta.
  Neste caso, o uso de redes neurais se enquadra naturalmente, pois o jogo
@@ -1812,7 +1973,11 @@ indent
 \begin_layout Standard
 Na fase de pesquisa teórica, objetivou-se o levantamento de dados sobre
  redes neurais como técnica de aprendizado de máquina, além do estudo do
- jogo do pôquer em si.
+ jogo do 
+\emph on
+poker
+\emph default
+ em si.
  No planejamento, foram construídas a topologia da rede a ser utilizada
  para modelar o oponente, e a diagramação de classes do sistema.
  Foram coletados dados para o treinamento da rede em um banco disponibilizado
@@ -1820,7 +1985,7 @@ Na fase de pesquisa teórica, objetivou-se o levantamento de dados sobre
 \end_layout
 
 \begin_layout Standard
-Com base na pesquisa teórica e nos exempos conhecidos de redes desenvolvidas,
+Com base na pesquisa teórica e nos exemplos conhecidos de redes desenvolvidas,
  foi modelada a RNA para o sistema de treinamento, e o reconhecedor de perfis.
 \end_layout
 
@@ -1860,7 +2025,11 @@ indent
 \begin_layout Standard
 No capítulo 2, será apresentada a fundamentação teórica acerca de redes
  neurais mínima necessária para o entendimento do trabalho.
- No capítulo 3, um breve resumo das regras do pôquer 
+ No capítulo 3, um breve resumo das regras do 
+\emph on
+poker
+\emph default
+ 
 \shape italic
 Texas Hold'em
 \shape default
@@ -1961,15 +2130,22 @@ As primeiras informações sobre neurocomputação surgiram em 1943 nos artigos
 \end_layout
 
 \begin_layout Standard
-Em 1948, o livro “Cybernetics” de Wiener descreve alguns conceitos sobre
- controle, comunicação e processamento estatístico de sinais.
+Em 1948, o livro 
+\emph on
+“Cybernetics”
+\emph default
+ de Wiener descreve alguns conceitos sobre controle, comunicação e processamento
+ estatístico de sinais.
  
 \end_layout
 
 \begin_layout Standard
-Em 1950, por meio do livro “The Organization of Behavior”, Hebb descreveu
- um sistema de aprendizado por correlação dos neurônios que acabou dando
- origem a Regra de Aprendizagem de Hebb.
+Em 1950, por meio do livro 
+\emph on
+“The Organization of Behavior”
+\emph default
+, Hebb descreveu um sistema de aprendizado por correlação dos neurônios
+ que acabou dando origem a Regra de Aprendizagem de Hebb.
  No ano seguinte, Minsky construiu o primeiro neuro computador.
  
 \end_layout
@@ -1977,28 +2153,39 @@ Em 1950, por meio do livro “The Organization of Behavior”, Hebb descreveu
 \begin_layout Standard
 Em 1956, a Inteligência Artificial foi oficialmente criada por McCarthy,
  Minsky, Shannon, Newell & Simon, Samuel e outros.
- Em Darthmouth College nasceram os dois paradigmas da IA: a simbólica, que
- tenta simular o comportamento inteligente humano desconsiderando os mecanismos
- responsáveis por tal, e a conexionista, que acredita que o sistema apresentará
- inteligência se simular a estrutura do cerébro.
+ Em 
+\emph on
+Darthmouth College
+\emph default
+ nasceram os dois paradigmas da IA: a simbólica, que tenta simular o comportamen
+to inteligente humano desconsiderando os mecanismos responsáveis por tal,
+ e a conexionista, que acredita que o sistema apresentará inteligência se
+ simular a estrutura do cérebro.
  
 \end_layout
 
 \begin_layout Standard
-No ano seguinte, Rosenblatt criou o Perceptron, um modelo cognitivo que
- consistia de unidades sensoriais conectadas a uma única camada de neurônios
- de McCulloch & Pitts, demonstrando que se fossem acrescidas sinapses ajustáveis
-, as redes neurais de McCulloch & Pitts podem ser treinadas para classificar
- padrões em classes linearmente separáveis, convergindo em um número limitado
- de passos.
+No ano seguinte, Rosenblatt criou o 
+\emph on
+Perceptron
+\emph default
+, um modelo cognitivo que consistia de unidades sensoriais conectadas a
+ uma única camada de neurônios de McCulloch & Pitts, demonstrando que se
+ fossem acrescidas sinapses ajustáveis, as redes neurais de McCulloch &
+ Pitts podem ser treinadas para classificar padrões em classes linearmente
+ separáveis, convergindo em um número limitado de passos.
  
 \end_layout
 
 \begin_layout Standard
-Em 1969, Minsky e Papert publicam “Perceptron”, que expõe as limitações
- do modelo de Rosenblatt, provando que tais redes não são capazes de resolver
- uma ampla classe de problemas devido às restrições de representam, tendo
- impacto devastador no interesse dos pesquisadores sobre redes neurais.
+Em 1969, Minsky e Papert publicam “
+\emph on
+Perceptron
+\emph default
+”, que expõe as limitações do modelo de Rosenblatt, provando que tais redes
+ não são capazes de resolver uma ampla classe de problemas devido às restrições
+ de representam, tendo impacto devastador no interesse dos pesquisadores
+ sobre redes neurais.
  
 \end_layout
 
@@ -2020,9 +2207,12 @@ backpropagation
 , que se baseia na retropropagação dos erros para realizar os ajustes de
  pesos das camadas intermediárias.
  A área de redes neurais teve um desenvolvimento explosivo após a publicação
- em 1986 do “Parallel Distributed Processing” editado por Rummerlhart &
- McClelland, com o surgimento exponencial de teses e artigos cientifícos
- na área.
+ em 1986 do 
+\emph on
+“Parallel Distributed Processing”
+\emph default
+ editado por Rummerlhart & McClelland, com o surgimento exponencial de teses
+ e artigos científicos na área.
 \end_layout
 
 \begin_layout Standard
@@ -2256,7 +2446,7 @@ indent
 
 \begin_layout Standard
 Imaginando a RNA como um grafo monodirecionado, tem-se as conexões entre
- os nós fazendo o papel dos axiônios (ao enviar a informação de saída de
+ os nós fazendo o papel dos axônios (ao enviar a informação de saída de
  um neurônio) e dos dendritos (associando um peso a cada entrada).
  Esse peso nada mais é que um valor que é ajustado durante o treinamento
  da rede neural, podendo ser positivo (excita a entrada) ou negativo (inibe
@@ -2384,7 +2574,7 @@ As funções de limiar, ou funções para transferência de sinais entre neurôn
 \shape italic
 step
 \shape default
-, a em rampa, a gaussiana e a sigmoid.
+, a em rampa, a gaussiana e a sigmóide.
  
 \end_layout
 
@@ -2640,7 +2830,7 @@ Função Gaussiana
 \begin_layout Itemize
 A função 
 \shape italic
-sigmoid
+sigmóide
 \shape default
  é uma variante da função em rampa, com a vantagem de diminuir mais ainda
  o problema da função step, deixando-a totalmente diferenciável.
@@ -2692,8 +2882,8 @@ Função sigmóide
 Neste trabalho será utilizada a função de limiar sigmóide, com uma otimização
  muito utilizada no ramo das redes neurais, que é a mudança dos limites
  da função para não trabalhar com números negativos.
- Foram usados os valores da sigmoid variando entre 0 e 1, sendo aceito e
- não aceito respectivamente.
+ Foram usados os valores da sigmóide variando entre 0 e 1, sendo aceito
+ e não aceito respectivamente.
  A principal utilidade da sigmóide, no que tange a uma rede neural, é que
  sua derivada é expressa de uma forma bastante simples: 
 \begin_inset Formula $f'(x)=f(x)*(1-f(x))$
@@ -2705,7 +2895,7 @@ Neste trabalho será utilizada a função de limiar sigmóide, com uma otimizaç
 backpropagation
 \shape default
 , que depende dessa derivada.
- Com o cálculo da mesma rápidamente efetuado, a iteração do algoritmo se
+ Com o cálculo da mesma rapidamente efetuado, a iteração do algoritmo se
  torna mais rápida.
 \end_layout
 
@@ -2893,9 +3083,13 @@ indent
 \end_layout
 
 \begin_layout Standard
-Adaline (Adaptative Linear Network), como seu nome diz, utiliza um combinador
- adaptativo linear, em que a saída de cada neurônio é a combinação linear
- das entradas multiplicadas por um peso, seguindo a fórmula 
+Adaline (
+\emph on
+Adaptative Linear Network
+\emph default
+), como seu nome diz, utiliza um combinador adaptativo linear, em que a
+ saída de cada neurônio é a combinação linear das entradas multiplicadas
+ por um peso, seguindo a fórmula 
 \begin_inset Formula $S(t)=\sum_{i=0}^{n-1}p_{i}(t)e_{i}(t)$
 \end_inset
 
@@ -2996,7 +3190,7 @@ O
 \shape italic
 Backpropagation
 \shape default
- é um algorítmo de aprendizado utilizado em redes neurais de três ou mais
+ é um algoritmo de aprendizado utilizado em redes neurais de três ou mais
  camadas de adalines interconectados, que utilizam como função limiar a
  sigmóide.
 \end_layout
@@ -3008,7 +3202,7 @@ A atualização dos pesos neste modelo é feita se iniciando pelo erro da saída
 \end_layout
 
 \begin_layout Standard
-O erro da útima saída é dado por 
+O erro da última saída é dado por 
 \begin_inset Formula $\varepsilon_{i}(t)=S(t)(1\text{-}S(t))(d_{i}(t)\text{-}S(t))$
 \end_inset
 
@@ -3124,7 +3318,9 @@ A vantagem do modelo é que ele abrange uma grande quantidade de padrões
 \end_layout
 
 \begin_layout Section
-O PÔQUER
+O 
+\emph on
+POKER
 \end_layout
 
 \begin_layout Standard
@@ -3145,18 +3341,29 @@ indent
 \end_layout
 
 \begin_layout Standard
-O pôquer é um jogo de cartas jogado por duas ou mais pessoas, no qual os
- jogadores com as cartas total ou parcialmente escondidas fazem apostas
- em um pote central e após o fim das apostas, o pote central é atribuído
- ao jogador que possuir o melhor conjunto de cartas dentre os que permaneceram
- na jogada, ou ao único que restou caso todos os outros tenham desistido.
- Pôquer é um banco de ensaio interessante para pesquisas em inteligência
- artificial, pois é um jogo de informações imperfeitas, onde os múltiplos
- agentes concorrentes têm de lidar com conhecimento probabilístico, avaliação
- de risco e a possível fraude, assim como são as decisões feitas no mundo
- real.
+O 
+\emph on
+poker
+\emph default
+ é um jogo de cartas jogado por duas ou mais pessoas, no qual os jogadores
+ com as cartas total ou parcialmente escondidas fazem apostas em um pote
+ central e após o fim das apostas, o pote central é atribuído ao jogador
+ que possuir o melhor conjunto de cartas dentre os que permaneceram na jogada,
+ ou ao único que restou caso todos os outros tenham desistido.
+ O 
+\emph on
+poker
+\emph default
+ é um banco de ensaio interessante para pesquisas em inteligência artificial,
+ pois é um jogo de informações imperfeitas, onde os múltiplos agentes concorrent
+es têm de lidar com conhecimento probabilístico, avaliação de risco e a
+ possível fraude, assim como são as decisões feitas no mundo real.
  A modelagem do oponente é um outro problema difícil em aplicações de tomada
- de decisão, sendo essencial para alcançar alto desempenho no pôquer.
+ de decisão, sendo essencial para alcançar alto desempenho no 
+\emph on
+poker
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -3188,15 +3395,27 @@ indent
 \end_layout
 
 \begin_layout Standard
-O pôquer é jogado com um barulho comum, de 52 cartas, divididas em 4 grupos,
- chamados naipes.
+O 
+\emph on
+poker
+\emph default
+ é jogado com um barulho comum, de 52 cartas, divididas em 4 grupos, chamados
+ naipes.
  Os naipes são identificados por nomes: ouros , copas, paus e espadas e
  seus símbolos.
 \end_layout
 
 \begin_layout Standard
-No pôquer os naipes possuem o mesmo valor, ou seja, o naipe da carta nunca
- é critério de desempate no pôquer.
+No 
+\emph on
+poker
+\emph default
+ os naipes possuem o mesmo valor, ou seja, o naipe da carta nunca é critério
+ de desempate no 
+\emph on
+poker
+\emph default
+.
  Cada naipe possui 13 cartas em ordem decrescente de valor: o ás (A), o
  rei (K), a dama(Q), o valete (J) e os números de 10 a 2, como é ilustrado
  na figura 
@@ -3274,8 +3493,11 @@ indent
 \end_layout
 
 \begin_layout Standard
-O ranking das combinações de 5 cartas no pôquer é exibido a seguir em ordem
- crescente de valor:
+O ranking das combinações de 5 cartas no 
+\emph on
+poker
+\emph default
+ é exibido a seguir em ordem crescente de valor:
 \end_layout
 
 \begin_layout Standard
@@ -3749,7 +3971,11 @@ royal straight flush
 straight flush
 \emph default
  com um ás como carta mais alta.
- É a combinação mais forte do pôquer (Figura 
+ É a combinação mais forte do 
+\emph on
+poker
+\emph default
+ (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:royalflush"
@@ -3826,7 +4052,11 @@ indent
 \end_layout
 
 \begin_layout Standard
-No pôquer, os jogadores possuem disponíveis as seguintes ações: passar (
+No 
+\emph on
+poker
+\emph default
+, os jogadores possuem disponíveis as seguintes ações: passar (
 \shape italic
 check
 \shape default
@@ -3900,7 +4130,9 @@ Quando a última aposta ou aumento na rodada final for igualada, ocorre a
 \end_layout
 
 \begin_layout Subsection
-TIPOS DE POQUÊR
+TIPOS DE 
+\emph on
+POKER
 \end_layout
 
 \begin_layout Standard
@@ -3921,20 +4153,43 @@ indent
 \end_layout
 
 \begin_layout Standard
-Existem diversas variantes do pôquer, dentre as quais se pode categorizar
- livremente em: pôquer aberto, pôquer fechado e 
+Existem diversas variantes do 
+\emph on
+poker
+\emph default
+, dentre as quais se pode categorizar livremente em: 
+\emph on
+poker
+\emph default
+ aberto, 
+\emph on
+poker
+\emph default
+ fechado e 
 \shape italic
 community card poker
 \shape default
 , dentre outras.
- O estilo de pôquer conhecido como Texas-Hold'em é um tipo de 
+ O estilo de 
+\emph on
+poker
+\emph default
+ conhecido como 
+\emph on
+Texas-Hold'em
+\emph default
+ é um tipo de 
 \shape italic
 community card poker
 \shape default
 , onde existem cartas abertas para uso de todos os jogadores.
- Ele é atualmente o pôquer mais conhecido e jogado nos cassinos e torneios,
- e consequentemente com maior quantidade de estudo acerca do mesmo, fator
- pelo qual foi utilizado como base no presente trabalho.
+ Ele é atualmente o 
+\emph on
+poker
+\emph default
+ mais conhecido e jogado nos cassinos e torneios, e consequentemente com
+ maior quantidade de estudo acerca do mesmo, fator pelo qual foi utilizado
+ como base no presente trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -3947,8 +4202,12 @@ Texas Hold`em
  Para vencer, o jogador deve combinar suas duas cartas fechadas com três
  das cinco abertas ou a melhor combinação, podendo usar as cinco cartas
  comunitárias.
- Ao contrário do pôquer aberto tradicional, as cartas abertas são as mesmas
- para todos os participantes.Existem um total de quatro rodadas de apostas.
+ Ao contrário do 
+\emph on
+poker
+\emph default
+ aberto tradicional, as cartas abertas são as mesmas para todos os participantes.
+Existem um total de quatro rodadas de apostas.
  Antes do início das rodadas de apostas, os dois jogadores à esquerda do
  crupiê (
 \shape italic
@@ -4085,13 +4344,20 @@ indent
 
 \begin_layout Standard
 O primeiro passo tomado na construção do projeto foi o desenvolvimento de
- uma interface genérica básica de rede neural de três camadas (input, camada
- interna e output) e com ativação sigmóide.
+ uma interface genérica básica de rede neural de três camadas (
+\emph on
+input
+\emph default
+, camada interna e 
+\emph on
+output
+\emph default
+) e com ativação sigmóide.
 \end_layout
 
 \begin_layout Standard
 Para realizar o teste desta API foram usados problemas mais simples do que
- o tratado no resto deste trabalho, como ,por exemplo, dado um caracter,
+ o tratado no resto deste trabalho, como ,por exemplo, dado um caractere,
  decidir se o mesmo representa uma vogal ou não, e dada uma reta e um dos
  semiplanos determinados pela mesma, determinar se o semiplano contem um
  ponto.
@@ -4341,17 +4607,24 @@ Ao se realizar a transformação dos dados puros para a parametrização requeri
  pela rede, um problema encontrado foi calcular a probabilidade da mão ser
  a melhor da mesa.
  Existem cálculos que computam a probabilidade de se atingir um determinado
- jogo (os chamados cálculos de Outs), contudo, tais probabilidades não represent
-am a chance de se vencer a mão de fato.
+ jogo (os chamados cálculos de 
+\emph on
+Outs
+\emph default
+), contudo, tais probabilidades não representam a chance de se vencer a
+ mão de fato.
  Além disso, o número de mãos necessário para se determinar a probabilidade
  exata da melhor mão é intratável sem a utilização de enormes tabelas de
  consulta que não caberiam na memória física disponível.
  Foi decidido, então, utilizar o método de Monte Carlo (amostragem aleatória)
  para determinar uma probabilidade aproximada, contando quantas vitórias
  ocorreram na amostragem.
- Tal método é mais preciso que a estimação via Outs (que não leva em conta
- o jogo do oponente) e quase tão rápido quanto o uso de tabelas de consulta,
- porém sem o consequente uso excessivo de memória.
+ Tal método é mais preciso que a estimação via 
+\emph on
+Outs
+\emph default
+ (que não leva em conta o jogo do oponente) e quase tão rápido quanto o
+ uso de tabelas de consulta, porém sem o consequente uso excessivo de memória.
 \end_layout
 
 \begin_layout Standard
@@ -5539,8 +5812,11 @@ indent
 
 \begin_layout Standard
 Para realizar o treinamento da rede foram coletados dados de um extenso
- banco de dados chamado IRC Poker Database, que foi adaptado na estrutura
- de dados apresentada na figura 
+ banco de dados chamado IRC 
+\emph on
+Poker Database
+\emph default
+, que foi adaptado na estrutura de dados apresentada na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-das-classes"
@@ -5599,7 +5875,9 @@ Diagrama relacional do banco de dados utilizado.
 \end_layout
 
 \begin_layout Subsection
-IRC POKER DATABASE
+IRC 
+\emph on
+POKER DATABASE
 \end_layout
 
 \begin_layout Standard
@@ -5619,9 +5897,12 @@ indent
 \end_layout
 
 \begin_layout Standard
-Antes da existência de serviços de poker online com dinheiro real, os entusiasta
-s do jogo podiam treinar e testar suas táticas em servidores do IRC preparados
- para o jogo.
+Antes da existência de serviços de 
+\emph on
+poker
+\emph default
+ online com dinheiro real, os entusiastas do jogo podiam treinar e testar
+ suas táticas em servidores do IRC preparados para o jogo.
  Essa estrutura de salas de jogos se desenvolveu a ponto de serem criados
  canais para diferentes modalidades e experiências no jogo.
 \end_layout
@@ -5631,7 +5912,11 @@ Em 1995, Michael Maurer criou um programa chamado
 \begin_inset Quotes sld
 \end_inset
 
+
+\emph on
 Observer
+\emph default
+
 \begin_inset Quotes srd
 \end_inset
 
@@ -5646,8 +5931,11 @@ Jesus
 \begin_inset Quotes srd
 \end_inset
 
- Ferguson, que ganhou 5 vezes o World Series of Poker, sendo campeão mundial
- do evento principal em 2000.
+ Ferguson, que ganhou 5 vezes o 
+\emph on
+World Series of 
+\emph default
+Poker, sendo campeão mundial do evento principal em 2000.
 \end_layout
 
 \begin_layout Standard
@@ -5888,7 +6176,7 @@ As faixas de corte usadas foram determinadas da seguinte maneira: assumindo
 fold
 \shape default
  (mãos nas quais o jogador deu fold dividido pelo total de mãos jogadas)
- e uma população com desvio padrao 
+ e uma população com desvio padrão 
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -6077,8 +6365,12 @@ indent
 
 \begin_layout Standard
 A utilização de redes neurais é factível para a simulação e análise de oponentes
- no jogo de pôquer dada a pesquisa bibliográfica realizada, o que foi confirmado
- nos resultados experimentais.
+ no jogo de 
+\emph on
+poker
+\emph default
+ dada a pesquisa bibliográfica realizada, o que foi confirmado nos resultados
+ experimentais.
  Contudo, salvo pela mera imitação de um jogador de bom desempenho, a rede
  neural se mostrou pouco eficaz no uso destas informações para funcionar
  como um agente 
@@ -6179,9 +6471,12 @@ key "opponent_modeling"
  Salim, Rohwer.
  
 \series bold
+\emph on
 Poker Opponent Modeling
 \series default
- - Indiana University, 2006.
+ - Indiana University
+\emph default
+, 2006.
 \end_layout
 
 \begin_layout Bibliography
@@ -6195,9 +6490,15 @@ key "opponent_modeling_old"
 Billings, Papp et al.
  
 \series bold
+\emph on
 Opponent Modeling in Poker
 \series default
- - AAAI, University of Alberta, Edmonton, Canada, 1998.
+\emph default
+ - AAAI,
+\emph on
+ University of Alberta
+\emph default
+, Edmonton, Canada, 1998.
 \end_layout
 
 \begin_layout Bibliography
@@ -6211,9 +6512,12 @@ key "key-3"
 Davidson, Billings, Schaeffer, Szafron.
  
 \series bold
+\emph on
 Improved Opponent Modeling in Poker
 \series default
- - University of Alberta, Edmonton, Canada, 2000.
+ - University of Alberta
+\emph default
+, Edmonton, Canada, 2000.
 \end_layout
 
 \begin_layout Bibliography
@@ -6227,10 +6531,13 @@ key "key-2"
 Johnson.
  
 \series bold
+\emph on
 Robust Strategies and Counter-Strategies: Building a Champion Level Computer
  Poker Player
 \series default
- - University of Alberta, 2007.
+ - University of Alberta
+\emph default
+, 2007.
 \end_layout
 
 \begin_layout Bibliography
@@ -6244,9 +6551,12 @@ key "key-4"
 Nicolai, Hilderman.
  
 \series bold
+\emph on
 No-Limit Texas Hold’em Poker Agents Created with Evolutionary Neural Networks
 \series default
- - IEEE Symposium on Computational Intelligence and Games, 2009.
+ - IEEE Symposium on Computational Intelligence and Games
+\emph default
+, 2009.
 \end_layout
 
 \begin_layout Bibliography
@@ -6265,9 +6575,12 @@ B.
  Hilderman.
  
 \series bold
+\emph on
 Pattern classification in no-limit poker: A head-start evolutionary approach
 \series default
- - Canadian Conference on AI, 204–215, 2007.
+ - Canadian Conference on AI
+\emph default
+, 204–215, 2007.
 \end_layout
 
 \begin_layout Bibliography
@@ -6281,8 +6594,10 @@ key "key-5-2"
 Russell S., Norvig P.
  
 \series bold
+\emph on
 Artificial Intelligence: A Modern Approach (3rd Edition)
 \series default
+\emph default
 , 2010.
 \end_layout
 
@@ -6296,9 +6611,12 @@ key "key-1"
 
 desJardins - 
 \series bold
+\emph on
 Machine Learning for Military Operations
 \series default
-, Rome Laboratory, Air Force Materiel Command, 1996;
+, Rome Laboratory, Air Force Materiel Command
+\emph default
+, 1996;
 \end_layout
 
 \begin_layout Bibliography
@@ -6312,9 +6630,12 @@ key "key-2"
 Spaanenburg, ten Berg.
  
 \series bold
+\emph on
 Modular and Hierarchical Specialization for Neural Networks
 \series default
- - Lund University, Department of Information Technology, 2003;
+ - Lund University, Department of Information Technology
+\emph default
+, 2003;
 \end_layout
 
 \begin_layout Bibliography
@@ -6328,9 +6649,12 @@ key "key-3"
 Hornik.
  
 \series bold
+\emph on
 Approximation capabilities of multilayer feedforward networks
 \series default
-, Neural Networks, Volume 4, Issue 2, pg 251-257, 1991;
+, Neural Networks, Volume 4, Issue 2
+\emph default
+, pg 251-257, 1991;
 \end_layout
 
 \end_body
